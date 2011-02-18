@@ -12,8 +12,21 @@
 	font-style: normal;
 }
 
+@-webkit-keyframes border {
+  0% {
+    border-top: 5px solid #00899b;
+  }
+  100% {
+    border-top: 5px solid #3994C6;
+  }
+}
+
 html {
   border-top: 5px solid #00899b;
+  -webkit-animation-name: border;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
 }
 
 body {
