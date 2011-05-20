@@ -2,6 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=device-width">
+  
   <title>Full Frontal 2011- JavaScript Conference</title>
   
   <link rel="stylesheet" href="fullfrontal.css" />
@@ -10,7 +12,7 @@
 <body> 
   
     <header>
-      <h1 class="full-frontal"><span>F<span>ull</span><span> </span>F<span>rontal</span></span></h1> 
+      <h1 class="full-frontal">F<span>ull</span><span> </span>F<span>rontal</span></h1> 
       <h2>JavaScript <br /> Conference</h2>
       <h3>Duke Of Yorks, Brighton, 11th November 2011</h3>
     
@@ -18,20 +20,23 @@
     <header>
     
     <form action="" method="">
-      <label for="email">Enter your email address above to get updated on Full Frontal 2011</label>
-      <input type="email" name="email" placeholder="Enter your email for updates..."/>
-      <button type="submit">Go</button>
+      <label for="email">Enter your email address below to get updated on Full Frontal 2011</label>
+      <p>
+        <input type="email" name="email" placeholder="Enter your email for updates..."/>
+        <button type="submit">Go</button>
+      </p>
     </form>
     
-    <section>
-      <h1>Want to speak?</h2>
+    <div class="want-to">
+    <section class="speak">
+      <h1>Want to speak?</h1>
       <p>
         Want to speak at Full Frontal 2011? We'd love to give you the platform to speak to hundreds of
         developers and designers, so what are you waiting for, <a href="#">get in touch!</a>
       </p>
     </section>
     
-    <section>
+    <section class="sponsor">
       <h1>Want to sponsor?</h1>
       <p>
         Find out how your company can sponsor Full Frontal by reviewing our
@@ -39,8 +44,9 @@
         how we can work together.
       </p>
     </section>
+    </div>
     
-    <div>
+    <div class="tweets">
       <blockquote>
         <p>Had a great day at #fullfrontalconf. Lots of inspiring stuff. Some awesome 3D demos by @paulrouget and @seb_ly</p>
         <cite>Andyeo</cite>
