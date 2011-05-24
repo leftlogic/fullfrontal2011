@@ -16,10 +16,11 @@ html {
 body {
   width: 80%;
   max-width: 60em;
+  min-width: 20em;
   margin: 0 auto;
   margin-top: 8em;
   padding: 0;
-  font-family: "Century Gothic", sans-serif;
+  font-family: 'Century Gothic', sans-serif;
   font-weight: bold;
   color: #93cfd6;
 }
@@ -34,18 +35,21 @@ a:hover {
 }
 
 header {
-  font-family: 'Cabin Sketch';
+  font-family: 'Cabin Sketch', sans-serif;
   color: #fff;
+  -webkit-text-shadow: 2px 2px 2px rgba(0,0,0,0.1); 
   text-shadow: 2px 2px 2px rgba(0,0,0,0.1); 
   text-transform: uppercase;
 }
-header time {
+header h4 {
   float: left;
-  margin: 0;
-  font-size: 12.5em;
+}
+header time {
+  width: 100%;
+  margin: 0 0.1304em;
+  font-size: 11.5em;
   line-height: 1;
   letter-spacing: -0.05em;
-  margin-right: 0.025em;
 }
 header h2,
 header h3 {
@@ -72,21 +76,24 @@ header h3 {
   height: 1.1em;
   width: 1.1em;
   margin: 0;
+  margin-top: 0.0694em;
   padding-right: 0.05em;
   background-color: #ded4a0;
   color: #008999;
   text-align: center;
   text-transform: lowercase;
   letter-spacing: -0.05em;
-  font-family: "ff", sans-serif;
+  font-family: 'ff', sans-serif;
   font-weight: bold; 
-  font-size: 10em;
+  font-size: 9em;
   line-height: 1.3em;
+  
   -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,.2);
   -moz-box-shadow: 1px 1px 1px rgba(0,0,0,.2);
   -o-box-shadow: 1px 1px 1px rgba(0,0,0,.2);
   -ms-box-shadow: 1px 1px 1px rgba(0,0,0,.2);
   box-shadow: 1px 1px 1px rgba(0,0,0,.2);
+  
   -moz-border-radius-topleft: 0.3em;
   -moz-border-radius-bottomright: 0.3em;
   -webkit-border-top-left-radius: 0.3em;
@@ -98,10 +105,9 @@ header h3 {
   display: none;
 }
 
-
 form {
   clear: both;
-  margin-bottom: 4.375em;
+  margin: 5.375em 0 4.375em 0;
 }
 form p{
   position: relative;
@@ -125,11 +131,11 @@ button {
 }
 button:hover {
   background: #008999;
+  cursor: pointer;
 }
 button span {
   display: block;
   height: 34px;
-  /* I tried to do this without an image but it just detracts from the feel of the whole design */
   background: #ded4a0 url('images/button-go.png') no-repeat center top;
   text-indent: -9999em;
 }
@@ -152,9 +158,6 @@ input::-moz-placeholder {
   color: #008999;
 }
 
-
-
-
 .want-to {
   margin-bottom: 4.375em;
   overflow: hidden;
@@ -170,76 +173,76 @@ section h1 {
   float: right;
   min-width: 5em;
   margin: 0;
-  font-family: 'Cabin Sketch';
+  font-family: 'Cabin Sketch', sans-serif;
   font-size: 3.875em;
   text-transform: uppercase;
+  -webkit-text-shadow: 2px 2px 2px rgba(0,0,0,0.1); 
   text-shadow: 2px 2px 2px rgba(0,0,0,0.1); 
   line-height: 0.7562;
   color: #fff;
 }
 section p {
-  margin: 1em 0.5em 0 0;
   float: right;
   clear: right;
   max-width: 20em;
+  margin: 1em 0.5em 0 0;
   font-size: 0.9375em;
   line-height: 1.3333;
 }
-
 .speak {
   background-image: url('images/speak.png');
-  
 }
 .sponsor {
   background-image: url('images/sponsor.png');
-  
 }
 
 .tweets,
 .tweets .clear {
   clear: both;
 }
-blockquote {
-  width: 22%;
-  min-width: 10em;
-  margin: 0;
-  margin-right: -2%;
-  float: left;
-  position: relative;
+.tweets {
+  overflow: hidden;
+  max-height: 192px;
 }
-blockquote:first-child {
+.tweets div {
+  margin-right: -1%;
   margin-left: -1%;
+  float: left;
+  width: 21%;
 }
+.tweets div:first-child {
+  margin-left: 1%;
+}
+blockquote {
+  position: relative;
+  width: 212px;
+  height: 192px;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  background-image: url('images/bubble.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
 blockquote p {
+  position: absolute;
+  top: 37px;
+  bottom: 58px;
+  left: 24px;
+  right: 24px;
+  overflow: hidden;
   margin: 0;
-  padding: 10% 20%;
-  background: #93CFD6;
+  padding: 0;
   color: #008999;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
   font-size: 0.75em;
   line-height: 1.0833;
   text-align: center;
-  border: 1px solid rgba(0,0,0,0.1);
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
 }
 blockquote cite {
-/*
-  Failed attempt at doing speech bubble tails, I don't even know what I was trying to do here,
-  I just kept thinking this is either a horrible hack or pure genius. :/
-  
-  background-image: url('images/bubble-tail.png');
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  display: block;
-  top: 50%;
-  outline: 1px solid red;
   position: absolute;
-  padding-top: 50%;
-  bottom: -3em;
-*/
-  padding-left: 20%;
-  font-family: 'Cabin Sketch';  
+  bottom: 0;
+  padding-left: 3.25em;
+  font-family: 'Cabin Sketch', sans-serif;  
   font-style: normal;  
   text-transform: uppercase;
 }
@@ -250,22 +253,24 @@ blockquote cite img {
 
 .follow {
   clear: both;
-  margin: 0.6em 0;
+  margin: 1.2em 0 0.6em 0;
   padding: 1em 0;
   border: 1px solid hsla(0,0%,100%,0.1);
   border-width: 1px 0 1px 0;
-  font-family: 'Cabin Sketch';
+  font-family: 'Cabin Sketch', sans-serif;
   font-size: 2.875em;
   line-height: 0.8679;
   text-transform: uppercase;
   text-align: center;
+  -webkit-text-shadow: 2px 2px 2px rgba(0,0,0,0.1);
   text-shadow: 2px 2px 2px rgba(0,0,0,0.1);
   letter-spacing: -0.0434em;
   color: #fff;
 }
 .follow a:hover {
   text-decoration: none;
-  text-shadow: none;
+  -webkit-text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
 }
 
 footer {
@@ -276,25 +281,108 @@ footer {
 footer h1 {
   float: right;
   margin: 0;
+  margin-bottom: 0.5em;
 }
 footer h1 a {
   display: block;
   background: url('images/left-logic.png');
+  background-position: top left;
   width: 200px;
   height: 41px;
   text-indent: -9999em;
 }
 footer h1 a:hover {
-  background-position: -41px left;
+  background-position: bottom left;
 }
 footer p {
   margin: 0;
   font-weight: normal;
 }
 
-@media screen and (max-width: 45em) {
+@media screen and (max-width: 73em) {
+  .tweets div {
+      width: 26%;
+  }
+}
+@media screen and (max-width: 56em) {
   section {
     width: 100%;
+    float: none;
+    margin-bottom: 1em;
+  }
+  section h1 {
+   float: none;
+   min-width: none;
+   margin-left: 2.6em; 
+  }
+  section p {
+    max-width: none;
+    margin-left: 11em;
+  }
+}
+@media screen and (max-width: 63em) {
+  .want-to {
+    margin-bottom: 3.075em;
+  }
+  .tweets div {
+      width: 34%;
+  }
+}
+@media screen and (max-width: 47em) {
+  .want-to {
+    margin-bottom: 2.075em;
+  }
+  .tweets div {
+      width: 50%;
+  }
+}
+@media screen and (max-width: 37em) {
+  time {
+    display: none;
+  }
+  section {
+    width: 100%;
+    float: none;
+    margin-bottom: 1em;
+  }
+  section h1 {
+    float: right;
+    min-width: 5em;
+    margin-left: 0;
+  }
+  section p {
+    max-width: 20em;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 36em) {
+  .follow {
+    font-size: 1.875em;
+  }
+  footer h1 {
+    float: none;
+  }
+}
+@media screen and (max-width: 32em) {
+  .want-to {
+    margin-bottom: 1.075em;
+  }
+  .tweets div {
+      width: 100%;
+  }
+}
+@media screen and (max-width: 25em) {
+  section {
+    width: 100%;
+    float: none;
+    margin-bottom: 1em;
+  }
+  section h1 {
+   float: none;
+   min-width: none;
+   margin-left: 0; 
+  }
+  section p {
     float: none;
   }
 }
