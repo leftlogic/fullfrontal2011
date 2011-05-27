@@ -1,10 +1,13 @@
 <!DOCTYPE html> 
 <html>
 <head>
-  <meta charset="utf-8" /> 
-  
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Full Frontal 2011- JavaScript Conference</title>
   
+  <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Cabin+Sketch:bold' />
   <link rel="stylesheet" href="fullfrontal.css" />
   
 </head> 
@@ -12,7 +15,7 @@
   
     <header>
       <h1 class="full-frontal">F<span>ull</span><span> </span>F<span>rontal</span></h1> 
-      <h4><time datetime="2011-11-11T09:00:00Z">11.11.11</time></h4>
+      <time datetime="2011-11-11T09:00:00Z">11.11.11</time>
       <h2>JavaScript <br /> <span>Conference</span></h2>
       <h3>Duke Of Yorks, Brighton, <br /> 11th November 2011</h3>
     </header>
@@ -82,49 +85,49 @@
     </footer>
     
 <script>
-	// Adapted from http://www.quirksmode.org/dom/getstyles.html
-	var getStyle = function (el, styleProp) {
-  	var x = el;
-  	if (x.currentStyle)
-  		var y = x.currentStyle[styleProp];
-  	else if (window.getComputedStyle)
-  		var y = document.defaultView.getComputedStyle(x,null).getPropertyValue(styleProp);
-  		console.log(y);
-  	return y;
-  }
-	
-	// Adapted for use withour jQuery from https://github.com/davatron5000/FitText.js
-	var fitText = function (element, kompressor) {
-			var origFontSize = parseFloat(getStyle(element, 'font-size'));
-			console.log(origFontSize);
-			var compressor = kompressor || 1;
+  // // Adapted from http://www.quirksmode.org/dom/getstyles.html
+  // var getStyle = function (el, styleProp) {
+  //    var x = el;
+  //    if (x.currentStyle)
+  //      var y = x.currentStyle[styleProp];
+  //    else if (window.getComputedStyle)
+  //      var y = document.defaultView.getComputedStyle(x,null).getPropertyValue(styleProp);
+  //      console.log(y);
+  //    return y;
+  //   }
+  // 
+  // // Adapted for use withour jQuery from https://github.com/davatron5000/FitText.js
+  // var fitText = function (element, kompressor) {
+  //    var origFontSize = parseFloat(getStyle(element, 'font-size'));
+  //    console.log(origFontSize);
+  //    var compressor = kompressor || 1;
+  // 
+  //       // Resizer() resizes items based on the object width divided by the compressor * 10
+  //    var resizer = function () {
+  //      element.style.fontSize = Math.min(element.offsetWidth / (compressor*10), origFontSize) + 'px';
+  //      console.log(element.offsetWidth);
+  //      console.log(Math.min(element.offsetWidth / (compressor*10), origFontSize) + 'px');
+  //    };
+  //    resizer();
+  //      window.onresize = function (){
+  //        resizer()
+  //      };
+  // };
+  // fitText(document.getElementsByTagName('time')[0], 0.8);
 
-      // Resizer() resizes items based on the object width divided by the compressor * 10
-			var resizer = function () {
-				element.style.fontSize = Math.min(element.offsetWidth / (compressor*10), origFontSize) + 'px';
-				console.log(element.offsetWidth);
-				console.log(Math.min(element.offsetWidth / (compressor*10), origFontSize) + 'px');
-			};
-			resizer();
-    	window.onresize = function (){
-    	  resizer()
-    	};
-	};
-	fitText(document.getElementsByTagName('time')[0], 0.8);
-
-  // Google Fonts
-  WebFontConfig = {
-    google: { families: [ 'Cabin Sketch:bold' ] }
-  };
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })();
+  // // Google Fonts
+  // WebFontConfig = {
+  //   google: { families: [ 'Cabin Sketch:bold' ] }
+  // };
+  // (function() {
+  //   var wf = document.createElement('script');
+  //   wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+  //       '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  //   wf.type = 'text/javascript';
+  //   wf.async = 'true';
+  //   var s = document.getElementsByTagName('script')[0];
+  //   s.parentNode.insertBefore(wf, s);
+  // })();
 
   // Google Analytics
   var _gaq = _gaq || [];
