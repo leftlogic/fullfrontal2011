@@ -50,7 +50,7 @@ header h3 {
   margin: 0;
 }
 header h2 {
-  padding-top: 0.2em;
+  padding-top: 0.1em;
   font-size: 4.1875em;
   line-height: 0.75;
   letter-spacing: -0.05em;
@@ -64,6 +64,9 @@ header h3 {
 }
 
 .full-frontal {
+  -webkit-transition-property: height, width;
+  -webkit-transition-duration: 100ms, 100ms;
+  -webkit-transition-timing-function: linear, linear;
   background: url(images/ff2011-logo.png) no-repeat center;
   position: relative;
   float: left;
@@ -302,10 +305,168 @@ body {
   -webkit-transition: margin 100ms linear;
 }
 
+html {
+  position: relative;
+}
+
+html:before {
+  content: '';
+  border-right: 5px solid #f00;
+  border-bottom: 5px solid #f00;
+  padding: 10px;
+  background: #c00;
+  color: #fff;
+  line-height: 2;
+  font-family: menlo, monospace;
+}
+
+@media screen and (max-height: 16em) {
+  html:before {
+    content: "Ohhh noes";
+  }
+  
+  header {
+    margin-top: -2em;
+  }
+  
+  .full-frontal {
+    background: url(http://29.media.tumblr.com/tumblr_l5wjnzhwtq1qcjha6o1_400.jpg) no-repeat 50% -70px;
+    -webkit-mask-box-image: url(images/ff2011-logo.png);    
+  }
+}
+
+@-webkit-keyframes background {
+	from {
+		background-color: #D6CD7E;
+	}
+	25% {
+		background-color: #FF242F;
+	}
+	50% {
+		background-color: #D62782;
+	}
+	75% {
+		background-color: #25D673;
+	}
+	to {
+		background-color: #D6CD7E;
+	}
+}
+
+@-webkit-keyframes invert-background {
+	from {
+		background-color: #000AD6;
+		background-position: top left;
+	}
+	24.9% {
+	  background-color: #000AD6;
+	}
+	25% {
+		background-color: #F2FF07;
+	}
+	49.9% {
+	  background-color: #F2FF07;
+	}
+	50% {
+		background-color: #FF00A2;
+	}
+	74.9% {
+	  background-color: #FF00A2;
+	}
+	75% {
+		background-color: #00FF12;
+	}
+	99.9% {
+	  background-color: #00FF12;
+	}
+	to {
+		background-color: #000AD6;
+		background-position: bottom right;
+	}
+}
+
+
+@-webkit-keyframes foreground {
+	from {
+		color: #D6CD7E;
+	}
+	25% {
+		color: #FF242F;
+	}
+	50% {
+		color: #D62782;
+	}
+	75% {
+		color: #25D673;
+	}
+	to {
+		color: #D6CD7E;
+	}
+}
+
+@media screen and (min-width: 88em) and (max-width: 88.124em) {
+  html:before {
+    content: "Welcome to the speccy loading mode";
+  }
+  
+  header {
+    margin-top: -2em;
+  }
+  
+  .full-frontal {
+    background: #D6CD7E fixed no-repeat 50% -70px;
+    -webkit-mask-box-image: url(images/ff2011-logo.png);    
+    -webkit-animation-name: background;
+  	-webkit-animation-duration: 100ms;
+  	-webkit-animation-iteration-count: infinite;
+  	-webkit-animation-timing-function: linear;  	
+  }
+  
+  body, header, h1, h2, a, p {
+    -webkit-animation-name: foreground;
+  	-webkit-animation-duration: 100ms;
+  	-webkit-animation-iteration-count: infinite;
+  	-webkit-animation-timing-function: linear;
+  }
+  
+  html {
+    background-color: blue;
+    background-image:
+      -webkit-linear-gradient(transparent 25%, rgba(255,255,255,.5) 25%),
+      -webkit-linear-gradient(transparent 50%, rgba(255,255,255,.7) 50%),
+      -webkit-linear-gradient(transparent 75%, rgba(255,0,0,1) 75%);
+    background-size: 50px, 50px, 50px;
+    background-repeat: repeat, repeat, repeat;
+    -webkit-animation-name: invert-background;
+  	-webkit-animation-duration: 500ms;
+  	-webkit-animation-iteration-count: infinite;
+  	-webkit-animation-timing-function: linear;
+  }
+
+  blockquote {
+    -webkit-mask-box-image: url(images/bubble.png);
+  }
+  
+  blockquote, input {
+    background: #D6CD7E fixed no-repeat 50% -70px;
+    background-image:
+      -webkit-linear-gradient(0, transparent 25%, rgba(255,255,255,.5) 25%),
+      -webkit-linear-gradient(0, transparent 50%, rgba(255,255,255,.7) 50%),
+      -webkit-linear-gradient(0, transparent 75%, rgba(255,0,0,1) 75%);
+    background-size: 50px, 50px, 50px;
+    background-repeat: repeat, repeat, repeat;
+    -webkit-animation-name: invert-background;
+  	-webkit-animation-duration: 500ms;
+  	-webkit-animation-iteration-count: infinite;
+  	-webkit-animation-timing-function: linear;
+  	-webkit-animation-fill-mode: both;
+  	-webkit-animation-direction: alternate;   
+  }
+}
+
 @media screen and (min-width: 63em) {
   body {
     width: 94%;
-/*    margin-top: 5em;*/
   }
 
   header time {
@@ -313,14 +474,13 @@ body {
     float: left;
     margin: 0 0.1304em 0 0;
     font-size: 11.5em;
-    line-height: 1;
+    line-height: 0.95;
     letter-spacing: -0.05em;
   }
 }
 @media screen and (min-width: 74em) {
   body {
     width: 80%;
-/*    margin-top: 8em;*/
   }
 }
 @media screen and (max-width: 73em) {
