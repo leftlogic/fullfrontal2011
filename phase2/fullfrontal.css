@@ -7,7 +7,7 @@
 }
 
 html {
-  background-image: url('images/bg-dots.png'), url('images/bg-pier.png');
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2P4//+/MBQzgDAICEMxXAAMYCoRIlCVANL6FYTYi5d+AAAAAElFTkSuQmCC), url('images/bg-pier.png');
   background-position: center 24px;
   background-repeat: repeat, no-repeat;
   background-color: #008999;
@@ -18,7 +18,7 @@ body {
   max-width: 60em;
   min-width: 20em;
   margin: 0 auto;
-  margin-top: 8em;
+  margin-top: 5em;
   padding: 0;
   font-family: 'Century Gothic', sans-serif;
   font-weight: bold;
@@ -41,6 +41,7 @@ header {
   text-shadow: 2px 2px 2px rgba(0,0,0,0.1); 
   text-transform: uppercase;
 }
+
 header time {
   display: none;
 }
@@ -63,16 +64,20 @@ header h3 {
 }
 
 .full-frontal {
+  background: url(images/ff2011-logo.png) no-repeat center;
   position: relative;
   float: left;
   display: block;
-  height: 1.1em;
-  width: 1.1em;
+  overflow: hidden;
+  text-indent: -9999px;
+  white-space: nowrap;
+  height: 153px; /*1.1em;*/
+  width: 164px; /*1.1em;*/
   margin: 0.0694em 0.1111em 0.1111em 0;
   padding-right: 0.05em;
-  background-color: #ded4a0;
-  color: #008999;
-  text-align: center;
+/*  background-color: #ded4a0;*/
+/*  color: #008999;*/
+/*  text-align: center;
   text-transform: lowercase;
   letter-spacing: -0.05em;
   font-family: 'ff', sans-serif;
@@ -92,7 +97,7 @@ header h3 {
   -webkit-border-bottom-right-radius: 0.3em;
   border-top-left-radius: 0.4em;
   border-bottom-right-radius: 0.4em;
-}
+*/}
 .full-frontal span {
   display: none;
 }
@@ -293,7 +298,16 @@ footer p {
   font-weight: normal;
 }
 
-@media screen and (min-width: 74em) {
+body {
+  -webkit-transition: margin 100ms linear;
+}
+
+@media screen and (min-width: 63em) {
+  body {
+    width: 94%;
+/*    margin-top: 5em;*/
+  }
+
   header time {
     display: block;
     float: left;
@@ -303,12 +317,18 @@ footer p {
     letter-spacing: -0.05em;
   }
 }
+@media screen and (min-width: 74em) {
+  body {
+    width: 80%;
+/*    margin-top: 8em;*/
+  }
+}
 @media screen and (max-width: 73em) {
   .tweets div {
       width: 26%;
   }
 }
-@media screen and (max-width: 56em) {
+@media screen and (max-width: 56em) {  
   section {
     width: 100%;
     float: none;
@@ -361,7 +381,7 @@ footer p {
 }
 @media screen and (max-width: 36em) {
   html {
-     background-image: url('images/bg-dots.png'), url('images/bg-pier-small.png'); 
+     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2P4//+/MBQzgDAICEMxXAAMYCoRIlCVANL6FYTYi5d+AAAAAElFTkSuQmCC), url('images/bg-pier-small.png'); 
   }
   body {
    margin-top: 1em; 
@@ -382,6 +402,34 @@ footer p {
   }
 }
 @media screen and (max-width: 25em) {
+  .full-frontal {
+    background: url(images/ff2011-logo.png) no-repeat center;
+    background-size: 100%;
+    height: 77px; /*1.1em;*/
+    width: 82px; /*1.1em;*/
+  }
+  
+  header h2 {
+    font-size: 2.95em;
+  }
+  
+  header h3 {
+    clear: left;
+  }
+  
+  body {
+    min-width: 97%;
+    width: 97%;
+  }
+  
+  footer {
+    margin-bottom: 0.25em;
+  }
+  
+  footer h1 a {
+    margin: 0 auto;
+  }
+  
   section {
     width: 100%;
     float: none;
