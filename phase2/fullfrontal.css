@@ -305,11 +305,16 @@ body {
   -webkit-transition: margin 100ms linear;
 }
 
-html {
+html, blockquote, input {
   position: relative;
+  background-position: top left, top left, top left;
+  -moz-transition: background-position 30s linear;
+  -o-transition: background-position 30s linear;
+  transition: background-position 30s linear;
 }
 
 html:before {
+  display: none;
   content: '';
   border-right: 5px solid #f00;
   border-bottom: 5px solid #f00;
@@ -322,6 +327,7 @@ html:before {
 
 @media screen and (max-height: 16em) {
   html:before {
+    display: inline;
     content: "Ohhh noes";
   }
   
@@ -355,33 +361,27 @@ html:before {
 
 @-webkit-keyframes invert-background {
 	from {
-		background-color: #000AD6;
-		background-position: top left;
-	}
-	24.9% {
-	  background-color: #000AD6;
-	}
-	25% {
-		background-color: #F2FF07;
+    background-color: #000AD6;
+		background-position: top left, top left, top left;
 	}
 	49.9% {
-	  background-color: #F2FF07;
+    background-color: #000AD6;
 	}
 	50% {
-		background-color: #FF00A2;
+    background-color: #FF00A2;
 	}
 	74.9% {
-	  background-color: #FF00A2;
+    background-color: #FF00A2;
 	}
 	75% {
-		background-color: #00FF12;
+    background-color: #FF0016;
 	}
 	99.9% {
-	  background-color: #00FF12;
+    background-color: #00FF12;
 	}
 	to {
-		background-color: #000AD6;
-		background-position: bottom right;
+    background-color: #000AD6;
+		background-position: bottom right, bottom right, bottom right;
 	}
 }
 
@@ -406,6 +406,7 @@ html:before {
 
 @media screen and (min-width: 88em) and (max-width: 88.124em) {
   html:before {
+    display: inline;
     content: "Welcome to the speccy loading mode";
   }
   
@@ -417,28 +418,37 @@ html:before {
     background: #D6CD7E fixed no-repeat 50% -70px;
     -webkit-mask-box-image: url(images/ff2011-logo.png);    
     -webkit-animation-name: background;
-  	-webkit-animation-duration: 100ms;
+  	-webkit-animation-duration: 300ms;
   	-webkit-animation-iteration-count: infinite;
   	-webkit-animation-timing-function: linear;  	
   }
   
   body, header, h1, h2, a, p {
     -webkit-animation-name: foreground;
-  	-webkit-animation-duration: 100ms;
+  	-webkit-animation-duration: 200ms;
   	-webkit-animation-iteration-count: infinite;
   	-webkit-animation-timing-function: linear;
   }
   
   html {
+    background-position: bottom right, bottom right, bottom right;
     background-color: blue;
     background-image:
       -webkit-linear-gradient(transparent 25%, rgba(255,255,255,.5) 25%),
       -webkit-linear-gradient(transparent 50%, rgba(255,255,255,.7) 50%),
       -webkit-linear-gradient(transparent 75%, rgba(255,0,0,1) 75%);
+    background-image:
+      -moz-linear-gradient(transparent 25%, rgba(255,255,255,.5) 25%),
+      -moz-linear-gradient(transparent 50%, rgba(255,255,255,.7) 50%),
+      -moz-linear-gradient(transparent 75%, rgba(255,0,0,1) 75%);
+    background-image:
+      -o-linear-gradient(transparent 25%, rgba(255,255,255,.5) 25%),
+      -o-linear-gradient(transparent 50%, rgba(255,255,255,.7) 50%),
+      -o-linear-gradient(transparent 75%, rgba(255,0,0,1) 75%);
     background-size: 50px, 50px, 50px;
     background-repeat: repeat, repeat, repeat;
     -webkit-animation-name: invert-background;
-  	-webkit-animation-duration: 500ms;
+  	-webkit-animation-duration: 0.8s;
   	-webkit-animation-iteration-count: infinite;
   	-webkit-animation-timing-function: linear;
   }
@@ -448,11 +458,20 @@ html:before {
   }
   
   blockquote, input {
+    background-position: bottom right, bottom right, bottom right;
     background: #D6CD7E fixed no-repeat 50% -70px;
     background-image:
       -webkit-linear-gradient(0, transparent 25%, rgba(255,255,255,.5) 25%),
       -webkit-linear-gradient(0, transparent 50%, rgba(255,255,255,.7) 50%),
       -webkit-linear-gradient(0, transparent 75%, rgba(255,0,0,1) 75%);
+    background-image:
+      -moz-linear-gradient(0, transparent 25%, rgba(255,255,255,.5) 25%),
+      -moz-linear-gradient(0, transparent 50%, rgba(255,255,255,.7) 50%),
+      -moz-linear-gradient(0, transparent 75%, rgba(255,0,0,1) 75%);
+    background-image:
+      -o-linear-gradient(0, transparent 25%, rgba(255,255,255,.5) 25%),
+      -o-linear-gradient(0, transparent 50%, rgba(255,255,255,.7) 50%),
+      -o-linear-gradient(0, transparent 75%, rgba(255,0,0,1) 75%);
     background-size: 50px, 50px, 50px;
     background-repeat: repeat, repeat, repeat;
     -webkit-animation-name: invert-background;
