@@ -71,6 +71,15 @@ header h3 {
   -webkit-transition-property: height, width;
   -webkit-transition-duration: 100ms, 100ms;
   -webkit-transition-timing-function: linear, linear;
+  -moz-transition-property: height, width;
+  -moz-transition-duration: 100ms, 100ms;
+  -moz-transition-timing-function: linear, linear;
+  -o-transition-property: height, width;
+  -o-transition-duration: 100ms, 100ms;
+  -o-transition-timing-function: linear, linear;
+  transition-property: height, width;
+  transition-duration: 100ms, 100ms;
+  transition-timing-function: linear, linear;
   background: url(images/ff2011-logo.png) no-repeat center;
   position: relative;
   float: left;
@@ -82,29 +91,8 @@ header h3 {
   width: 164px; /*1.1em;*/
   margin: 0.0694em 0.1111em 0.1111em 0;
   padding-right: 0.05em;
-/*  background-color: #ded4a0;*/
-/*  color: #008999;*/
-/*  text-align: center;
-  text-transform: lowercase;
-  letter-spacing: -0.05em;
-  font-family: 'ff', sans-serif;
-  font-weight: bold; 
-  font-size: 9em;
-  line-height: 1.3em;
-  
-  -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,.2);
-  -moz-box-shadow: 1px 1px 1px rgba(0,0,0,.2);
-  -o-box-shadow: 1px 1px 1px rgba(0,0,0,.2);
-  -ms-box-shadow: 1px 1px 1px rgba(0,0,0,.2);
-  box-shadow: 1px 1px 1px rgba(0,0,0,.2);
-  
-  -moz-border-radius-topleft: 0.3em;
-  -moz-border-radius-bottomright: 0.3em;
-  -webkit-border-top-left-radius: 0.3em;
-  -webkit-border-bottom-right-radius: 0.3em;
-  border-top-left-radius: 0.4em;
-  border-bottom-right-radius: 0.4em;
-*/}
+}
+
 .full-frontal span {
   display: none;
 }
@@ -135,24 +123,18 @@ button {
   border: 0;
   background: #ded4a0;
   font-size: 2.8125em;
-/*  background: #ded4a0 url('images/button-go.png') no-repeat center top;*/
+  padding: 13px 9px;
 }
 button:hover {
   background: #008999;
   cursor: pointer;
 }
 button span {
-  position: absolute;
-  top: 13px;
-  left: 0;
-  height: 100%;
-  width: 100%;
+  width: 1.6em;
   display: block;
   height: 34px; /* total height: 60px */
   background: #ded4a0 url('images/button-go.png') no-repeat center top;
   text-indent: -999em;
-/*  overflow: hidden;*/
-/*  background: #c00;*/
 }
 button:hover span,
 button:active span {
@@ -333,6 +315,9 @@ footer p {
 
 body {
   -webkit-transition: margin 100ms linear;
+  -moz-transition: margin 100ms linear;
+  -o-transition: margin 100ms linear;
+  transition: margin 100ms linear;
 }
 
 html, input {
@@ -672,11 +657,6 @@ html:before {
   font-size: 12.5em;
   line-height: 0.9;
   letter-spacing: -0.05em;
-}
-
-.ie button span {
-  position: absolute;
-  top: -17px;
 }
 
 .ie input {
