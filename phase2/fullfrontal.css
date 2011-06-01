@@ -6,6 +6,10 @@
 	font-style: normal;
 }
 
+article, section, footer, header {
+  display: block;
+}
+
 html {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2P4//+/MBQzgDAICEMxXAAMYCoRIlCVANL6FYTYi5d+AAAAAElFTkSuQmCC), url('images/bg-pier.png');
   background-position: center 24px;
@@ -122,26 +126,36 @@ button {
   display: block;
   top: 0;
   right: 0px;
-  /* right: 1px; Webkit only */
+/*   right: 1px; Webkit only */
   margin: 0;
   height: 1.3333em; /* 60px in Firefox 4 */
+  height: 60px;
   width: 2em;
   line-height: 1.3;
   border: 0;
   background: #ded4a0;
   font-size: 2.8125em;
+/*  background: #ded4a0 url('images/button-go.png') no-repeat center top;*/
 }
 button:hover {
   background: #008999;
   cursor: pointer;
 }
 button span {
+  position: absolute;
+  top: 13px;
+  left: 0;
+  height: 100%;
+  width: 100%;
   display: block;
-  height: 34px;
+  height: 34px; /* total height: 60px */
   background: #ded4a0 url('images/button-go.png') no-repeat center top;
-  text-indent: -9999em;
+  text-indent: -999em;
+/*  overflow: hidden;*/
+/*  background: #c00;*/
 }
-button:hover span {
+button:hover span,
+button:active span {
   background-color: #008999;
   background-position: center -34px;
 }
@@ -239,6 +253,16 @@ blockquote p {
   font-size: 0.75em;
   line-height: 1.0833;
   text-align: center;
+  
+  display : box;
+  box-orient: vertical;
+  box-pack: center;
+  display : -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-pack: center;
+  display : -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
 }
 blockquote cite {
   position: absolute;
@@ -247,16 +271,22 @@ blockquote cite {
   font-family: 'Cabin Sketch', sans-serif;  
   font-style: normal;  
   text-transform: uppercase;
+  white-space: nowrap;
 }
 blockquote cite img {
   vertical-align: middle;
   margin-right: 0.5em;
 }
 
+blockquote p a {
+  color: hsl(190,30%,30%);
+}
+
 .follow {
   clear: both;
   margin: 1.2em 0 0.6em 0;
   padding: 1em 0;
+  border: 1px solid #00A1B3;
   border: 1px solid hsla(0,0%,100%,0.1);
   border-width: 1px 0 1px 0;
   font-family: 'Cabin Sketch', sans-serif;
@@ -305,9 +335,12 @@ body {
   -webkit-transition: margin 100ms linear;
 }
 
-html, blockquote, input {
-  position: relative;
+html, input {
   background-position: top left, top left, top left;
+}
+
+html, input, blockquote {
+  position: relative;
   -moz-transition: background-position 30s linear;
   -o-transition: background-position 30s linear;
   transition: background-position 30s linear;
@@ -325,7 +358,7 @@ html:before {
   font-family: menlo, monospace;
 }
 
-@media screen and (max-height: 16em) {
+@media screen and (max-height: 16em) and (min-width: 40em) {
   html:before {
     display: inline;
     content: "Ohhh noes";
@@ -491,9 +524,9 @@ html:before {
   header time {
     display: block;
     float: left;
-    margin: 0 0.1304em 0 0;
-    font-size: 11.5em;
-    line-height: 0.95;
+    margin: 0 0.05em 0 0;
+    font-size: 12.5em;
+    line-height: 0.9;
     letter-spacing: -0.05em;
   }
 }
@@ -573,14 +606,6 @@ html:before {
   }
 }
 @media screen and (max-width: 32em) {
-  .want-to {
-    margin-bottom: 1.075em;
-  }
-  .tweets div {
-      width: 100%;
-  }
-}
-@media screen and (max-width: 25em) {
   .full-frontal {
     background: url(images/ff2011-logo.png) no-repeat center;
     background-size: 100%;
@@ -596,6 +621,18 @@ html:before {
     clear: left;
   }
   
+  form {
+    margin: 1.375em 0 1.375em 0;
+  }
+  
+  .want-to {
+    margin-bottom: 1.075em;
+  }
+  .tweets div {
+      width: 100%;
+  }
+}
+@media screen and (max-width: 25em) {
   body {
     min-width: 97%;
     width: 97%;
@@ -622,4 +659,26 @@ html:before {
   section p {
     float: none;
   }
+}
+
+.nomediaquerygoodnessyepisuck {
+  width: 1024px;
+}
+
+.nomediaquerygoodnessyepisuck header time {
+  display: block;
+  float: left;
+  margin: 0 0.05em 0 0;
+  font-size: 12.5em;
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+}
+
+.ie button span {
+  position: absolute;
+  top: -17px;
+}
+
+.ie input {
+  line-height: 1.75;
 }

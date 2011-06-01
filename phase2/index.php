@@ -1,4 +1,22 @@
-<!DOCTYPE html> 
+<?php
+$thanks = false;
+$error = false;
+$email = '';
+
+function validEmail($e) {
+  return (preg_match("/^([_a-z0-9-\+]+(\.[_a-z0-9-\+]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4}))$/", $e));
+}
+
+if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
+  $email = $_POST['email'];
+  $fp = fopen('emails.txt', 'a+');
+  fwrite($fp, $email . "\n");
+  fclose($fp);
+  $thanks = true;
+} else if (isset($_POST['email'])) {
+  $error = true;
+}
+?><!DOCTYPE html> 
 <html>
 <head>
   <meta charset="utf-8" />
@@ -8,10 +26,13 @@
   
   <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Cabin+Sketch:bold' />
   <link rel="stylesheet" href="fullfrontal.css" />
+  <!--[if lt IE 9]>
+  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
   
-</head> 
-<body> 
-  
+</head>
+<!--[if lte IE 8]><body class="ie nomediaquerygoodnessyepisuck"><![endif]-->
+<!--[if gt IE 8]><!--><body><!--<![endif]-->
     <header>
       <h1 class="full-frontal">Full Frontal</h1> 
       <time datetime="2011-11-11T09:00:00Z">11.11.11</time>
@@ -19,7 +40,7 @@
       <h3>Duke Of Yorks, Brighton, <br /> 11th November 2011</h3>
     </header>
     
-    <form action="" method="">
+    <form action="/" method="post">
       <label for="email">Enter your email address below to get updated on Full Frontal 2011</label>
       <p>
         <input type="email" id="email" name="email" placeholder="Enter your email for updates..." />
@@ -32,7 +53,7 @@
         <h1>Want to<br />speak?</h1>
         <p>
           Want to speak at Full Frontal 2011? We'd love to give you the platform to speak to hundreds of
-          developers and designers, so what are you waiting for, <a href="#">get in touch!</a>
+          developers and designers, so what are you waiting for, <a href="mailto:events@leftlogic.com?subject=FF2011%20Speaking%20Proposal">get in touch!</a>
         </p>
       </section>
     
@@ -40,37 +61,50 @@
         <h1>Want to<br />sponsor?</h1>
         <p>
           Find out how your company can sponsor Full Frontal by reviewing our
-          <a href="#">sponsorship packages</a> and <a href="#">get in touch</a> with us to discuss
+          <a href="#">sponsorship packages</a> and <a href="mailto:events@leftlogic.com?FF2011%20Sponsorship">get in touch</a> with us to discuss
           how we can work together.
         </p>
       </section>
     </div>
     
     <div class="tweets">
-      <div><blockquote cite="https://twitter.com/#!/rem/status/72211643467169792">
-        <p>Had a great day at #fullfrontalconf. Lots of inspiring stuff. Some awesome 3D demos by @paulrouget and @seb_ly</p>
-        <cite><img width="30" height="30" src="avatar.png" alt=""><a href="https://twiiter.com/Andyeo">Andyeo</a></cite>
+<?php
+function linkify($text) {
+  // note - this order is important, i.e. links at the top, then anything else
+  $matches = array(
+    '/([A-Za-z]+:\/\/[A-Za-z0-9-_]+\.[A-Za-z0-9-_:%&\?\/.=]+)/',
+    '/(^|[^\w])(#[\d\w\-]+)/',
+    '/(^|[^\w])(@([\d\w\-]+))/'
+  );
+  
+  $replacements = array(
+    '<a href="$1">$1</a>',
+    '$1<a href="http://search.twitter.com/search?q=$2">$2</a>',
+    '$1@<a href="http://twitter.com/$3">$3</a>'
+  );
+  
+  return preg_replace($matches, $replacements, $text);
+}
+
+
+$favs_raw = json_decode(file_get_contents('./fullfrontalconf.json'));
+$favs = array();
+
+// remove old tweets
+foreach ($favs_raw as $fav) {
+  if (stripos($fav->created_at, '2010')) {
+    array_push($favs, $fav);
+  }
+}
+
+shuffle($favs);
+
+for ($i = 0; $i < 5; $i++) : $fav = $favs[$i]; ?>
+      <div><blockquote cite="http://twitter.com/<?=$fav->user->screen_name?>/statuses/<?=$fav->id?>">
+        <p><?=(htmlentities($fav->text))?></p>
+        <cite><a href="http://twitter.com/<?=$fav->user->screen_name?>"><img width="30" height="30" src="<?=$fav->user->profile_image_url?>" alt="<?=$fav->user->screen_name?>"></a><a href="http://twitter.com/<?=$fav->user->screen_name?>/statuses/<?=$fav->id?>"><?=$fav->user->screen_name?></a></cite>
       </blockquote></div>
-      
-     <div> <blockquote cite="https://twitter.com/#!/rem/status/72211643467169792">
-        <p>THANKS @rem and @Julieanne for a brilliant @fullfrontalconf. I spent the day on the sofa in the gallery. Sofa + JavaScript. Awesome day.</p>
-        <cite><img width="30" height="30" src="avatar.png" alt=""><a href="https://twiiter.com/Andyeo">Dharmafly</a></cite>
-      </blockquote></div>
-      
-    <div>  <blockquote cite="https://twitter.com/#!/rem/status/72211643467169792">
-        <p>Had a great day at #fullfrontalconf.</p>
-        <cite><img width="30" height="30" src="avatar.png" alt=""><a href="https://twiiter.com/Andyeo">Binarytales</a></cite>
-      </blockquote></div>
-      
-     <div> <blockquote cite="https://twitter.com/#!/rem/status/72211643467169792">
-        <p>Leaving Brighton after a brilliant #fullfrontalconf. Thank you @rem and @Julieanne for organizing such a great event with passionate people.</p>
-        <cite><img width="30" height="30" src="avatar.png" alt=""><a href="https://twiiter.com/Andyeo">Andyeo</a></cite>
-      </blockquote></div>
-      
-     <div> <blockquote cite="https://twitter.com/#!/rem/status/72211643467169792">
-        <p>Had a great day at #fullfrontalconf. Lots of inspiring stuff. Some awesome 3D demos by @paulrouget and @seb_ly</p>
-        <cite><img width="30" height="30" src="avatar.png" alt=""><a href="https://twiiter.com/Andyeo">Romainhuet</a></cite>
-      </blockquote></div>
+<?php endfor ?>
       
       <div class="clear"></div>
     </div>
@@ -84,50 +118,6 @@
     </footer>
     
 <script>
-  // // Adapted from http://www.quirksmode.org/dom/getstyles.html
-  // var getStyle = function (el, styleProp) {
-  //    var x = el;
-  //    if (x.currentStyle)
-  //      var y = x.currentStyle[styleProp];
-  //    else if (window.getComputedStyle)
-  //      var y = document.defaultView.getComputedStyle(x,null).getPropertyValue(styleProp);
-  //      console.log(y);
-  //    return y;
-  //   }
-  // 
-  // // Adapted for use withour jQuery from https://github.com/davatron5000/FitText.js
-  // var fitText = function (element, kompressor) {
-  //    var origFontSize = parseFloat(getStyle(element, 'font-size'));
-  //    console.log(origFontSize);
-  //    var compressor = kompressor || 1;
-  // 
-  //       // Resizer() resizes items based on the object width divided by the compressor * 10
-  //    var resizer = function () {
-  //      element.style.fontSize = Math.min(element.offsetWidth / (compressor*10), origFontSize) + 'px';
-  //      console.log(element.offsetWidth);
-  //      console.log(Math.min(element.offsetWidth / (compressor*10), origFontSize) + 'px');
-  //    };
-  //    resizer();
-  //      window.onresize = function (){
-  //        resizer()
-  //      };
-  // };
-  // fitText(document.getElementsByTagName('time')[0], 0.8);
-
-  // // Google Fonts
-  // WebFontConfig = {
-  //   google: { families: [ 'Cabin Sketch:bold' ] }
-  // };
-  // (function() {
-  //   var wf = document.createElement('script');
-  //   wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-  //       '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-  //   wf.type = 'text/javascript';
-  //   wf.async = 'true';
-  //   var s = document.getElementsByTagName('script')[0];
-  //   s.parentNode.insertBefore(wf, s);
-  // })();
-
   // Google Analytics
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-1656750-25']);
@@ -137,7 +127,6 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-  
 </script>
 </body> 
 </html>
