@@ -17,7 +17,7 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
   $error = true;
 }
 ?><!DOCTYPE html> 
-<html>
+<html id="home">
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -100,9 +100,9 @@ foreach ($favs_raw as $fav) {
 shuffle($favs);
 
 for ($i = 0; $i < 5; $i++) : $fav = $favs[$i]; ?>
-      <div><blockquote cite="http://twitter.com/<?=$fav->user->screen_name?>/statuses/<?=$fav->id?>">
+      <div><blockquote cite="http://twitter.com/<?=$fav->user->screen_name?>/statuses/<?=$fav->id_str?>">
         <p><?=(htmlentities($fav->text))?></p>
-        <cite><a href="http://twitter.com/<?=$fav->user->screen_name?>"><img width="30" height="30" src="<?=$fav->user->profile_image_url?>" alt="<?=$fav->user->screen_name?>"></a><a href="http://twitter.com/<?=$fav->user->screen_name?>/statuses/<?=$fav->id?>"><?=$fav->user->screen_name?></a></cite>
+        <cite><a href="http://twitter.com/<?=$fav->user->screen_name?>"><img width="30" height="30" src="<?=$fav->user->profile_image_url?>" alt="<?=$fav->user->screen_name?>"></a><a href="http://twitter.com/<?=$fav->user->screen_name?>/statuses/<?=$fav->id_str?>"><?=$fav->user->screen_name?></a></cite>
       </blockquote></div>
 <?php endfor ?>
       
@@ -113,7 +113,7 @@ for ($i = 0; $i < 5; $i++) : $fav = $favs[$i]; ?>
     
     <footer>
       <h1><a href="http://leftlogic.com">Left Logic</a></h1>
-      <p>Full Frontal is a one day conference organised by Left Logic - <a href="#">Terms &amp; Conditions</a></p>
+      <p>Full Frontal is a one day conference organised by Left Logic - <a href="terms.html">Terms &amp; Conditions</a></p>
       <p>Previous Years &ndash; <a href="http://2009.full-frontal.org">2009</a> &amp; <a href="http://2010.full-frontal.org">2010</a></p>
     </footer>
     
