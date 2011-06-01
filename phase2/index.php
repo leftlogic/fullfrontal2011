@@ -61,7 +61,7 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
         <h1>Want to<br />sponsor?</h1>
         <p>
           Find out how your company can sponsor Full Frontal by reviewing our
-          <a href="#">sponsorship packages</a> and <a href="mailto:events@leftlogic.com?FF2011%20Sponsorship">get in touch</a> with us to discuss
+          <a href="/sponsorship.html">sponsorship packages</a> and <a href="mailto:events@leftlogic.com?FF2011%20Sponsorship">get in touch</a> with us to discuss
           how we can work together.
         </p>
       </section>
