@@ -130,6 +130,9 @@ for ($i = 0; $i < 5; $i++) : $fav = $favs[$i]; ?>
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+  
+  // stops the transitions from applying whilst the page is rendering
+  document.documentElement.className += ' transition';  
 </script>
 </body> 
 </html>
