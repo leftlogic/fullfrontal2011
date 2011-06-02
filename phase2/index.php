@@ -13,8 +13,11 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
   fwrite($fp, $email . "\n");
   fclose($fp);
   $thanks = true;
+  header('location: /?thanks');
 } else if (isset($_POST['email'])) {
   $error = true;
+} else if (isset($_GET['thanks'])) {
+  $thanks = true;
 }
 ?><!DOCTYPE html> 
 <html id="home">
