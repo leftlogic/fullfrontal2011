@@ -333,12 +333,14 @@ html:before {
   color: #fff;
   line-height: 2;
   font-family: menlo, monospace;
+  z-index: 9;
+  position: relative;
 }
 
 @media screen and (max-height: 16em) and (min-width: 40em) {
   html:before {
     display: inline;
-    content: "Ohhh noes";
+    content: "Ohhh noes" !important;
   }
   
   header {
@@ -417,7 +419,7 @@ html:before {
 @media screen and (min-width: 88em) and (max-width: 88.124em) {
   html:before {
     display: inline;
-    content: "Welcome to the speccy loading mode";
+    content: "Welcome to the speccy loading mode" !important;
   }
   
   header {
@@ -654,3 +656,14 @@ html:before {
 .ie input {
   line-height: 1.75;
 }
+
+html.thanks:before {
+  display: inline;
+  content: "Thank you - we'll be in touch as soon as tickets are available!";
+}
+
+html.thanks header {
+  margin-top: -2em;
+}
+
+

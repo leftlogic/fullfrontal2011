@@ -20,7 +20,7 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
   $thanks = true;
 }
 ?><!DOCTYPE html> 
-<html id="home">
+<html id="home"<?=$thanks?' class="thanks"':''?>>
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
