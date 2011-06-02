@@ -60,6 +60,20 @@ header h3 {
 }
 
 .full-frontal {
+  background: url(images/ff2011-logo.png) no-repeat center;
+  position: relative;
+  float: left;
+  display: block;
+  overflow: hidden;
+  text-indent: -9999px;
+  white-space: nowrap;
+  height: 153px; /*1.1em;*/
+  width: 164px; /*1.1em;*/
+  margin: 0.0694em 0.1111em 0.1111em 0;
+  padding-right: 0.05em;
+}
+
+html.transition .full-frontal {
   -webkit-transition-property: height, width;
   -webkit-transition-duration: 100ms, 100ms;
   -webkit-transition-timing-function: linear, linear;
@@ -72,17 +86,6 @@ header h3 {
   transition-property: height, width;
   transition-duration: 100ms, 100ms;
   transition-timing-function: linear, linear;
-  background: url(images/ff2011-logo.png) no-repeat center;
-  position: relative;
-  float: left;
-  display: block;
-  overflow: hidden;
-  text-indent: -9999px;
-  white-space: nowrap;
-  height: 153px; /*1.1em;*/
-  width: 164px; /*1.1em;*/
-  margin: 0.0694em 0.1111em 0.1111em 0;
-  padding-right: 0.05em;
 }
 
 .full-frontal span {
@@ -216,7 +219,7 @@ blockquote {
 
 blockquote p {
   position: absolute;
-  top: 37px;
+  top: 30px;
   bottom: 58px;
   left: 24px;
   right: 24px;
@@ -305,18 +308,11 @@ footer p {
   font-weight: normal;
 }
 
-body {
-  -webkit-transition: margin 100ms linear;
-  -moz-transition: margin 100ms linear;
-  -o-transition: margin 100ms linear;
-  transition: margin 100ms linear;
-}
-
-html, input {
+input {
   background-position: top left, top left, top left;
 }
 
-html, input, blockquote {
+html.transition, html.transition input, html.transition blockquote {
   position: relative;
   -moz-transition: background-position 30s linear;
   -o-transition: background-position 30s linear;
@@ -666,4 +662,9 @@ html.thanks header {
   margin-top: -2em;
 }
 
-
+html.transition body {
+  -webkit-transition: margin 100ms linear;
+  -moz-transition: margin 100ms linear;
+  -o-transition: margin 100ms linear;
+  transition: margin 100ms linear;
+}
