@@ -41,9 +41,6 @@ header {
   text-transform: uppercase;
 }
 
-header time {
-  display: none;
-}
 header h2,
 header h3 {
   margin: 0;
@@ -548,15 +545,6 @@ html:before {
   .wrapper {
     width: 94%;
   }
-
-  header time {
-    display: block;
-    float: left;
-    margin: 0 0.05em 0 0;
-    font-size: 12.5em;
-    line-height: 0.9;
-    letter-spacing: -0.05em;
-  }
 }
 @media screen and (min-width: 74em) {
   .wrapper {
@@ -601,9 +589,6 @@ html:before {
   }
 }
 @media screen and (max-width: 37em) {
-  time {
-    display: none;
-  }
   .want-to section {
     width: 100%;
     float: none;
@@ -691,15 +676,6 @@ html:before {
 
 .nomediaquerygoodnessyepisuck {
   width: 1024px;
-}
-
-.nomediaquerygoodnessyepisuck header time {
-  display: block;
-  float: left;
-  margin: 0 0.05em 0 0;
-  font-size: 12.5em;
-  line-height: 0.9;
-  letter-spacing: -0.05em;
 }
 
 .ie input {
