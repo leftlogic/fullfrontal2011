@@ -33,6 +33,23 @@ a:hover {
   text-decoration: underline;
 }
 
+.clear {
+  clear: both;
+}
+
+.button {
+  display: block;
+  line-height: 1.4117; /* 48px */
+  font-family: 'Century Gothic', sans-serif;
+  color: #008999;
+  text-align: center;
+  background-color: #c7be8f;
+  background-image: url('images/bg-button.png');
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+}
+
+
 header {
   font-family: 'Cabin Sketch', sans-serif;
   color: #fff;
@@ -41,15 +58,19 @@ header {
   text-transform: uppercase;
 }
 
+header hgroup {
+  float: left;
+}
 header h2,
 header h3 {
   margin: 0;
 }
-header h2 {
+header h2,
+.tickets {
   padding-top: 0.1em;
-  font-size: 4.1875em;
+  font-size: 4.1875em; /* 67px */
   line-height: 0.75;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.05em; /* -3px */
 }
 header h2 span {
   font-size: 0.8657em;
@@ -69,7 +90,7 @@ header h3 {
   white-space: nowrap;
   height: 153px; /*1.1em;*/
   width: 164px; /*1.1em;*/
-  margin: 0.0694em 0.1111em 0.1111em 0;
+  margin: 0.0694em 1.1111em 0.1111em 0;
   padding-right: 0.05em;
 }
 
@@ -91,6 +112,56 @@ html.transition .full-frontal {
 .full-frontal span {
   display: none;
 }
+
+.tickets {
+  display: block;
+  float: right;
+  line-height: 0.65;
+  margin-top: 3px;
+}
+.tickets:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.tickets span {
+  font-size: 0.7164em; /* 48/67 */
+}
+.tickets .button {
+  margin-top: 8px;
+}
+
+nav {
+  clear: both;
+  font-family: 'Cabin Sketch', sans-serif;
+  border-bottom: 2px solid #9cc;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  list-style: none;
+  margin: 0;
+  width: 16.66666666666667%;
+  text-align: center;
+  padding: 0;
+  float: left;
+}
+nav a {
+  position: relative;
+  bottom: -2px;
+  display: inline-block;
+  padding-bottom: 4px;
+  z-index: 10;
+}
+nav a:hover {
+  padding-bottom: 2px;
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+
 
 form {
   clear: both;

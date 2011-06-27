@@ -40,14 +40,16 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
   <div class=wrapper>
     <header>
       <h1 class=full-frontal>Full Frontal</h1> 
-
-      <h2>JavaScript <br> <span>Conference</span></h2>
-      <h3>Duke Of Yorks, Brighton, <br> <time datetime=2011-11-11T09:00:00Z>11th November 2011</time></h3>
+      
+      <hgroup>
+        <h2>JavaScript <br> <span>Conference</span></h2>
+        <h3>Duke Of Yorks, Brighton, <br> <time datetime=2011-11-11T09:00:00Z>11th November 2011</time></h3>
+      </hgroup>
     
       <a href=# class=tickets>
-        Earlybird <br>
-        1 day &pound;129+ <abbr>VAT</abbr> <br>
-        <span>Buy tickets</span>
+        Earlybird<br>
+        <span>1 day &pound;129+ <abbr>VAT</abbr></spn><br>
+        <span class=button><img src=images/buy-tickets width=278 height=24 alt="Buy Tickets"></span>
       </a>
     </header>
     
@@ -58,7 +60,9 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
         <li><a href=#>Schedule</a>
         <li><a href=#>The Venue</a>
         <li><a href=#>Sponsors</a>
+        <li><a href=#>Workshops</a>
       </ul>
+      <div class=clear></div>
     </nav>
     
     
@@ -114,47 +118,7 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
       </section>
     </div>
     
-    <div class=tweets>
-<?php
-function linkify($text) {
-  // note - this order is important, i.e. links at the top, then anything else
-  $matches = array(
-    '/([A-Za-z]+:\/\/[A-Za-z0-9-_]+\.[A-Za-z0-9-_:%&\?\/.=]+)/',
-    '/(^|[^\w])(#[\d\w\-]+)/',
-    '/(^|[^\w])(@([\d\w\-]+))/'
-  );
-  
-  $replacements = array(
-    '<a href="$1">$1</a>',
-    '$1<a href="http://search.twitter.com/search?q=$2">$2</a>',
-    '$1@<a href="http://twitter.com/$3">$3</a>'
-  );
-  
-  return preg_replace($matches, $replacements, $text);
-}
-
-
-$favs_raw = json_decode(file_get_contents('./fullfrontalconf.json'));
-$favs = array();
-
-// remove old tweets
-foreach ($favs_raw as $fav) {
-  if (stripos($fav->created_at, '2010')) {
-    array_push($favs, $fav);
-  }
-}
-
-shuffle($favs);
-
-for ($i = 0; $i < 5; $i++) : $fav = $favs[$i]; ?>
-      <div><blockquote cite="http://twitter.com/<?=$fav->user->screen_name?>/statuses/<?=$fav->id_str?>">
-        <p><?=(htmlentities($fav->text))?>
-        <cite><a href="http://twitter.com/<?=$fav->user->screen_name?>"><img width=30 height=30 src="<?=$fav->user->profile_image_url?>" alt="<?=$fav->user->screen_name?>"></a><a href="http://twitter.com/<?=$fav->user->screen_name?>/statuses/<?=$fav->id_str?>"><?=$fav->user->screen_name?></a></cite>
-      </blockquote></div>
-<?php endfor ?>
-      
-      <div class=clear></div>
-    </div><!-- .tweets -->
+<!-- Tweets -->
     
     
     
