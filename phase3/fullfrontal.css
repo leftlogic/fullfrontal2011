@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'Cabin Sketch';
+    src: url('fonts/cabinsketch-bold-webfont.eot');
+    src: url('fonts/cabinsketch-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/cabinsketch-bold-webfont.woff') format('woff'),
+         url('fonts/cabinsketch-bold-webfont.ttf') format('truetype'),
+         url('fonts/cabinsketch-bold-webfont.svg#CabinSketchBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 article, section, footer, header {
   display: block;
 }
@@ -56,6 +67,7 @@ header {
   -webkit-text-shadow: 2px 2px 2px rgba(0,0,0,0.1); 
   text-shadow: 2px 2px 2px rgba(0,0,0,0.1); 
   text-transform: uppercase;
+  overflow: hidden;
 }
 
 header hgroup {

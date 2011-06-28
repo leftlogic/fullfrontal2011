@@ -29,7 +29,6 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
   <meta name=viewport content="width=device-width, initial-scale=1.0">
   <title>Full Frontal 2011- JavaScript Conference</title>
 
-  <link rel=stylesheet href="http://fonts.googleapis.com/css?family=Cabin+Sketch:bold">
   <link rel=stylesheet href=fullfrontal.css>
   <!--[if lt IE 9]>
   <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
