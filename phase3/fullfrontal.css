@@ -303,7 +303,8 @@ footer {
 
 
 .headline {
-
+  width: 100%;
+  font-size: 10px;
 }
 
 

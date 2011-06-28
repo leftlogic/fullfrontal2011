@@ -337,10 +337,5 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
       you wanted, and we'll add you to the waiting list and email you if the ticket becomes available. This
       will be on a first come first serve basis.
       
-      
-      
-      
-      
-    
   </div><!-- .wrapper -->
 <?php include('footer.php'); ?>
