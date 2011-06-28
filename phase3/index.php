@@ -45,18 +45,31 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
         <h3>Duke Of Yorks, Brighton, <br> <time datetime=2011-11-11T09:00:00Z>11th November 2011</time></h3>
       </hgroup>
     
-      <a href=# class=tickets>
+      <a href=# class="tickets early-bird">
         Earlybird<br>
-        <span>1 day &pound;129+ <abbr>VAT</abbr></spn><br>
-        <span class=button><img src=images/buy-tickets width=278 height=24 alt="Buy Tickets"></span>
+        <span>1 day &pound;99+ <abbr>VAT</abbr></span><br>
+        <span class=button><img src=images/buy-tickets width=278 height=48 alt="Buy Tickets"></span>
       </a>
+      
+      <!--
+      
+      <a href=# class="tickets buy-now">
+        Buy Now<br>
+        <span>1 day &pound;129+ <abbr>VAT</abbr></span><br>
+        <span class=button><img src=images/buy-tickets width=278 height=48 alt="Buy Tickets"></span>
+      </a>
+            
+      <span class="tickets sold-out">Sold Out</span>
+      
+      -->
+      
     </header>
     
     <nav>
       <ul>
         <li><a href=#>Home</a>
         <li><a href=#>Speakers</a>
-        <li><a href=#>Schedule</a>
+        <li><a class=selected href=#>Schedule</a>
         <li><a href=#>The Venue</a>
         <li><a href=#>Sponsors</a>
         <li><a href=#>Workshops</a>
@@ -70,8 +83,8 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
     
     
     <hgroup>
-      <h1>Full Frontal</h1>
-      <h2>Javascript Conference</h2>
+      <h1 class=headline>Full Frontal</h1>
+      <h2 class=headline>Javascript Conference</h2>
     </hgroup>
     
     <div class=list-speakers>    
@@ -123,7 +136,7 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
     
     
     
-    <h1>Schedule</h1>
+    <h1 class=headline>Schedule</h1>
     
     <ol class=schedule>
       <li>
@@ -151,7 +164,7 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
     
     
     
-    <h1>Speakers</h1>
+    <h1 class=headline>Speakers</h1>
     
     <section>
       <h1><span class=number></span>Brendan Dawes</h1>
@@ -165,7 +178,7 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
 
 
 
-    <h1>Sponsors</h1>
+    <h1 class=headline>Sponsors</h1>
     
     <h2>
       Full Frontal
@@ -231,7 +244,7 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
     
     
     
-    <h1>Workshops</h1>
+    <h1 class=headline>Workshops</h1>
     
     <div class=workshop>
       <section>
@@ -267,10 +280,10 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
       
       <div>
         <img>
-        <a href=# class=tickets>
-          Earlybird <br>
-          1 day &pound;129+ <abbr>VAT</abbr> <br>
-          <span>Buy tickets</span>
+        <a href=# class="tickets early-bird">
+          Earlybird<br>
+          <span>1 day &pound;99+ <abbr>VAT</abbr></span><br>
+          <span class=button><img src=images/buy-tickets width=278 height=48 alt="Buy Tickets"></span>
         </a>
       </div>
     </div>
@@ -279,10 +292,10 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
     
     
     
-    <h1>The Tickets<h1>
+    <h1 class=headline>The Tickets</h1>
     
     <section>
-      <h1>Conference<h1>
+      <h1>Conference</h1>
       <h2>&pound;109+ <abbr>VAT</abbr> <span>No workshops</span><h2>
       <ul>
         <li>Full Day Conference Tickets
@@ -293,7 +306,7 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
     </section> 
     
     <section>
-      <h1>Conference<h1>
+      <h1>Conference</h1>
       <h2>&pound;109+ <abbr>VAT</abbr> <span>No workshops</span><h2>
       <ul>
         <li>Full Day Conference Tickets
@@ -304,7 +317,7 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
     </section>
     
     <section>
-      <h1>Conference<h1>
+      <h1>Conference</h1>
       <h2>&pound;109+ <abbr>VAT</abbr> <span>No workshops</span><h2>
       <ul>
         <li>Full Day Conference Tickets

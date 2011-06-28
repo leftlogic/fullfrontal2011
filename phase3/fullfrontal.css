@@ -15,7 +15,7 @@ article, section, footer, header {
 
 html {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2P4//+/MBQzgDAICEMxXAAMYCoRIlCVANL6FYTYi5d+AAAAAElFTkSuQmCC), url('images/bg-pier.png');
-  background-position: center 24px;
+  background-position: center -71px;
   background-repeat: repeat, no-repeat;
   background-color: #008999;
 }
@@ -32,7 +32,7 @@ body {
   max-width: 60em;
   min-width: 20em;
   margin: 0 auto;
-  margin-top: 5em;
+  margin-top: 3.125em;
 }
 
 a {
@@ -48,9 +48,21 @@ a:hover {
   clear: both;
 }
 
+.cabin,
+.headline,
+header,
+nav,
+.tickets {
+  font-family: 'Cabin Sketch', sans-serif;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+  text-transform: uppercase;
+  color: #fff;
+}
+
 .button {
   display: block;
-  line-height: 1.4117; /* 48px */
+  line-height: 48px;
+  font-size: 48px;
   font-family: 'Century Gothic', sans-serif;
   color: #008999;
   text-align: center;
@@ -58,38 +70,17 @@ a:hover {
   background-image: url('images/bg-button.png');
   border: 1px solid rgba(0,0,0,0.1);
   box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+  max-height: 48px;
+}
+.button:hover {
+  background-color: #f1efe2;
+  background-position: bottom;
 }
 
 
 header {
-  font-family: 'Cabin Sketch', sans-serif;
-  color: #fff;
   -webkit-text-shadow: 2px 2px 2px rgba(0,0,0,0.1); 
-  text-shadow: 2px 2px 2px rgba(0,0,0,0.1); 
-  text-transform: uppercase;
   overflow: hidden;
-}
-
-header hgroup {
-  float: left;
-}
-header h2,
-header h3 {
-  margin: 0;
-}
-header h2,
-.tickets {
-  padding-top: 0.1em;
-  font-size: 4.1875em; /* 67px */
-  line-height: 0.75;
-  letter-spacing: -0.05em; /* -3px */
-}
-header h2 span {
-  font-size: 0.8657em;
-}
-header h3 {
-  font-size: 1.4375em;
-  line-height: 1;
 }
 
 .full-frontal {
@@ -125,39 +116,77 @@ html.transition .full-frontal {
   display: none;
 }
 
+header hgroup {
+  float: left;
+}
+header h2,
+header h3 {
+  margin: 0;
+}
+header h2,
+.tickets {
+  padding-top: 0.1em;
+  font-size: 4.1875em; /* 67p/16 */
+  line-height: 0.75;
+  letter-spacing: -0.05em; /* -3px */
+}
+header h2 span {
+  font-size: 0.8657em;
+}
+header h3 {
+  font-size: 1.4375em;
+  line-height: 1;
+}
+
 .tickets {
   display: block;
   float: right;
   line-height: 0.65;
   margin-top: 3px;
+  color: #ded4a0;
+}
+.tickets span {
+  font-size: 0.7313em; /* 49/67 */
+}
+.buy-now {
+  font-size: 4.6875em; /* 75/16 */
+}
+.buy-now span {
+  font-size: 0.64em; /* 48/75 */  
+}
+.tickets .button {
+  margin-top: 8px;
 }
 .tickets:hover {
   text-decoration: none;
   color: #fff;
 }
-.tickets span {
-  font-size: 0.7164em; /* 48/67 */
-}
-.tickets .button {
-  margin-top: 8px;
+.tickets:hover .button {
+  background-color: #f1efe2;
+  background-position: bottom;
 }
 
+
 nav {
+  font-size: 1.625em; /* 25/16 */
   clear: both;
-  font-family: 'Cabin Sketch', sans-serif;
   border-bottom: 2px solid #9cc;
+  margin-top: 2.2em; /* 55/25 */
 }
 nav ul {
   margin: 0;
   padding: 0;
 }
 nav li {
-  list-style: none;
-  margin: 0;
-  width: 16.66666666666667%;
-  text-align: center;
-  padding: 0;
   float: left;
+  margin: 0;
+  margin-right: 3.9583333%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+nav li:last-child {
+  margin-right: 0;
 }
 nav a {
   position: relative;
@@ -166,6 +195,7 @@ nav a {
   padding-bottom: 4px;
   z-index: 10;
 }
+nav a.selected,
 nav a:hover {
   padding-bottom: 2px;
   text-decoration: none;
@@ -173,65 +203,109 @@ nav a:hover {
   border-bottom: 2px solid #fff;
 }
 
-
-
-form {
+footer {
   clear: both;
-  margin: 5.375em 0 4.375em 0;
+  margin-bottom: 4.375em;
 }
-form p{
-  position: relative;
-  width: 100%;
+.terms {
+  width: 80%;
+  max-width: 60em;
+  min-width: 20em;
+  margin: 0 auto;
+  font-size: 0.875em;
+}
+.terms h1 {
+  float: right;
   margin: 0;
-  margin-top: 0.5em;
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+  margin-bottom: 0.5em;
+}
+.terms h1 a {
+  display: block;
+  background: url('images/left-logic.png');
+  background-position: top left;
+  width: 200px;
+  height: 41px;
+  text-indent: -9999em;
+}
+.terms h1 a:hover {
+  background-position: bottom left;
+}
+.terms p {
+  margin: 0;
+  font-weight: normal;
+}
+
+.fat-footer {
+  margin: 2em 0;
+  padding-bottom: 3em;
+  background-image: url('images/bg-pier-yellow.png');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-color: #dad197;
   overflow: hidden;
+  color: #663;
 }
-button {
-  position: absolute;
+.fat-footer .wrapper {
+  margin: 0 auto;
+}
+.fat-footer section {
+  float: left;
+}
+.fat-footer h1 {
+  margin: 1em 0;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0 rgba(0,0,0,0.5);
+  color: #996;
+}
+.updates {
+  width: 36%;
+}
+.updates p {
+  font-size: 0.8125em;
+  line-height: 1.5;
+  padding-right: 2.5em;
+}
+.updates a {
+  color: #996;
+  font-weight: normal;
+}
+.updates .follow {
   display: block;
-  top: 0;
-  right: 0px;
-  margin: 0;
-  height: 1.3333em; /* 60px in Firefox 4 */
-  height: 60px;
-  width: 2em;
-  line-height: 1.3;
-  border: 0;
-  background: #ded4a0;
-  font-size: 2.8125em;
-  padding: 13px 9px;
-}
-button:hover {
-  background: #008999;
-  cursor: pointer;
-}
-button span {
-  width: 1.6em;
-  display: block;
-  height: 34px; /* total height: 60px */
-  background: #ded4a0 url('images/button-go.png') no-repeat center top;
-  text-indent: -999em;
-}
-button:hover span,
-button:active span {
-  background-color: #008999;
-  background-position: center -34px;
-}
-input {
-  width: 96%;
-  height: 1.875em;
+  margin-right: 2em;
+  padding: 0.75em 0;
+  text-align: center;
+  background-color: #EEE8A2;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
   line-height: 1;
-  padding: 0.0625em 2%;
-  border: 0;
-  vertical-align: middle;
-  font-size: 1.875em;
-  color: #008999;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 rgba(0,0,0,0.5);
 }
-input::-webkit-input-placeholder,
-input::-moz-placeholder {
-  color: #008999;
+.follow:hover {
+  text-decoration: none;
+  color: #EEE8A2;
+  background-color: #996;
 }
+.sponsors {
+  width: 63%;
+  padding-right: -1em;
+}
+.sponsors img {
+  background: #FFF;
+  margin: 0 1em 1em 0;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+}
+.sponsors a:hover img,
+.sponsors a:focus img {
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+}
+
+
+.headline {
+
+}
+
 
 .want-to {
   margin-bottom: 4.375em;
@@ -343,103 +417,7 @@ blockquote p a {
 
 
 
-footer {
-  clear: both;
-  margin-bottom: 4.375em;
-}
-.terms {
-  width: 80%;
-  max-width: 60em;
-  min-width: 20em;
-  margin: 0 auto;
-  font-size: 0.875em;
-}
-.terms h1 {
-  float: right;
-  margin: 0;
-  margin-bottom: 0.5em;
-}
-.terms h1 a {
-  display: block;
-  background: url('images/left-logic.png');
-  background-position: top left;
-  width: 200px;
-  height: 41px;
-  text-indent: -9999em;
-}
-.terms h1 a:hover {
-  background-position: bottom left;
-}
-.terms p {
-  margin: 0;
-  font-weight: normal;
-}
 
-.fat-footer {
-  margin: 2em 0;
-  padding-bottom: 3em;
-  background-image: url('images/bg-pier-yellow.png');
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-color: #dad197;
-  overflow: hidden;
-  color: #663;
-}
-.fat-footer .wrapper {
-  margin: 0 auto;
-}
-.fat-footer section {
-  float: left;
-}
-.fat-footer h1 {
-  margin: 1em 0;
-  text-transform: uppercase;
-  text-shadow: -1px -1px 0 rgba(0,0,0,0.5);
-  color: #996;
-}
-.updates {
-  width: 36%;
-}
-.updates p {
-  font-size: 0.8125em;
-  line-height: 1.5;
-  padding-right: 2.5em;
-}
-.updates a {
-  color: #996;
-  font-weight: normal;
-}
-.updates .follow {
-  display: block;
-  margin-right: 2em;
-  padding: 0.75em 0;
-  text-align: center;
-  background-color: #EEE8A2;
-  box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-  line-height: 1;
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: bold;
-  text-shadow: -1px -1px 0 rgba(0,0,0,0.5);
-}
-.follow:hover {
-  text-decoration: none;
-  color: #EEE8A2;
-  background-color: #996;
-}
-.sponsors {
-  width: 63%;
-  padding-right: -1em;
-}
-.sponsors img {
-  background: #FFF;
-  margin: 0 1em 1em 0;
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
-}
-.sponsors a:hover img,
-.sponsors a:focus img {
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
-}
 
 input {
   background-position: top left, top left, top left;
@@ -624,19 +602,22 @@ html:before {
   }
 }
 
+@media screen and (max-width: 73em) {
+  .tweets div {
+      width: 26%;
+  }
+}
 @media screen and (min-width: 63em) {
   .wrapper {
     width: 94%;
   }
 }
-@media screen and (min-width: 74em) {
-  .wrapper {
-    width: 80%;
+@media screen and (max-width: 63em) {
+  .want-to {
+    margin-bottom: 3.075em;
   }
-}
-@media screen and (max-width: 73em) {
   .tweets div {
-      width: 26%;
+      width: 34%;
   }
 }
 @media screen and (max-width: 56em) {  
@@ -653,14 +634,6 @@ html:before {
   .want-to section p {
     max-width: none;
     margin-left: 11em;
-  }
-}
-@media screen and (max-width: 63em) {
-  .want-to {
-    margin-bottom: 3.075em;
-  }
-  .tweets div {
-      width: 34%;
   }
 }
 @media screen and (max-width: 47em) {
@@ -709,8 +682,12 @@ html:before {
     width: 82px; /*1.1em;*/
   }
   
-  header h2 {
+  header h2,
+  header .tickets {
     font-size: 2.95em;
+  }
+  .tickets {
+    float: left;
   }
   
   header h3 {

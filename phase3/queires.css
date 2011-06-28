@@ -1,0 +1,294 @@
+@media screen and (max-height: 16em) and (min-width: 40em) {
+  html:before {
+    display: inline;
+    content: "Ohhh noes" !important;
+  }
+  
+  header {
+    margin-top: -2em;
+  }
+  
+  .full-frontal {
+    background: url(http://29.media.tumblr.com/tumblr_l5wjnzhwtq1qcjha6o1_400.jpg) no-repeat 50% -70px;
+    -webkit-mask-box-image: url(images/ff2011-logo.png);    
+  }
+}
+
+@-webkit-keyframes background {
+	from {
+		background-color: #D6CD7E;
+	}
+	25% {
+		background-color: #FF242F;
+	}
+	50% {
+		background-color: #D62782;
+	}
+	75% {
+		background-color: #25D673;
+	}
+	to {
+		background-color: #D6CD7E;
+	}
+}
+
+@-webkit-keyframes invert-background {
+	from {
+    background-color: #000AD6;
+		background-position: top left, top left, top left;
+	}
+	49.9% {
+    background-color: #000AD6;
+	}
+	50% {
+    background-color: #FF00A2;
+	}
+	74.9% {
+    background-color: #FF00A2;
+	}
+	75% {
+    background-color: #FF0016;
+	}
+	99.9% {
+    background-color: #00FF12;
+	}
+	to {
+    background-color: #000AD6;
+		background-position: bottom right, bottom right, bottom right;
+	}
+}
+
+
+@-webkit-keyframes foreground {
+	from {
+		color: #D6CD7E;
+	}
+	25% {
+		color: #FF242F;
+	}
+	50% {
+		color: #D62782;
+	}
+	75% {
+		color: #25D673;
+	}
+	to {
+		color: #D6CD7E;
+	}
+}
+
+@media screen and (min-width: 88em) and (max-width: 88.124em) {
+  html:before {
+    display: inline;
+    content: "Welcome to the speccy loading mode" !important;
+  }
+  
+  header {
+    margin-top: -2em;
+  }
+  
+  .full-frontal {
+    background: #D6CD7E fixed no-repeat 50% -70px;
+    -webkit-mask-box-image: url(images/ff2011-logo.png);    
+    -webkit-animation-name: background;
+  	-webkit-animation-duration: 300ms;
+  	-webkit-animation-iteration-count: infinite;
+  	-webkit-animation-timing-function: linear;  	
+  }
+  
+  .wrapper, header, h1, h2, a, p {
+    -webkit-animation-name: foreground;
+  	-webkit-animation-duration: 200ms;
+  	-webkit-animation-iteration-count: infinite;
+  	-webkit-animation-timing-function: linear;
+  }
+  
+  html {
+    background-position: bottom right, bottom right, bottom right;
+    background-color: blue;
+    background-image:
+      -webkit-linear-gradient(transparent 25%, rgba(255,255,255,.5) 25%),
+      -webkit-linear-gradient(transparent 50%, rgba(255,255,255,.7) 50%),
+      -webkit-linear-gradient(transparent 75%, rgba(255,0,0,1) 75%);
+    background-image:
+      -moz-linear-gradient(transparent 25%, rgba(255,255,255,.5) 25%),
+      -moz-linear-gradient(transparent 50%, rgba(255,255,255,.7) 50%),
+      -moz-linear-gradient(transparent 75%, rgba(255,0,0,1) 75%);
+    background-image:
+      -o-linear-gradient(transparent 25%, rgba(255,255,255,.5) 25%),
+      -o-linear-gradient(transparent 50%, rgba(255,255,255,.7) 50%),
+      -o-linear-gradient(transparent 75%, rgba(255,0,0,1) 75%);
+    background-size: 50px, 50px, 50px;
+    background-repeat: repeat, repeat, repeat;
+    -webkit-animation-name: invert-background;
+  	-webkit-animation-duration: 0.8s;
+  	-webkit-animation-iteration-count: infinite;
+  	-webkit-animation-timing-function: linear;
+  }
+
+  blockquote {
+    -webkit-mask-box-image: url(images/bubble.png);
+  }
+  
+  blockquote, input {
+    background-position: bottom right, bottom right, bottom right;
+    background: #D6CD7E fixed no-repeat 50% -70px;
+    background-image:
+      -webkit-linear-gradient(0, transparent 25%, rgba(255,255,255,.5) 25%),
+      -webkit-linear-gradient(0, transparent 50%, rgba(255,255,255,.7) 50%),
+      -webkit-linear-gradient(0, transparent 75%, rgba(255,0,0,1) 75%);
+    background-image:
+      -moz-linear-gradient(0, transparent 25%, rgba(255,255,255,.5) 25%),
+      -moz-linear-gradient(0, transparent 50%, rgba(255,255,255,.7) 50%),
+      -moz-linear-gradient(0, transparent 75%, rgba(255,0,0,1) 75%);
+    background-image:
+      -o-linear-gradient(0, transparent 25%, rgba(255,255,255,.5) 25%),
+      -o-linear-gradient(0, transparent 50%, rgba(255,255,255,.7) 50%),
+      -o-linear-gradient(0, transparent 75%, rgba(255,0,0,1) 75%);
+    background-size: 50px, 50px, 50px;
+    background-repeat: repeat, repeat, repeat;
+    -webkit-animation-name: invert-background;
+  	-webkit-animation-duration: 500ms;
+  	-webkit-animation-iteration-count: infinite;
+  	-webkit-animation-timing-function: linear;
+  	-webkit-animation-fill-mode: both;
+  	-webkit-animation-direction: alternate;   
+  }
+}
+
+@media screen and (min-width: 63em) {
+  .wrapper {
+    width: 94%;
+  }
+}
+@media screen and (min-width: 74em) {
+  .wrapper {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 73em) {
+  .tweets div {
+      width: 26%;
+  }
+}
+@media screen and (max-width: 56em) {  
+  .want-to section {
+    width: 100%;
+    float: none;
+    margin-bottom: 1em;
+  }
+  .want-to section h1 {
+   float: none;
+   min-width: none;
+   margin-left: 2.6em; 
+  }
+  .want-to section p {
+    max-width: none;
+    margin-left: 11em;
+  }
+}
+@media screen and (max-width: 63em) {
+  .want-to {
+    margin-bottom: 3.075em;
+  }
+  .tweets div {
+      width: 34%;
+  }
+}
+@media screen and (max-width: 47em) {
+  .want-to {
+    margin-bottom: 2.075em;
+  }
+  .tweets div {
+      width: 50%;
+  }
+}
+@media screen and (max-width: 37em) {
+  .want-to section {
+    width: 100%;
+    float: none;
+    margin-bottom: 1em;
+  }
+  .want-to section h1 {
+    float: right;
+    min-width: 5em;
+    margin-left: 0;
+  }
+  .want-to section p {
+    max-width: 20em;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 36em) {
+  html {
+     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2P4//+/MBQzgDAICEMxXAAMYCoRIlCVANL6FYTYi5d+AAAAAElFTkSuQmCC), url('images/bg-pier-small.png'); 
+  }
+  .wrapper {
+   margin-top: 1em; 
+  }
+  .follow {
+    font-size: 1.875em;
+  }
+  .terms h1 {
+    float: none;
+  }
+}
+@media screen and (max-width: 32em) {
+  .full-frontal {
+    background: url(images/ff2011-logo.png) no-repeat center;
+    background-size: 100%;
+    height: 77px; /*1.1em;*/
+    width: 82px; /*1.1em;*/
+  }
+  
+  header h2,
+  header .tickets {
+    font-size: 2.95em;
+  }
+  .tickets {
+    float: left;
+  }
+  
+  header h3 {
+    clear: left;
+  }
+  
+  form {
+    margin: 1.375em 0 1.375em 0;
+  }
+  
+  .want-to {
+    margin-bottom: 1.075em;
+  }
+  .tweets div {
+      width: 100%;
+  }
+}
+@media screen and (max-width: 25em) {
+  .wrapper {
+    min-width: 97%;
+    width: 97%;
+  }
+  
+  .terms {
+    margin-bottom: 0.25em;
+  }
+  
+  .terms h1 a {
+    margin: 0 auto;
+  }
+  
+  .want-to section {
+    width: 100%;
+    float: none;
+    margin-bottom: 1em;
+  }
+  .want-to section h1 {
+   float: none;
+   min-width: none;
+   margin-left: 0; 
+  }
+  .want-to section p {
+    float: none;
+  }
+}
