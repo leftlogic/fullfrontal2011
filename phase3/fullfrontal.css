@@ -35,6 +35,16 @@ body {
   margin-top: 3.125em;
 }
 
+p {
+  color: #99cfd7;
+  font-size: ;
+  line-height: 1.3333;
+  font-size: 0.9375em; /* 15/16*/ /* Note: Measurements like this are caluclate as targetValue/context|parentValue */ 
+}
+.highlight {
+  color: #fff;
+}
+
 a {
   color: #ded4a0;
   text-decoration: none;
@@ -42,6 +52,16 @@ a {
 a:focus,
 a:hover {
   text-decoration: underline;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-image: url('images/custom-bullet.gif');
+  background-repeat: no-repeat;
+  background-position: center left;
+  padding-left: 16px;
 }
 
 .clear {
@@ -52,14 +72,22 @@ a:hover {
 .headline,
 header,
 nav,
-.tickets {
+.buy-tickets,
+h1,
+h2,
+.speakers-list {
   font-family: 'Cabin Sketch', sans-serif;
   text-shadow: 2px 2px 2px rgba(0,0,0,0.1);
   text-transform: uppercase;
   color: #fff;
 }
+h1, h2 {
+  margin: 0;
+  padding: 0;
+}
 
-.button {
+.buy-button,
+.sold-button {
   display: block;
   line-height: 48px;
   font-size: 48px;
@@ -72,7 +100,7 @@ nav,
   box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
   max-height: 48px;
 }
-.button:hover {
+.buy-button:hover {
   background-color: #f1efe2;
   background-position: bottom;
 }
@@ -124,7 +152,7 @@ header h3 {
   margin: 0;
 }
 header h2,
-.tickets {
+.buy-tickets {
   padding-top: 0.1em;
   font-size: 4.1875em; /* 67p/16 */
   line-height: 0.75;
@@ -138,14 +166,16 @@ header h3 {
   line-height: 1;
 }
 
-.tickets {
+.buy-tickets {
   display: block;
-  float: right;
   line-height: 0.65;
   margin-top: 3px;
   color: #ded4a0;
 }
-.tickets span {
+header .buy-tickets {
+  float: right;
+}
+.buy-tickets span {
   font-size: 0.7313em; /* 49/67 */
 }
 .buy-now {
@@ -154,14 +184,14 @@ header h3 {
 .buy-now span {
   font-size: 0.64em; /* 48/75 */  
 }
-.tickets .button {
+.buy-tickets .buy-button {
   margin-top: 8px;
 }
-.tickets:hover {
+.buy-tickets:hover {
   text-decoration: none;
   color: #fff;
 }
-.tickets:hover .button {
+.buy-tickets:hover .buy-button {
   background-color: #f1efe2;
   background-position: bottom;
 }
@@ -184,6 +214,7 @@ nav li {
   padding: 0;
   list-style: none;
   text-align: center;
+  background: none;
 }
 nav li:last-child {
   margin-right: 0;
@@ -252,10 +283,14 @@ footer {
   float: left;
 }
 .fat-footer h1 {
+  font-family: 'Century Goth', sans-serif;
   margin: 1em 0;
   text-transform: uppercase;
   text-shadow: -1px -1px 0 rgba(0,0,0,0.5);
   color: #996;
+}
+.fat-footer p {
+    color: #663;
 }
 .updates {
   width: 36%;
@@ -304,46 +339,50 @@ footer {
 
 .headline {
   width: 100%;
-  font-size: 10px;
+  line-height: 1;
+  margin: 7.2916667% 0 6.25% 0; /* 70/960 0 60/960 0 */ 
+  padding: 0;
+}
+.headline img {
+  max-width: 100%;
 }
 
-
-.want-to {
-  margin-bottom: 4.375em;
-  overflow: hidden;
-}
-.want-to section {
+.speakers-list {
   width: 50%;
   float: left;
-  background-repeat: no-repeat;
-  background-position: top left;
-  min-height: 191px;
 }
-.want-to section h1 {
-  float: right;
-  min-width: 5em;
+.speakers-list ul {
   margin: 0;
-  font-family: 'Cabin Sketch', sans-serif;
-  font-size: 3.875em;
-  text-transform: uppercase;
-  -webkit-text-shadow: 2px 2px 2px rgba(0,0,0,0.1); 
-  text-shadow: 2px 2px 2px rgba(0,0,0,0.1); 
-  line-height: 0.7562;
+  padding: 0;
+}
+.speakers-list li {
+  background: none;
+  padding: 0;
+  font-size: 4.375em; /* 70/16 */
+  line-height: 0.76;
+  letter-spacing: -0.05em;
+}
+.speakers-list a:hover {
+  text-decoration: none;
   color: #fff;
 }
-.want-to section p {
+.speakers-list h2 {
+  font-size: 2.4375em;
+  line-height: 0.76;
+  letter-spacing: -0.05em;
+}
+
+.image-cube {
+  width: 50%;
   float: right;
-  clear: right;
-  max-width: 20em;
-  margin: 1em 0.5em 0 0;
-  font-size: 0.9375em;
-  line-height: 1.3333;
 }
-.speak {
-  background-image: url('images/speak.png');
+.image-cube div {
+  width: 33.33333%;
+  float: left;
 }
-.sponsor {
-  background-image: url('images/sponsor.png');
+.image-cube img {
+  display: block;
+  max-width: 100%;
 }
 
 .tweets,
@@ -415,6 +454,72 @@ blockquote cite img {
 blockquote p a {
   color: hsl(190,30%,30%);
 }
+
+
+.tickets {
+  width: 31.25%;
+  float: left;
+  margin-right: 3.125%; /* 30/960 */
+  margin-bottom: 2.5em;
+}
+.tickets:last-of-type {
+  margin-right: 0;
+}
+.tickets h1, 
+.tickets h2 {
+  margin: 0;
+  padding: 0;
+  line-height: 53px;
+  letter-spacing: -0.06em;
+}
+.tickets h1{
+  font-size: 55px;
+
+}
+.tickets h2{
+  color: #ded4a0;
+  font-size: 78px;
+}
+.tickets h2 span {
+  display: block;
+  font-size: 44px;
+}
+.tickets ul {
+  margin: 0;
+  margin-bottom: 2.5em;
+  padding: 0;
+}
+
+
+
+.workshop .details {
+  width: 64.58333%;
+  float: right;
+  margin-left: 3.125%;
+}
+.workshop .callout {
+  width: 32.291667%;
+  float: left;
+}
+.workshop header {
+  font-size: 1.25em; /* 20/16 */
+}
+.workshop h1 {
+  font-size: 2.5em; /* 50/20 */ 
+  line-height: 0.76;
+}
+.workshop h2 {
+  font-size: 1.875em; /* 30/16 */  
+}
+.workshop header time {
+  font-size: 1.5em; /* 30/20 */
+  color: #99cfd7;
+}
+.workshop header a {
+  font-size
+}
+
+
 
 
 
