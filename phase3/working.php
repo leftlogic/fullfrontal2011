@@ -145,7 +145,7 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
     for ($i = 0; $i < 5; $i++) : $fav = $favs[$i]; ?>
           <div><blockquote cite="http://twitter.com/<?=$fav->user->screen_name?>/statuses/<?=$fav->id_str?>">
             <p><?=(htmlentities($fav->text))?>
-            <cite><a href="http://twitter.com/<?=$fav->user->screen_name?>"><img width=30 height=30 src="<?=$fav->user->profile_image_url?>" alt="<?=$fav->user->screen_name?>"></a><a href="http://twitter.com/<?=$fav->user->screen_name?>/statuses/<?=$fav->id_str?>"><?=$fav->user->screen_name?></a></cite>
+            <footer><a href="http://twitter.com/<?=$fav->user->screen_name?>"><img width=30 height=30 src="<?=$fav->user->profile_image_url?>" alt="<?=$fav->user->screen_name?>"></a><a href="http://twitter.com/<?=$fav->user->screen_name?>/statuses/<?=$fav->id_str?>"><?=$fav->user->screen_name?></a></footer>
           </blockquote></div>
     <?php endfor ?>
 
@@ -196,23 +196,23 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
 
     <h1 class=headline><img src=images/headlines/sponsors.png alt=Sponsors></h1>
     
-    <h2>
-      Full Frontal
-      is proudly
-      sponsored by
-    </h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <section class=sponsor-blurb>
+      <h1>
+        <span class=line1>Full Frontal</span>
+        <span class=line2>is proudly</span>
+        <span class=line3>sponsored by</span>
+      </h1>
+      <p>
+        Sponsoring Full Frontal means developers, designer, bloggers and more get to know your company better
+        and shows that you support their community. You’ll have the opportunity to promote your brand and
+        products to attendees and potentially meet new employees, clients and users.
+      <p>
+        There are also networking opportunities throughout the conference and during the after party.
+        Find out how your company can sponsor Full Frontal by reviewing our <a href=#>sponsorship packages</a>
+        and <a href=#>get in touch</a> with us to discuss how we can work together.
+    </section>
     
-    <section class="sponsor full">
+    <section class=sponsor-full>
       <a href=#>
         <h1><img src=/ width= height= alt=Mozilla></h1>
       </a>
@@ -223,7 +223,7 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </section>
     
-    <section class="sponsor half">
+    <section class="sponsor sponsor-half">
       <h1>Half Monties
         <a href=#>Become a Half Monty sponsor</a>  
       </h1>
@@ -232,7 +232,7 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
       <a href=#><img src=/ width= height= alt=></a>
     </section>
     
-    <section class="sponsor small">
+    <section class="sponsor sponsor-small">
       <h1>Small Monties
         <a href=#>Become a Small Monty Sponsor</a>
       </h1>
@@ -244,7 +244,7 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
         <a class=available href=#><img src=/ width= height= alt=></a>
     </section>
     
-    <section class="sponsor media">
+    <section class="sponsor sponsor-media">
       <h1>Media Partners
         <a href=#>Become a Media Partner</a>
       </h1>
@@ -295,7 +295,7 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
       </div>
       
       <div class=callout>
-        <img src=images/workshop-speaker-1>
+        <img src=images/pictures/workshop-speaker-1>
         <a href=# class="buy-tickets early-bird">
           Earlybird<br>
           <span>1 day &pound;99+ <abbr>VAT</abbr></span><br>
@@ -355,5 +355,71 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
       you wanted, and we'll add you to the waiting list and email you if the ticket becomes available. This
       will be on a first come first serve basis.
       
+    
+    
+    
+    
+    <h1 class=headline><img src=images/headlines/the-venue.png alt="The Venue"></h1>
+    
+    <section class=venue>
+      <div class=details>
+        <h2>
+          <span>Duke</span>
+          <span>of York's Picturehouse</span>
+          <span>Preston Circus, Brighton, BN1 4NA</span>
+          <span>+44 (0)871 902 5728</span>
+        </h2>
+    
+        <p>
+          Full Frontal Javascript Conference is being held at the historic 
+          <a href=#>Duke of York's Picturehouse</a> in Brighton. It is centrally located on
+          Preston Circus, less than 15 minutes walk from Brighton train station.
+          Trains run regularly from Gatwick Airport, London Bridge and London Victoria
+          station.
+      </div>
+      
+      <img src=images/pictures/venue.jpg>
+    </section>
+    
+    <section class=associated-venues>
+      <div class=details>
+        <h2>Hotels</h2>
+    
+        <ul>
+          <li><a href#>Jury's Inn'</a> £88*<br>
+              101 Stroundly Road, Brighton, BN1 4DJ
+          <li><a href#>Travelodge</a> £35.50*<br>
+              165-167 Preston Road, Brighton, BN1 6AU
+          <li><a href#>My Hotel</a> £104*<br>
+              17 Jubilee Street, Brighton, BN1 1GE
+          <li><a href#>Queens Hotel</a> £89*<br>
+              1-5 Kings Road, Brighton, BN1 1NS
+        </ul>
+    
+        <h2>Food</h2>
+    
+        <ul>
+          <li><a href#>Circus Circus</a> Pub<br>
+                101 Stroundly Road, Brighton, BN1 4DJ
+          <li><a href#>The Open House</a> Pub<br>
+              165-167 Preston Road, Brighton, BN1 6AU
+          <li><a href#>Bardsley's'</a> Fish &amp; Chips<br>
+              17 Jubilee Street, Brighton, BN1 1GE
+          <li><a href#>Mitre Travern</a> Pub<br>
+              Kings Road, Brighton, BN1 2GS
+          <li><a href#>Mediterrane</a> Snacks<br>
+              Next to Duke of York;s
+        </ul>
+    
+        <h2>After Party</h2>
+      
+        <p>
+          Please join us at the Full Frontal After Party at <a href#>Oh So Social</a> from
+          6:30pm - 1am where <a href=#>Mozilla, our Full Monty sponsor, had bought you a pint!
+      </div>
+          
+      <div id=venue-map></div>
+    </section>
+    
   </div><!-- .wrapper -->
 <?php include('footer.php'); ?>

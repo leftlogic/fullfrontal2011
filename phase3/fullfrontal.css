@@ -37,7 +37,6 @@ body {
 
 p {
   color: #99cfd7;
-  font-size: ;
   line-height: 1.3333;
   font-size: 0.9375em; /* 15/16*/ /* Note: Measurements like this are caluclate as targetValue/context|parentValue */ 
 }
@@ -51,7 +50,7 @@ a {
 }
 a:focus,
 a:hover {
-  text-decoration: underline;
+  color: #fff;
 }
 
 li {
@@ -229,8 +228,6 @@ nav a {
 nav a.selected,
 nav a:hover {
   padding-bottom: 2px;
-  text-decoration: none;
-  color: #fff;
   border-bottom: 2px solid #fff;
 }
 
@@ -348,33 +345,32 @@ footer {
 }
 
 .speakers-list {
-  width: 50%;
+  width: 51%;
   float: left;
+  margin-bottom: 6.25%;
 }
 .speakers-list ul {
   margin: 0;
+  margin-bottom: 6.25%;
   padding: 0;
 }
 .speakers-list li {
   background: none;
   padding: 0;
-  font-size: 4.375em; /* 70/16 */
-  line-height: 0.76;
+  font-size: 4.25em; /* 68/16 */
+  line-height: 0.78;
   letter-spacing: -0.05em;
 }
-.speakers-list a:hover {
-  text-decoration: none;
-  color: #fff;
-}
 .speakers-list h2 {
-  font-size: 2.4375em;
+  font-size: 2.25em; /* 36/16 */
   line-height: 0.76;
   letter-spacing: -0.05em;
 }
 
 .image-cube {
-  width: 50%;
+  width: 49%;
   float: right;
+  margin-bottom: 6.25%;
 }
 .image-cube div {
   width: 33.33333%;
@@ -421,6 +417,7 @@ blockquote p {
   right: 24px;
   overflow: hidden;
   margin: 0;
+  margin-top: -12px;
   padding: 0;
   color: #008999;
   font-size: 0.75em;
@@ -437,16 +434,18 @@ blockquote p {
   -webkit-box-orient: vertical;
   -webkit-box-pack: center;
 }
-blockquote cite {
+blockquote footer {
+  display: block;
   position: absolute;
   bottom: 0;
+  margin: 0;
   padding-left: 3.25em;
   font-family: 'Cabin Sketch', sans-serif;  
   font-style: normal;  
   text-transform: uppercase;
   white-space: nowrap;
 }
-blockquote cite img {
+blockquote footer img {
   vertical-align: middle;
   margin-right: 0.5em;
 }
@@ -457,7 +456,7 @@ blockquote p a {
 
 
 .tickets {
-  width: 31.25%;
+  width: 30.25%; /*31.25%*/
   float: left;
   margin-right: 3.125%; /* 30/960 */
   margin-bottom: 2.5em;
@@ -524,6 +523,83 @@ blockquote p a {
 
 
 
+.sponsor-blurb {
+  overflow: hidden;
+}
+.sponsor-blurb h1,
+.sponsor-blurb p {
+  width: 31.25%;
+  margin: 0;
+  margin-right: 3.125%;
+  float: left;
+}
+.sponsor-blurb h1 {
+  letter-spacing: -3px;
+  text-align: center;
+} 
+.sponsor-blurb .line1 { line-height: 39px; font-size: 2.125em; } /* 51/24 */
+.sponsor-blurb .line2 { line-height: 46px; font-size: 2.45833em; } /* 59/24 */
+.sponsor-blurb .line3 { line-height: 0.5853; font-size: 1.958333em; } /* 47/24 */
+  
+.sponsor-blurb p {
+  font-size: 0.9375em; /* 15/16 */
+}
+.sponsor-blurb p:last-child {
+  margin-right: 0;
+}
+
+.sponsor h1 {
+  font-size: 1.875em; /* 30/16 */
+  margin-bottom: 1em; 
+}
+.sponsor h1 a {
+  float: right;
+}
+
+.sponsor-full {
+  clear: both;
+  overflow: hidden;
+  margin: 2.5em 0; /* 40/16 */
+  padding: 1.25em;
+  background-color: #fff;
+  color: #007a8b;
+}
+.sponsor-full a {
+  display: block;
+  float: left;
+  width: 32.916667%;
+}
+.sponsor-full p {
+  float: left;
+  width: 63.3333%;
+  padding: 1.25em 1.875%;
+  color: #007a8b;
+  border-left: 1px solid #c9e7ea;
+}
+
+.venue .details,
+.associated-venues .details {
+  width: 31.6667%;
+  float: left;
+}
+.venue img,
+#venue-map {
+  display: block;
+  width: 65.6%;
+  float: right;
+}
+.associated-venues {
+  clear: both;
+}
+
+#venue-map {
+ height: 600px;
+ background-color: #fff;
+}
+.associated-venues h2 {
+  font-size: 3.0625em; /* 46/16 */
+  letter-spacing: -0.04em;
+}
 
 input {
   background-position: top left, top left, top left;
