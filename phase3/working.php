@@ -30,6 +30,8 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
   <title>Full Frontal 2011- JavaScript Conference</title>
 
   <link rel=stylesheet href=fullfrontal.css>
+  <link rel=stylesheet href=queires.css>
+  
   <!--[if lt IE 9]>
   <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -214,7 +216,7 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
     
     <section class=sponsor-full>
       <a href=#>
-        <h1><img src=/ width= height= alt=Mozilla></h1>
+        <h1><img src=images/sponsors/mozilla alt=Mozilla></h1>
       </a>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -227,33 +229,30 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
       <h1>Half Monties
         <a href=#>Become a Half Monty sponsor</a>  
       </h1>
-      <a href=#><img src=/ width= height= alt=></a>
-      <a href=#><img src=/ width= height= alt=></a>
-      <a href=#><img src=/ width= height= alt=></a>
+      <a class=sponsor-logo href=#><img src=/ width= height= alt=></a>
+      <a class=sponsor-logo href=#><img src=/ width= height= alt=></a>
+      <a class=sponsor-logo href=#><img src=/ width= height= alt=></a>
     </section>
     
     <section class="sponsor sponsor-small">
       <h1>Small Monties
         <a href=#>Become a Small Monty Sponsor</a>
       </h1>
-        <a href=#><img src=/ width= height= alt=></a>
-        <a href=#><img src=/ width= height= alt=></a>
-        <a href=#><img src=/ width= height= alt=></a>
-        <a href=#><img src=/ width= height= alt=></a>
-        <a href=#><img src=/ width= height= alt=></a>
-        <a class=available href=#><img src=/ width= height= alt=></a>
+        <a class=sponsor-logo href=#><img src=/ width= height= alt=></a>
+        <a class=sponsor-logo href=#><img src=/ width= height= alt=></a>
+        <a class=sponsor-logo href=#><img src=/ width= height= alt=></a>
+        <span class=sponsor-available>&nbsp;</span>
     </section>
     
     <section class="sponsor sponsor-media">
       <h1>Media Partners
         <a href=#>Become a Media Partner</a>
       </h1>
-        <a href=#><img src=/ width= height= alt=></a>
-        <a href=#><img src=/ width= height= alt=></a>
-        <a href=#><img src=/ width= height= alt=></a>
-        <a class=available href=#><img src=/ width= height= alt=></a>
-        <a class=available href=#><img src=/ width= height= alt=></a>
-        <a class=available href=#><img src=/ width= height= alt=></a>
+        <a class=sponsor-logo href=#><img src=/ width= height= alt=></a>
+        <a class=sponsor-logo href=#><img src=/ width= height= alt=></a>
+        <span class=sponsor-available>&nbsp;</span>
+        <span class=sponsor-available>&nbsp;</span>
+        <span class=sponsor-available>&nbsp;</span>
     </section>
   
     
@@ -386,28 +385,44 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
         <h2>Hotels</h2>
     
         <ul>
-          <li><a href#>Jury's Inn'</a> £88*<br>
+          <li><span class=venue-1>1</span>
+              <a href#>Jury's Inn'</a> £88*<br>
               101 Stroundly Road, Brighton, BN1 4DJ
-          <li><a href#>Travelodge</a> £35.50*<br>
+         
+          <li><span class=venue-2>2</span>
+              <a href#>Travelodge</a> £35.50*<br>
               165-167 Preston Road, Brighton, BN1 6AU
-          <li><a href#>My Hotel</a> £104*<br>
+          
+          <li><span class=venue-3>3</span>
+              <a href#>My Hotel</a> £104*<br>
               17 Jubilee Street, Brighton, BN1 1GE
-          <li><a href#>Queens Hotel</a> £89*<br>
+          
+          <li><span class=venue-4>4</span>
+              <a href#>Queens Hotel</a> £89*<br>
               1-5 Kings Road, Brighton, BN1 1NS
         </ul>
     
         <h2>Food</h2>
     
         <ul>
-          <li><a href#>Circus Circus</a> Pub<br>
-                101 Stroundly Road, Brighton, BN1 4DJ
-          <li><a href#>The Open House</a> Pub<br>
+          <li><span class=venue-5>5</span>
+              <a href#>Circus Circus</a> Pub<br>
+              101 Stroundly Road, Brighton, BN1 4DJ
+          
+          <li><span class=venue-6>6</span>
+              <a href#>The Open House</a> Pub<br>
               165-167 Preston Road, Brighton, BN1 6AU
-          <li><a href#>Bardsley's'</a> Fish &amp; Chips<br>
-              17 Jubilee Street, Brighton, BN1 1GE
-          <li><a href#>Mitre Travern</a> Pub<br>
+          
+          <li><span class=venue-7>7</span>
+              <a href#>Bardsley's'</a> Fish &amp; Chips<br>
+              17 Jubilee Sreet, Brighton, BN1 1GE
+          
+          <li><span class=venue-8>8</span>
+              <a href#>Mitre Travern</a> Pub<br>
               Kings Road, Brighton, BN1 2GS
-          <li><a href#>Mediterrane</a> Snacks<br>
+          
+          <li><span class=venue-9>9</span>
+              <a href#>Mediterrane</a> Snacks<br>
               Next to Duke of York;s
         </ul>
     

@@ -1,3 +1,5 @@
+/** Custom Font Setup **/
+
 @font-face {
     font-family: 'Cabin Sketch';
     src: url('fonts/cabinsketch-bold-webfont.eot');
@@ -8,6 +10,8 @@
     font-weight: normal;
     font-style: normal;
 }
+
+/** General Structure **/
 
 article, section, footer, header {
   display: block;
@@ -34,6 +38,8 @@ body {
   margin: 0 auto;
   margin-top: 3.125em;
 }
+
+/** Helper and Globals **/
 
 p {
   color: #99cfd7;
@@ -105,10 +111,16 @@ h1, h2 {
 }
 
 
+/*** Header & Footer ***/
+
+/** Header **/
+
 header {
   -webkit-text-shadow: 2px 2px 2px rgba(0,0,0,0.1); 
   overflow: hidden;
 }
+
+/* FF Logo */
 
 .full-frontal {
   background: url(images/ff2011-logo.png) no-repeat center;
@@ -143,6 +155,8 @@ html.transition .full-frontal {
   display: none;
 }
 
+/* Sub-title, Venue, Date Header */
+
 header hgroup {
   float: left;
 }
@@ -164,6 +178,8 @@ header h3 {
   font-size: 1.4375em;
   line-height: 1;
 }
+
+/* Buy Tickets Header */
 
 .buy-tickets {
   display: block;
@@ -195,6 +211,7 @@ header .buy-tickets {
   background-position: bottom;
 }
 
+/** Main Navigation **/
 
 nav {
   font-size: 1.625em; /* 25/16 */
@@ -231,37 +248,14 @@ nav a:hover {
   border-bottom: 2px solid #fff;
 }
 
+/** Footer **/
+
 footer {
   clear: both;
   margin-bottom: 4.375em;
 }
-.terms {
-  width: 80%;
-  max-width: 60em;
-  min-width: 20em;
-  margin: 0 auto;
-  font-size: 0.875em;
-}
-.terms h1 {
-  float: right;
-  margin: 0;
-  margin-bottom: 0.5em;
-}
-.terms h1 a {
-  display: block;
-  background: url('images/left-logic.png');
-  background-position: top left;
-  width: 200px;
-  height: 41px;
-  text-indent: -9999em;
-}
-.terms h1 a:hover {
-  background-position: bottom left;
-}
-.terms p {
-  margin: 0;
-  font-weight: normal;
-}
+
+/* Fat Footer - Tweets and Sponsors (yellow background) */
 
 .fat-footer {
   margin: 2em 0;
@@ -333,6 +327,40 @@ footer {
   box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
 }
 
+/* The Real Footer */
+
+.terms {
+  width: 80%;
+  max-width: 60em;
+  min-width: 20em;
+  margin: 0 auto;
+  font-size: 0.875em;
+}
+.terms h1 {
+  float: right;
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+.terms h1 a {
+  font-family: sans-serif;
+  display: block;
+  background: url('images/left-logic.png');
+  background-position: top left;
+  width: 200px;
+  height: 41px;
+  text-indent: -9999em;
+  overflow: hidden;
+}
+.terms h1 a:hover {
+  background-position: bottom left;
+}
+.terms p {
+  margin: 0;
+  font-weight: normal;
+}
+
+
+/** Headlines **/
 
 .headline {
   width: 100%;
@@ -343,6 +371,10 @@ footer {
 .headline img {
   max-width: 100%;
 }
+
+/*** Page Specific ***/
+
+/** Homepage **/
 
 .speakers-list {
   width: 51%;
@@ -380,6 +412,8 @@ footer {
   display: block;
   max-width: 100%;
 }
+
+/** Homepage - Tweets **/
 
 .tweets,
 .tweets .clear {
@@ -454,6 +488,7 @@ blockquote p a {
   color: hsl(190,30%,30%);
 }
 
+/** Tickets **/
 
 .tickets {
   width: 30.25%; /*31.25%*/
@@ -489,7 +524,7 @@ blockquote p a {
   padding: 0;
 }
 
-
+/** Workshops **/
 
 .workshop .details {
   width: 64.58333%;
@@ -518,10 +553,7 @@ blockquote p a {
   font-size
 }
 
-
-
-
-
+/** Sponsors **/ 
 
 .sponsor-blurb {
   overflow: hidden;
@@ -534,12 +566,12 @@ blockquote p a {
   float: left;
 }
 .sponsor-blurb h1 {
-  letter-spacing: -3px;
+  letter-spacing: -3px; /*TODO*/
   text-align: center;
 } 
-.sponsor-blurb .line1 { line-height: 39px; font-size: 2.125em; } /* 51/24 */
-.sponsor-blurb .line2 { line-height: 46px; font-size: 2.45833em; } /* 59/24 */
-.sponsor-blurb .line3 { line-height: 0.5853; font-size: 1.958333em; } /* 47/24 */
+.sponsor-blurb .line1 { line-height: 39px;/*TODO*/ font-size: 2.125em; } /* 51/24 */
+.sponsor-blurb .line2 { line-height: 46px;/*TODO*/ font-size: 2.45833em; } /* 59/24 */
+.sponsor-blurb .line3 { line-height: 40px;/*TODO*/ font-size: 1.958333em; } /* 47/24 */
   
 .sponsor-blurb p {
   font-size: 0.9375em; /* 15/16 */
@@ -548,12 +580,31 @@ blockquote p a {
   margin-right: 0;
 }
 
+
+.sponsor {
+  overflow: hidden;
+  margin-bottom: 1.875em; /* 30/16 */
+}
 .sponsor h1 {
   font-size: 1.875em; /* 30/16 */
   margin-bottom: 1em; 
 }
 .sponsor h1 a {
   float: right;
+}
+.sponsor-logo,
+.sponsor-available {
+  display: block;
+  float: left;
+  min-height: 8em;
+}
+.sponsor-logo {
+  background-color: #fff;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+}
+.sponsor-available {
+  background-image: url('images/bg-dots-alt.gif');
+  background-color: #18a0ab;
 }
 
 .sponsor-full {
@@ -563,11 +614,16 @@ blockquote p a {
   padding: 1.25em;
   background-color: #fff;
   color: #007a8b;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
 }
 .sponsor-full a {
   display: block;
+  padding: 2.5em 1.875%;
   float: left;
-  width: 32.916667%;
+  width: 29.16667%;
+}
+.sponsor-full h1 {
+  text-align: center;
 }
 .sponsor-full p {
   float: left;
@@ -577,6 +633,30 @@ blockquote p a {
   border-left: 1px solid #c9e7ea;
 }
 
+.sponsor-half .sponsor-logo,
+.sponsor-half .sponsor-available {
+  width: 32.3333%;
+  margin-right: 1%;
+}
+
+.sponsor-small .sponsor-logo,
+.sponsor-small .sponsor-available {
+  width: 24%;
+  margin-right: 1%;
+}
+
+.sponsor-media .sponsor-logo,
+.sponsor-media .sponsor-available {
+  width: 19%;
+  margin-right: 1%;
+}
+
+/** Venue **/
+
+.venue {
+  overflow: hidden;
+  margin-bottom: 2.5em; /* 40/16 */
+}
 .venue .details,
 .associated-venues .details {
   width: 31.6667%;
@@ -588,18 +668,56 @@ blockquote p a {
   width: 65.6%;
   float: right;
 }
-.associated-venues {
-  clear: both;
-}
-
 #venue-map {
  height: 600px;
  background-color: #fff;
+}
+.associated-venues {
+  clear: both;
 }
 .associated-venues h2 {
   font-size: 3.0625em; /* 46/16 */
   letter-spacing: -0.04em;
 }
+.associated-venues ul {
+  margin: 0;
+  padding: 0; 
+}
+.associated-venues li {
+  background: none;
+  padding: 0;
+}
+.associated-venues li span {
+  display: block;
+  float: left;
+  background-image: url('images/map-markers.png');
+  width: 29px;
+  height: 29px;
+  text-indent: -9999em;
+  overflow: hidden;
+  margin-right: 0.5em;
+}
+.venue-1 { background-position: 0 60px; }
+.venue-2 { background-position: -29px 60px; }
+.venue-3 { background-position: -58px 60px; }
+.venue-4 { background-position: -87px 60px; }
+.venue-5 { background-position: -116px 60px; }
+.venue-6 { background-position: -145px 60px; }
+.venue-7 { background-position: -174px 60px; }
+.venue-8 { background-position: -203px 60px; }
+.venue-9 { background-position: -232px 60px; }
+
+li:hover .venue-1 { background-position: 0 31px; }
+li:hover .venue-2 { background-position: -29px 31px; }
+li:hover .venue-3 { background-position: -58px 31px; }
+li:hover .venue-4 { background-position: -87px 31px; }
+li:hover .venue-5 { background-position: -116px 31px; }
+li:hover .venue-6 { background-position: -145px 31px; }
+li:hover .venue-7 { background-position: -174px 31px; }
+li:hover .venue-8 { background-position: -203px 31px; }
+li:hover .venue-9 { background-position: -232px 31px; }
+
+
 
 input {
   background-position: top left, top left, top left;
@@ -624,296 +742,6 @@ html:before {
   font-family: menlo, monospace;
   z-index: 9;
   position: relative;
-}
-
-@media screen and (max-height: 16em) and (min-width: 40em) {
-  html:before {
-    display: inline;
-    content: "Ohhh noes" !important;
-  }
-  
-  header {
-    margin-top: -2em;
-  }
-  
-  .full-frontal {
-    background: url(http://29.media.tumblr.com/tumblr_l5wjnzhwtq1qcjha6o1_400.jpg) no-repeat 50% -70px;
-    -webkit-mask-box-image: url(images/ff2011-logo.png);    
-  }
-}
-
-@-webkit-keyframes background {
-	from {
-		background-color: #D6CD7E;
-	}
-	25% {
-		background-color: #FF242F;
-	}
-	50% {
-		background-color: #D62782;
-	}
-	75% {
-		background-color: #25D673;
-	}
-	to {
-		background-color: #D6CD7E;
-	}
-}
-
-@-webkit-keyframes invert-background {
-	from {
-    background-color: #000AD6;
-		background-position: top left, top left, top left;
-	}
-	49.9% {
-    background-color: #000AD6;
-	}
-	50% {
-    background-color: #FF00A2;
-	}
-	74.9% {
-    background-color: #FF00A2;
-	}
-	75% {
-    background-color: #FF0016;
-	}
-	99.9% {
-    background-color: #00FF12;
-	}
-	to {
-    background-color: #000AD6;
-		background-position: bottom right, bottom right, bottom right;
-	}
-}
-
-
-@-webkit-keyframes foreground {
-	from {
-		color: #D6CD7E;
-	}
-	25% {
-		color: #FF242F;
-	}
-	50% {
-		color: #D62782;
-	}
-	75% {
-		color: #25D673;
-	}
-	to {
-		color: #D6CD7E;
-	}
-}
-
-@media screen and (min-width: 88em) and (max-width: 88.124em) {
-  html:before {
-    display: inline;
-    content: "Welcome to the speccy loading mode" !important;
-  }
-  
-  header {
-    margin-top: -2em;
-  }
-  
-  .full-frontal {
-    background: #D6CD7E fixed no-repeat 50% -70px;
-    -webkit-mask-box-image: url(images/ff2011-logo.png);    
-    -webkit-animation-name: background;
-  	-webkit-animation-duration: 300ms;
-  	-webkit-animation-iteration-count: infinite;
-  	-webkit-animation-timing-function: linear;  	
-  }
-  
-  .wrapper, header, h1, h2, a, p {
-    -webkit-animation-name: foreground;
-  	-webkit-animation-duration: 200ms;
-  	-webkit-animation-iteration-count: infinite;
-  	-webkit-animation-timing-function: linear;
-  }
-  
-  html {
-    background-position: bottom right, bottom right, bottom right;
-    background-color: blue;
-    background-image:
-      -webkit-linear-gradient(transparent 25%, rgba(255,255,255,.5) 25%),
-      -webkit-linear-gradient(transparent 50%, rgba(255,255,255,.7) 50%),
-      -webkit-linear-gradient(transparent 75%, rgba(255,0,0,1) 75%);
-    background-image:
-      -moz-linear-gradient(transparent 25%, rgba(255,255,255,.5) 25%),
-      -moz-linear-gradient(transparent 50%, rgba(255,255,255,.7) 50%),
-      -moz-linear-gradient(transparent 75%, rgba(255,0,0,1) 75%);
-    background-image:
-      -o-linear-gradient(transparent 25%, rgba(255,255,255,.5) 25%),
-      -o-linear-gradient(transparent 50%, rgba(255,255,255,.7) 50%),
-      -o-linear-gradient(transparent 75%, rgba(255,0,0,1) 75%);
-    background-size: 50px, 50px, 50px;
-    background-repeat: repeat, repeat, repeat;
-    -webkit-animation-name: invert-background;
-  	-webkit-animation-duration: 0.8s;
-  	-webkit-animation-iteration-count: infinite;
-  	-webkit-animation-timing-function: linear;
-  }
-
-  blockquote {
-    -webkit-mask-box-image: url(images/bubble.png);
-  }
-  
-  blockquote, input {
-    background-position: bottom right, bottom right, bottom right;
-    background: #D6CD7E fixed no-repeat 50% -70px;
-    background-image:
-      -webkit-linear-gradient(0, transparent 25%, rgba(255,255,255,.5) 25%),
-      -webkit-linear-gradient(0, transparent 50%, rgba(255,255,255,.7) 50%),
-      -webkit-linear-gradient(0, transparent 75%, rgba(255,0,0,1) 75%);
-    background-image:
-      -moz-linear-gradient(0, transparent 25%, rgba(255,255,255,.5) 25%),
-      -moz-linear-gradient(0, transparent 50%, rgba(255,255,255,.7) 50%),
-      -moz-linear-gradient(0, transparent 75%, rgba(255,0,0,1) 75%);
-    background-image:
-      -o-linear-gradient(0, transparent 25%, rgba(255,255,255,.5) 25%),
-      -o-linear-gradient(0, transparent 50%, rgba(255,255,255,.7) 50%),
-      -o-linear-gradient(0, transparent 75%, rgba(255,0,0,1) 75%);
-    background-size: 50px, 50px, 50px;
-    background-repeat: repeat, repeat, repeat;
-    -webkit-animation-name: invert-background;
-  	-webkit-animation-duration: 500ms;
-  	-webkit-animation-iteration-count: infinite;
-  	-webkit-animation-timing-function: linear;
-  	-webkit-animation-fill-mode: both;
-  	-webkit-animation-direction: alternate;   
-  }
-}
-
-@media screen and (max-width: 73em) {
-  .tweets div {
-      width: 26%;
-  }
-}
-@media screen and (min-width: 63em) {
-  .wrapper {
-    width: 94%;
-  }
-}
-@media screen and (max-width: 63em) {
-  .want-to {
-    margin-bottom: 3.075em;
-  }
-  .tweets div {
-      width: 34%;
-  }
-}
-@media screen and (max-width: 56em) {  
-  .want-to section {
-    width: 100%;
-    float: none;
-    margin-bottom: 1em;
-  }
-  .want-to section h1 {
-   float: none;
-   min-width: none;
-   margin-left: 2.6em; 
-  }
-  .want-to section p {
-    max-width: none;
-    margin-left: 11em;
-  }
-}
-@media screen and (max-width: 47em) {
-  .want-to {
-    margin-bottom: 2.075em;
-  }
-  .tweets div {
-      width: 50%;
-  }
-}
-@media screen and (max-width: 37em) {
-  .want-to section {
-    width: 100%;
-    float: none;
-    margin-bottom: 1em;
-  }
-  .want-to section h1 {
-    float: right;
-    min-width: 5em;
-    margin-left: 0;
-  }
-  .want-to section p {
-    max-width: 20em;
-    margin-left: 0;
-  }
-}
-@media screen and (max-width: 36em) {
-  html {
-     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2P4//+/MBQzgDAICEMxXAAMYCoRIlCVANL6FYTYi5d+AAAAAElFTkSuQmCC), url('images/bg-pier-small.png'); 
-  }
-  .wrapper {
-   margin-top: 1em; 
-  }
-  .follow {
-    font-size: 1.875em;
-  }
-  .terms h1 {
-    float: none;
-  }
-}
-@media screen and (max-width: 32em) {
-  .full-frontal {
-    background: url(images/ff2011-logo.png) no-repeat center;
-    background-size: 100%;
-    height: 77px; /*1.1em;*/
-    width: 82px; /*1.1em;*/
-  }
-  
-  header h2,
-  header .tickets {
-    font-size: 2.95em;
-  }
-  .tickets {
-    float: left;
-  }
-  
-  header h3 {
-    clear: left;
-  }
-  
-  form {
-    margin: 1.375em 0 1.375em 0;
-  }
-  
-  .want-to {
-    margin-bottom: 1.075em;
-  }
-  .tweets div {
-      width: 100%;
-  }
-}
-@media screen and (max-width: 25em) {
-  .wrapper {
-    min-width: 97%;
-    width: 97%;
-  }
-  
-  .terms {
-    margin-bottom: 0.25em;
-  }
-  
-  .terms h1 a {
-    margin: 0 auto;
-  }
-  
-  .want-to section {
-    width: 100%;
-    float: none;
-    margin-bottom: 1em;
-  }
-  .want-to section h1 {
-   float: none;
-   min-width: none;
-   margin-left: 0; 
-  }
-  .want-to section p {
-    float: none;
-  }
 }
 
 .nomediaquerygoodnessyepisuck {

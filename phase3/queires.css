@@ -156,19 +156,22 @@
   }
 }
 
+@media screen and (max-width: 73em) {
+  .tweets div {
+      width: 26%;
+  }
+}
 @media screen and (min-width: 63em) {
   .wrapper {
     width: 94%;
   }
 }
-@media screen and (min-width: 74em) {
-  .wrapper {
-    width: 80%;
+@media screen and (max-width: 63em) {
+  .want-to {
+    margin-bottom: 3.075em;
   }
-}
-@media screen and (max-width: 73em) {
   .tweets div {
-      width: 26%;
+      width: 34%;
   }
 }
 @media screen and (max-width: 56em) {  
@@ -185,14 +188,6 @@
   .want-to section p {
     max-width: none;
     margin-left: 11em;
-  }
-}
-@media screen and (max-width: 63em) {
-  .want-to {
-    margin-bottom: 3.075em;
-  }
-  .tweets div {
-      width: 34%;
   }
 }
 @media screen and (max-width: 47em) {
