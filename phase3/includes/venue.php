@@ -59,34 +59,34 @@
     </ul>
 
     <h2>Food</h2>
-    <ul>
+    <ul class=food>
       <li><span class=venue-5>5</span>
           <div>
-            <h3><a href=#>Circus Circus</a> Pub</h3>
+            <h3>Circus Circus <em>Pub</em></h3>
             <p>101 Stroundly Road, BN1 4DJ
           </div>
           
       <li><span class=venue-6>6</span>
           <div>
-            <h3><a href=#>The Open House</a> Pub</h3>
+            <h3>The Open House <em>Pub</em></h3>
             <p>165-167 Preston Road, BN1 6AU
           </div>
           
       <li><span class=venue-7>7</span>
           <div>
-            <h3><a href=#>Bardsley's'</a> Fish &amp; Chips</h3>
+            <h3>Bardsley's' <em>Fish &amp; Chips</em></h3>
             <p>17 Jubilee Sreet, BN1 1GE
           </div>
           
       <li><span class=venue-8>8</span>
           <div>
-            <h3><a href=#>Mitre Travern</a> Pub</h3>
+            <h3>Mitre Travern <em>Pub</em></h3>
             <p>Kings Road, BN1 2GS
           </div>
       
       <li><span class=venue-9>9</span>
           <div>
-            <h3><a href=#>Mitre Travern</a> Pub</h3>
+            <h3>Mitre Travern <em>Pub</em></h3>
             <p>Next to Duke of York's
           </div>
     </ul>
