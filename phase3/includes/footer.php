@@ -6,7 +6,9 @@
     <section class=updates>
       <h1>Tweets &amp; Updates</h1>
       <div id=updates><!-- js hook --></div>
-      <a class=follow href=https://twitter.com/fullfrontalconf>Follow @FullFrontalConf</a>
+      <a class=follow href=https://twitter.com/fullfrontalconf>
+        <img src=/images/follow.png alt="Follow @FullFrontalConf">
+      </a>
     </section>
   
     <section class=sponsors>
