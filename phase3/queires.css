@@ -1,3 +1,44 @@
+@media screen and (max-width: 768px) {
+  html:before {
+    display: inline;
+    content: "768" !important;
+  }
+
+  .sponsor h1 {
+    font-size: 1.5em;
+  }
+  
+  .sponsor-blurb .line1 {
+    font-size: 1.25em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html:before {
+    display: inline;
+    content: "320" !important;
+  }
+
+  .fat-footer section {
+    float: none;
+  }
+  
+  .updates {
+    width: auto;
+  }
+  
+  .tickets p span {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-bottom: 14px;
+  }
+  
+  .tickets {
+    margin-bottom: 1em;
+  }
+}
+
 @media screen and (max-width: 1017px) {
     
 }

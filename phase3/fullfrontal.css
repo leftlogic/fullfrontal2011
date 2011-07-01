@@ -1,6 +1,7 @@
 /** Custom Font Setup **/
 
 /* note: local font is broken in iOS - must use online version - suspect missing bold type */
+/*
 @font-face {
     font-family: 'Cabin Sketch';
     src: url('fonts/cabinsketch-bold-webfont.eot');
@@ -11,7 +12,7 @@
     font-weight: normal;
     font-style: normal;
 }
-
+*/
 /** General Structure **/
 
 article, section, footer, header {
@@ -102,8 +103,9 @@ h1, h2 {
 .buy-button,
 .sold-button {
   display: block;
-  line-height: 48px;
-  font-size: 48px;
+  /* RS change for scaling buy buttons - not sure I like this though... */
+/*  line-height: 48px;
+  font-size: 48px;*/
   font-family: 'Century Gothic', sans-serif;
   color: #008999;
   text-align: center;
@@ -518,10 +520,7 @@ blockquote p a {
 /** Tickets **/
 
 .tickets {
-  width: 30.25%; /*31.25%*/
-  float: left;
-  margin-right: 3.125%; /* 30/960 */
-  margin-bottom: 2.5em;
+  margin-bottom: 3.5em;
 }
 .tickets:last-of-type {
   margin-right: 0;
@@ -530,27 +529,41 @@ blockquote p a {
 .tickets h2 {
   margin: 0;
   padding: 0;
-  line-height: 53px;
+  line-height: 35px;
   letter-spacing: -0.06em;
 }
-.tickets h1{
-  font-size: 55px;
-
+.tickets h1 {
+  font-size: 44px;
+  float: left;
 }
 .tickets h2{
   color: #ded4a0;
-  font-size: 78px;
-}
-.tickets h2 span {
-  display: block;
   font-size: 44px;
+  float: right;
 }
-.tickets ul {
-  margin: 0;
-  margin-bottom: 2.5em;
-  padding: 0;
+.tickets strong {
+  color: #fff;
 }
-
+.tickets p {
+  padding-top: 20px;
+  clear: both;
+/*  position: relative;*/
+/*  padding-right: 290px;*/
+}
+.tickets p span {
+/*  position: absolute;*/
+/*  right: 0;
+  top: 20px;
+*/
+  float: right;
+  margin-left: 1.0416666666667%;
+  width: 28.9583333333333%;
+  padding: 0 1.0416666666667%;
+}
+.tickets span img {
+  max-width: 100%;
+  vertical-align: middle;
+}
 /** Workshops **/
 
 .workshop {
