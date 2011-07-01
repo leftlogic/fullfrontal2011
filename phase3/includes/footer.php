@@ -1,3 +1,5 @@
+</div><!-- .wrapper -->
+
 <footer>
   <div class=fat-footer>
     <div class=wrapper>
@@ -40,7 +42,8 @@
       <a href=http://2010.full-frontal.org>2010</a>, <a href=http://2009.full-frontal.org>2009</a>.
   </div>
 </footer>
-  
+
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <script>
   // Google Analytics
   var _gaq = _gaq || [];

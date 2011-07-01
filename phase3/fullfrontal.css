@@ -39,6 +39,10 @@ body {
   margin-top: 3.125em;
 }
 
+section {
+  overflow: hidden;
+}
+
 /** Helper and Globals **/
 
 p {
@@ -78,8 +82,7 @@ li {
 header,
 nav,
 .buy-tickets,
-h1,
-h2,
+h1, h2, h3,
 .speakers-list {
   font-family: 'Cabin Sketch', sans-serif;
   text-shadow: 2px 2px 2px rgba(0,0,0,0.1);
@@ -659,25 +662,39 @@ blockquote p a {
 }
 .venue .details,
 .associated-venues .details {
-  width: 31.6667%;
+  width: 34.532335%;
   float: left;
 }
+.venue .details h2 {
+  letter-spacing: -0.06em;
+  line-height: 1;
+}
+.venue .details .line-1 { line-height: 1; font-size: 124px; }
+.venue .details .line-2 { line-height: 0.1333; font-size: 65px; }
+.venue .details .line-3 { line-height: 0.9; font-size: 44px; }
+.venue .details .line-4 { line-height: 0; font-size: 18px; color: #99cfd7; }
+.venue .details .line-5 { line-height: 1; font-size: 34px; color: #99cfd7; }
+
 .venue img,
 #venue-map {
   display: block;
-  width: 65.6%;
+  width: 65.467665%;
   float: right;
 }
 #venue-map {
- height: 600px;
+ height: 900px;
  background-color: #fff;
 }
 .associated-venues {
   clear: both;
 }
 .associated-venues h2 {
-  font-size: 3.0625em; /* 46/16 */
+  font-size: 3.0625em; /* 49/16 */
   letter-spacing: -0.04em;
+  margin: 0.30612em 0;
+}
+.associated-venues h2:first-child {
+  margin-top: 0;
 }
 .associated-venues ul {
   margin: 0;
@@ -686,17 +703,41 @@ blockquote p a {
 .associated-venues li {
   background: none;
   padding: 0;
+  overflow: hidden;
 }
 .associated-venues li span {
   display: block;
+  overflow: hidden;
   float: left;
   background-image: url('images/map-markers.png');
   width: 29px;
   height: 29px;
   text-indent: -9999em;
-  overflow: hidden;
+  margin-top: 0.3753em;
   margin-right: 0.5em;
+
 }
+.associated-venues li div {
+  float: left;
+  width: 294px;
+}
+.associated-venues h3 {
+  margin: 0;
+  font-size: 1.5em; /* 24/16 */
+  line-height: 1;
+  letter-spacing: -0.06em;
+  text-shadow: 1px 0px 1px rgba(0,0,0,0.2);
+}
+.associated-venues p {
+  margin-top: 0;
+  font-weight: normal;
+  font-size: 0.875em; /* 14/16 */
+}
+.associated-venues small {
+  font-size: 0.8em;
+
+}
+
 .venue-1 { background-position: 0 60px; }
 .venue-2 { background-position: -29px 60px; }
 .venue-3 { background-position: -58px 60px; }
