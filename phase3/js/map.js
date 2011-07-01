@@ -1,7 +1,8 @@
 function newHoverIconAction(el, latlng, marker, standardIcon, hoverIcon) {
   return function (event) {
+    console.log(zIndex);
     if (event.type === 'mouseover') {
-      marker.setZIndex(zIndex++);
+      marker.setZIndex(++zIndex);
       marker.setIcon(hoverIcon);
       addClass(el, 'selected');
       // don't use the pageX - just using it to determine that we hovered from the li, not a google hover
@@ -48,17 +49,6 @@ var iconSize = new google.maps.Size(29, 39, 'px', 'px'),
     doyLocation = new google.maps.LatLng(50.8336812, -0.1388816),
     zIndex = google.maps.Marker.MAX_ZINDEX;
     
-var doyIcon = new google.maps.Marker({
-  position: doyLocation,
-  flat: true,
-  icon: new google.maps.MarkerImage(
-    iconURL,
-    new google.maps.Size(51, 69, 'px', 'px'),
-    new google.maps.Point(261, 0),
-    new google.maps.Point(26, 69)
-  )
-}).setMap(map);
-
 bounds.extend(doyLocation);
     
 for (var i = 0; i < len; i++) {
@@ -94,17 +84,24 @@ for (var i = 0; i < len; i++) {
     google.maps.event.addListener(marker, 'mouseout', function () {
       hoverIconAction({ type: 'mouseout' });
     });
-    // google.maps.event.addListener(marker, 'click', function () {
-    //   each(lis, function (el) {
-    //     removeClass(el, 'highlighted');
-    //   });
-    //   addClass(el, 'highlighted');
-    // });
-    el.onmouseover = hoverIconAction;
-    el.onmouseout = hoverIconAction;
+
+    el.addEventListener('mouseover', hoverIconAction, false);
+    el.addEventListener('mouseout', hoverIconAction, false);
     
     marker.setMap(map);
   }(i);
 }
 
 map.fitBounds(bounds);
+
+var doyIcon = new google.maps.Marker({
+  position: doyLocation,
+  flat: true,
+  icon: new google.maps.MarkerImage(
+    iconURL,
+    new google.maps.Size(51, 69, 'px', 'px'),
+    new google.maps.Point(261, 0),
+    new google.maps.Point(26, 69)
+  )
+}).setMap(map);
+
