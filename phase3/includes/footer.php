@@ -14,7 +14,7 @@
     <section class=sponsors>
       <h1>Proudly Sponsored By...</h1>
       <a class=small href=http://dharmafly.com><img src=/images/sponsors/dharmafly.gif alt="Dharmafly, apps for change"></a>
-      <a class=small href=http://dharmafly.com><img src=/images/sponsors/pusher.gif alt="Pusher - Supercharge your app with realtime events"></a>
+      <a class=small href=http://pusher.com><img src=/images/sponsors/pusher.gif alt="Pusher - Supercharge your app with realtime events"></a>
       <!-- <a href=#><img src=/ alt= width=132 height=99></a>
       <a href=#><img src=/ alt= width=132 height=99></a>
       <a href=#><img src=/ alt= width=132 height=99></a>
