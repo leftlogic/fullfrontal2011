@@ -1,5 +1,6 @@
 /** Custom Font Setup **/
 
+/* note: local font is broken in iOS - must use online version - suspect missing bold type */
 @font-face {
     font-family: 'Cabin Sketch';
     src: url('fonts/cabinsketch-bold-webfont.eot');
@@ -88,6 +89,7 @@ nav,
 h1, h2, h3,
 .speakers-list {
   font-family: 'Cabin Sketch', sans-serif;
+  -webkit-text-shadow: 2px 2px 2px rgba(0,0,0,0.1); 
   text-shadow: 2px 2px 2px rgba(0,0,0,0.1);
   text-transform: uppercase;
   color: #fff;
@@ -284,6 +286,7 @@ footer {
   font-family: 'Century Goth', sans-serif;
   margin: 1em 0;
   text-transform: uppercase;
+  -webkit-text-shadow: -1px -1px 0 rgba(0,0,0,0.5); 
   text-shadow: -1px -1px 0 rgba(0,0,0,0.5);
   color: #996;
 }
@@ -785,6 +788,7 @@ blockquote p a {
   font-size: 1.5em; /* 24/16 */
   line-height: 1;
   letter-spacing: -0.06em;
+  -webkit-text-shadow: 1px 0px 1px rgba(0,0,0,0.2);
   text-shadow: 1px 0px 1px rgba(0,0,0,0.2);
 }
 .associated-venues p {
