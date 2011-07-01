@@ -1,12 +1,11 @@
 <div class=speakers-list>    
   <ul>
-    <li><a href=#>Paul Rouget</a>
-    <li><a href=#>Brian Leroux</a>
-    <li><a href=#>Dan Webb</a>
-    <li><a href=#>Alex Russell</a>
-    <li><a href=#>Jan Lehnardt</a>
-    <li><a href=#>Seb Lee-Delisle</a>
-    <li><a href=#>Paul Bakhaus</a>
+    <li><a href=/speakers#nicholas>Nicholas Zakas</a>
+    <li><a href=/speakers#jeremy>Jeremy Ashkenas</a>
+    <li><a href=/speakers#glenn>Glenn Jones</a>
+    <li><a href=/speakers#brendan>Brendan Dawes</a>
+    <li><a href=/speakers#marijn>Marijn Haverbeke</a>
+    <li><a href="mailto:events@leftlogic.com?subject=FF2011%20Speaking%20Proposal">&gt; You?</a>
   </ul>
 
   <h2>Duke Of Yorks, Brighton, <br> 11th November 2011</h2>
