@@ -34,7 +34,7 @@
   <div class=terms>
     <h1><a href=http://leftlogic.com>Left Logic</a></h1>
     <p>
-      Full Frontal is a 1 day JavaScript Conference in Brighton (<abbr>UK</abbr>) at the Duke of York's cinema,
+      Full Frontal is a one day JavaScript Conference in Brighton (<abbr>UK</abbr>) at the Duke of York's cinema,
       organised by <a href=http://leftlogic.com>Left Logic</a>. 
       Read the <a href=terms.html>Terms &amp; Conditions</a> or view past years
       <a href=http://2010.full-frontal.org>2010</a>, <a href=http://2009.full-frontal.org>2009</a>.
