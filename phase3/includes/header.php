@@ -42,12 +42,12 @@
     </header>
     <nav>
       <ul>
-        <li><a href=/>Home</a>
-        <li><a href=/speakers>Speakers</a>
-        <li><a class=selected href=/schedule>Schedule</a>
-          <li><a href=/workshops>Workshops</a>
-        <li><a href=/venue>The Venue</a>
-        <li><a href=/sponsors>Sponsors</a>
+        <li><a <?=$file == 'home' ? 'class=selected ' : ''?>href=/>Home</a>
+        <li><a <?=$file == 'speakers' ? 'class=selected ' : ''?>href=/speakers>Speakers</a>
+        <li><a <?=$file == 'schedule' ? 'class=selected ' : ''?>href=/schedule>Schedule</a>
+        <li><a <?=$file == 'workshops' ? 'class=selected ' : ''?>href=/workshops>Workshops</a>
+        <li><a <?=$file == 'venue' ? 'class=selected ' : ''?>href=/venue>The Venue</a>
+        <li><a <?=$file == 'sponsors' ? 'class=selected ' : ''?>href=/sponsors>Sponsors</a>
       </ul>
       <div class=clear></div>
     </nav>
