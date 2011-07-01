@@ -19,25 +19,26 @@ article, section, footer, header {
 
 html {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2P4//+/MBQzgDAICEMxXAAMYCoRIlCVANL6FYTYi5d+AAAAAElFTkSuQmCC), url('images/bg-pier.png');
-  background-position: center -71px;
+  background-position: center -100px; /* 71px */
   background-repeat: repeat, no-repeat;
   background-color: #008999;
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: 'Century Gothic', sans-serif;
   font-weight: bold;
   color: #93cfd6;
 }
 .wrapper {
-  width: 90%;
+  width: 95%;
   position: relative;
   max-width: 60em;
   min-width: 20em;
   margin: 0 auto;
-  margin-top: 3.125em;
+/*  margin-top: 3.125em;*/
+  margin-top: 1.25em; /* pull ups */
 }
 
 section {
@@ -307,12 +308,13 @@ footer {
   padding: 0.75em 0;
   text-align: center;
   background-color: #EEE8A2;
-  box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+/*  box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
   line-height: 1;
   text-transform: uppercase;
   font-size: 20px;
   font-weight: bold;
   text-shadow: -1px -1px 0 rgba(0,0,0,0.5);
+*/  max-width: 100%;
 }
 .follow:hover {
   text-decoration: none;
@@ -323,6 +325,9 @@ footer {
   width: 63%;
   padding-right: -1em;
 }
+.sponsors a {
+  overflow: hidden;
+}
 .sponsors a.small {
   width: 30%;
   float: left;
@@ -332,6 +337,9 @@ footer {
   box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
   height: 5em;
   line-height: 5em;
+}
+.sponsors a.you img {
+  background: #DAD197;
 }
 .sponsors a:hover,
 .sponsors a:focus {
@@ -594,8 +602,12 @@ blockquote p a {
 }
 .sponsor-blurb h1 {
   letter-spacing: -3px; /*TODO*/
-  text-align: center;
+  text-align: justify;
 } 
+
+.sponsor-blurb h1 span {
+  display: block;
+}
 .sponsor-blurb .line1 { line-height: 39px;/*TODO*/ font-size: 2.125em; } /* 51/24 */
 .sponsor-blurb .line2 { line-height: 46px;/*TODO*/ font-size: 2.45833em; } /* 59/24 */
 .sponsor-blurb .line3 { line-height: 40px;/*TODO*/ font-size: 1.958333em; } /* 47/24 */
@@ -603,7 +615,7 @@ blockquote p a {
 .sponsor-blurb p {
   font-size: 0.9375em; /* 15/16 */
 }
-.sponsor-blurb p:last-child {
+.sponsor-blurb p.last-child {
   margin-right: 0;
 }
 
@@ -760,6 +772,7 @@ blockquote p a {
 
 .associated-venues li.highlighted,
 .associated-venues li.selected {
+  background-color: #2AA4B6;
   background-color: rgba(255, 255, 255, 0.15);
 }
 
@@ -839,6 +852,7 @@ li.selected .venue-9, li:hover .venue-9 { background-position: -232px 31px; }
   text-align: center;
 }
 .speaker .you img {
+  background-color: #007A8B;
   vertical-align: middle;
 }
 .speaker footer {
@@ -938,4 +952,8 @@ html.transition .wrapper {
   -moz-transition: margin 100ms linear;
   -o-transition: margin 100ms linear;
   transition: margin 100ms linear;
+}
+
+a img {
+  border: 0;
 }

@@ -1,3 +1,7 @@
+@media screen and (max-width: 1017px) {
+    
+}
+
 @media screen and (max-height: 16em) and (min-width: 40em) {
   html:before {
     display: inline;

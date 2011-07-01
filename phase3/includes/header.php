@@ -23,11 +23,11 @@
         <h3>Duke Of Yorks, Brighton, <br> <time datetime=2011-11-11T09:00:00Z>11th November 2011</time></h3>
       </hgroup>
     
-      <!-- <a href=/tickets class="buy-tickets early-bird">
+      <a href=/tickets class="buy-tickets early-bird">
         Earlybird<br>
         <span>1 day &pound;99+ <abbr>VAT</abbr></span><br>
         <span class=buy-button><img src=images/buy-tickets width=278 height=48 alt="Buy Tickets"></span>
-      </a> -->
+      </a>
       
       
       <!-- <a href=# class="buy-tickets buy-now">
@@ -36,7 +36,7 @@
         <span class=buy-button><img src=images/buy-tickets width=278 height=48 alt="Buy Tickets"></span>
       </a> -->
             
-      <span class="buy-tickets sold-out">Sold Out!</span>
+      <!-- <span class="buy-tickets sold-out">Sold Out!</span> -->
       
            
     </header>
@@ -44,7 +44,7 @@
       <ul>
         <li><a <?=$file == 'home' ? 'class=selected ' : ''?>href=/>Home</a>
         <li><a <?=$file == 'speakers' ? 'class=selected ' : ''?>href=/speakers>Speakers</a>
-        <li><a <?=$file == 'schedule' ? 'class=selected ' : ''?>href=/schedule>Schedule</a>
+<!--        <li><a <?=$file == 'schedule' ? 'class=selected ' : ''?>href=/schedule>Schedule</a> -->
         <li><a <?=$file == 'workshops' ? 'class=selected ' : ''?>href=/workshops>Workshops</a>
         <li><a <?=$file == 'venue' ? 'class=selected ' : ''?>href=/venue>The Venue</a>
         <li><a <?=$file == 'sponsors' ? 'class=selected ' : ''?>href=/sponsors>Sponsors</a>

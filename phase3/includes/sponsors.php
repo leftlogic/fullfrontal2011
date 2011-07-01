@@ -8,7 +8,7 @@
     Sponsoring Full Frontal means developers, designer, bloggers and more get to know your company better
     and shows that you support their community. You’ll have the opportunity to promote your brand and
     products to attendees and potentially meet new employees, clients and users.
-  <p>
+  <p class=last-child>
     There are also networking opportunities throughout the conference and during the after party.
     Find out how your company can sponsor Full Frontal by reviewing our <a href=/sponsorship.html>sponsorship packages</a>
     and <a href="mailto:events@leftlogic.com?subject=FF2011%20Sponsorship">get in touch</a> with us to discuss how we can work together.

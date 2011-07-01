@@ -1,12 +1,13 @@
 function newHoverIconAction(el, latlng, marker, standardIcon, hoverIcon) {
   return function (event) {
-    console.log(zIndex);
+    event = event || window.event;
+
     if (event.type === 'mouseover') {
       marker.setZIndex(++zIndex);
       marker.setIcon(hoverIcon);
       addClass(el, 'selected');
       // don't use the pageX - just using it to determine that we hovered from the li, not a google hover
-      if (event.pageX) map.panTo(latlng);
+      if (event.clientX) map.panTo(latlng);
     } else {
       marker.setIcon(standardIcon);
       removeClass(el, 'selected');
@@ -85,8 +86,8 @@ for (var i = 0; i < len; i++) {
       hoverIconAction({ type: 'mouseout' });
     });
 
-    el.addEventListener('mouseover', hoverIconAction, false);
-    el.addEventListener('mouseout', hoverIconAction, false);
+    el.onmouseover = hoverIconAction;
+    el.onmouseout = hoverIconAction;
     
     marker.setMap(map);
   }(i);
