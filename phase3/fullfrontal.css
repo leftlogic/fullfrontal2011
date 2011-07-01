@@ -249,6 +249,7 @@ nav a.selected,
 nav a:hover {
   padding-bottom: 2px;
   border-bottom: 2px solid #fff;
+  color: #fff;
 }
 
 /** Footer **/
@@ -380,7 +381,7 @@ footer {
 /** Homepage **/
 
 .speakers-list {
-  width: 51%;
+  width: 60%;
   float: left;
   margin-bottom: 6.25%;
 }
@@ -403,7 +404,7 @@ footer {
 }
 
 .image-cube {
-  width: 49%;
+  width: 40%;
   float: right;
   margin-bottom: 6.25%;
 }
@@ -529,6 +530,12 @@ blockquote p a {
 
 /** Workshops **/
 
+.workshop {
+  margin-bottom: 2em;
+  clear: left;
+  overflow: hidden;
+}
+
 .workshop .details {
   width: 64.58333%;
   float: right;
@@ -554,6 +561,10 @@ blockquote p a {
 }
 .workshop header a {
   font-size
+}
+
+.workshop .buy-tickets {
+  margin-bottom: 0.3em;
 }
 
 /** Sponsors **/ 
