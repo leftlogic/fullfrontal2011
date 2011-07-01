@@ -24,21 +24,25 @@
 
     <ul>
       <li><span class=venue-1>1</span>
-          <a href#>Jury's Inn'</a> £88*<br>
-          101 Stroundly Road, Brighton, BN1 4DJ
+          <p>
+            <a href#>Jury's Inn'</a> £88*<br>
+            101 Stroundly Road, Brighton, BN1 4DJ
+            <small>*discount code: JHGWUWDA</small>
      
       <li><span class=venue-2>2</span>
           <a href#>Travelodge</a> £35.50*<br>
           165-167 Preston Road, Brighton, BN1 6AU
+          <small>*discount code: JHGWUWDA</small>
       
       <li><span class=venue-3>3</span>
           <a href#>My Hotel</a> £104*<br>
           17 Jubilee Street, Brighton, BN1 1GE
+          <small>*discount code: JHGWUWDA</small>
       
       <li><span class=venue-4>4</span>
           <a href#>Queens Hotel</a> £89*<br>
           1-5 Kings Road, Brighton, BN1 1NS
-    </ul>
+
 
     <h2>Food</h2>
 
