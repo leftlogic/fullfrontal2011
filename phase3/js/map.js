@@ -1,7 +1,7 @@
 function newHoverIconAction(el, marker, standardIcon, hoverIcon) {
   return function (event) {
-    console.log(event, arguments);
     if (event.type === 'mouseover') {
+      marker.setZIndex(zIndex++);
       marker.setIcon(hoverIcon);
       el.setAttribute('class','selected');  
     } else {
@@ -17,6 +17,7 @@ var iconSize = new google.maps.Size(29, 39, 'px', 'px'),
     iconPoint = new google.maps.Point(16, 39),
     iconURL = '/images/map-markers.png',
     iconWidth = 29,
+    zIndex = google.maps.Marker.MAX_ZINDEX,
     map = new google.maps.Map(document.getElementById('venue-map'), {
       center: new google.maps.LatLng(50.8339238, -0.1385427),
       zoom: 14,
