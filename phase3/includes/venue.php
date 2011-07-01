@@ -103,3 +103,6 @@
   <div id=venue-map></div>
   
 </section>
+
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="js/map.js"></script>
