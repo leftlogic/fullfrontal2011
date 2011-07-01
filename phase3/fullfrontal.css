@@ -246,6 +246,7 @@ nav a.selected,
 nav a:hover {
   padding-bottom: 2px;
   border-bottom: 2px solid #fff;
+  color: #fff;
 }
 
 /** Footer **/
