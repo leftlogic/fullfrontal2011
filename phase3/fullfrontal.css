@@ -774,7 +774,7 @@ blockquote p a {
 .venue-8 { background-position: -203px 60px; }
 .venue-9 { background-position: -232px 60px; }
 
-li:hover .venue-1 { background-position: 0 31px; }
+li.selected .venue-1, li:hover .venue-1 { background-position: 0 31px; }
 li:hover .venue-2 { background-position: -29px 31px; }
 li:hover .venue-3 { background-position: -58px 31px; }
 li:hover .venue-4 { background-position: -87px 31px; }

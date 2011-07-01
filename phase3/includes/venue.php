@@ -26,7 +26,7 @@
     
     <h2>Hotels</h2>
     <ul>
-      <li data-latlng=50.83283,-0.140247 data-id=1><span class=venue-1>1</span>
+      <li data-latlng=50.83283,-0.140247 id=1><span class=venue-1>1</span>
           <div>
             <h3><a href=http://brightonhotels.jurysinns.com>Jury's Inn'</a> £112*</h3>
             <p>
@@ -100,3 +100,6 @@
   <div id=venue-map></div>
   
 </section>
+
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="js/map.js"></script>
