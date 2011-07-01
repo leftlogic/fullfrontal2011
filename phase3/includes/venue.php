@@ -28,34 +28,33 @@
     <ul>
       <li><span class=venue-1>1</span>
           <div>
-            <h3><a href=#>Jury's Inn'</a> £88*</h3>
+            <h3><a href=http://brightonhotels.jurysinns.com data-latlng=50.83283,-0.140247>Jury's Inn'</a> £112*</h3>
             <p>
               101 Stroundly Road, BN1 4DJ<br>
-              <small>*discount code: JHGWUWDA</small>
+              <small>* 2 nights special Full Frontal, £129 also includes breakfast</small>
           </div>
           
       <li><span class=venue-2>2</span>
           <div>
-            <h3><a href=#>Travelodge</a> £35.50*</h3>
+            <h3><a href=http://www.travelodge.co.uk/hotels/info?hotelId=18 data-latlng=50.83321,-0.140119>Travelodge</a> £38</h3>
             <p>
               165-167 Preston Road, BN1 6AU<br>
-              <small>*discount code: JHGWUWDA</small>
           </div>
           
       <li><span class=venue-3>3</span>
           <div>
-            <h3><a href=#>Queens Hotel</a> £89*</h3>
+            <h3><a href=http://www.myhotels.com/my-hotel-brighton/index.html data-latlng=50.829361,-0.139518>My Hotel</a> £95, £99*</h3>
             <p>
-              17 Jubilee Street, BN1 1GE<br>
-              <small>*discount code: JHGWUWDA</small>
+              17 Jubilee St, BN1 1GE<br>
+              <small>* £95 for Thurs, £99 for Fri</small>
           </div>
           
       <li><span class=venue-4>4</span>
           <div>
-            <h3><a href=#>Queens Hotel</a> £89*</h3>
+            <h3><a href=http://www.barcelo-hotels.co.uk/hotels/southern-england/barcelo-brighton-old-ship-hotel data-latlng=50.825159,-0.14102>Old Ship hotel</a> £63/£73*</h3>
             <p>
-              1-5 Kings Road, BN1 1NS<br>
-              <small>*discount code: JHGWUWDA</small>
+              King's Road, BN1 1NR<br>
+              <small>* £73 includes breakfast</small>
           </div>
     </ul>
 
