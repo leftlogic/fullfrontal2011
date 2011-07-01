@@ -10,41 +10,46 @@
     products to attendees and potentially meet new employees, clients and users.
   <p>
     There are also networking opportunities throughout the conference and during the after party.
-    Find out how your company can sponsor Full Frontal by reviewing our <a href=#>sponsorship packages</a>
-    and <a href=#>get in touch</a> with us to discuss how we can work together.
+    Find out how your company can sponsor Full Frontal by reviewing our <a href=/sponsorship.html>sponsorship packages</a>
+    and <a href="mailto:events@leftlogic.com?subject=FF2011%20Sponsorship">get in touch</a> with us to discuss how we can work together.
 </section>
-
-<section class=sponsor-full>
-  <a href=#>
-    <h1><img src=images/sponsors/mozilla alt=Mozilla></h1>
-  </a>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irur
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</section>
+<?php /*
+<div>
+  <h1>Full Monties
+    <a href=/sponsorship.html>Become a Full Monty sponsor</a>  
+  </h1>
+  <section class=sponsor-full>
+    <a href=#>
+      <h1><img src=images/sponsors/mozilla alt=Mozilla></h1>
+    </a>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irur
+      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+      non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </section>
+</div>
 
 <section class="sponsor sponsor-half">
   <h1>Half Monties
-    <a href=#>Become a Half Monty sponsor</a>  
+    <a href=/sponsorship.html>Become a Half Monty sponsor</a>  
   </h1>
   <a class=sponsor-logo href=#><img src=/ width= height= alt=></a>
   <a class=sponsor-logo href=#><img src=/ width= height= alt=></a>
   <a class=sponsor-logo href=#><img src=/ width= height= alt=></a>
 </section>
-
+*/
+?>
 <section class="sponsor sponsor-small">
   <h1>Small Monties
-    <a href=#>Become a Small Monty Sponsor</a>
+    <a href=/sponsorship.html>Become a Small Monty Sponsor</a>
   </h1>
-    <a class=sponsor-logo href=#><img src=/ width= height= alt=></a>
-    <a class=sponsor-logo href=#><img src=/ width= height= alt=></a>
-    <a class=sponsor-logo href=#><img src=/ width= height= alt=></a>
+    <a class=sponsor-logo href=http://dharmafly.com><img src=/images/sponsors/dharmafly.gif width=230 height=60 alt="Dharmafly, apps for change"></a>
+    <a class=sponsor-logo href=http://pusher.com><img src=/images/sponsors/pusher.gif width=230 height=90 alt="Pusher - Supercharge your app with realtime events"></a>
     <span class=sponsor-available>&nbsp;</span>
 </section>
 
-<section class="sponsor sponsor-media">
+<!-- <section class="sponsor sponsor-media">
   <h1>Media Partners
     <a href=#>Become a Media Partner</a>
   </h1>
@@ -53,4 +58,4 @@
     <span class=sponsor-available>&nbsp;</span>
     <span class=sponsor-available>&nbsp;</span>
     <span class=sponsor-available>&nbsp;</span>
-</section>
+</section> -->

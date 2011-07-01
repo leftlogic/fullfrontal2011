@@ -615,6 +615,11 @@ blockquote p a {
 .sponsor-logo {
   background-color: #fff;
   box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+  line-height: 8em;
+}
+.sponsor-logo img {
+  max-width: 100%;
+  vertical-align: middle;
 }
 .sponsor-available {
   background-image: url('images/bg-dots-alt.gif');
