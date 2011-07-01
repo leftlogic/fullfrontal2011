@@ -41,7 +41,7 @@
               165-167 Preston Road, BN1 6AU<br>
           </div>
           
-      <li data-latlng=50.829361,-0.139518><span class=venue-3>3</span>
+      <li data-latlng=50.82469821215884,-0.13905644416809082><span class=venue-3>3</span>
           <div>
             <h3><a href=http://www.myhotels.com/my-hotel-brighton/index.html>My Hotel</a> £95, £99*</h3>
             <p>
@@ -49,7 +49,7 @@
               <small>* £95 for Thurs, £99 for Fri</small>
           </div>
           
-      <li data-latlng=50.825159,-0.14102><span class=venue-4>4</span>
+      <li data-latlng=50.82025883414183,-0.14247357845306396><span class=venue-4>4</span>
           <div>
             <h3><a href=http://www.barcelo-hotels.co.uk/hotels/southern-england/barcelo-brighton-old-ship-hotel>Old Ship hotel</a> £63/£73*</h3>
             <p>
@@ -60,31 +60,31 @@
 
     <h2>Food</h2>
     <ul class=food>
-      <li data-latlng=50.835473,-0.140913><span class=venue-5>5</span>
+      <li data-latlng=50.833900951968864,-0.1390671730041504><span class=venue-5>5</span>
           <div>
             <h3>Circus Circus <em>Pub</em></h3>
             <p>101 Stroundly Road, BN1 4DJ
           </div>
           
-      <li data-latlng=50.836815,-0.138917 data-it=6><span class=venue-6>6</span>
+      <li data-latlng=50.83730916466705,-0.13620257377624512 data-it=6><span class=venue-6>6</span>
           <div>
             <h3>The Open House <em>Pub</em></h3>
             <p>165-167 Preston Road, BN1 6AU
           </div>
           
-      <li data-latlng=50.834362,-0.136814><span class=venue-7>7</span>
+      <li data-latlng=50.831969746834076,-0.13464689254760742><span class=venue-7>7</span>
           <div>
             <h3>Bardsley's' <em>Fish &amp; Chips</em></h3>
             <p>17 Jubilee Sreet, BN1 1GE
           </div>
           
-      <li data-latlng=50.834362,-0.136814><span class=venue-8>8</span>
+      <li data-latlng=50.831874878557926,-0.13535499572753906><span class=venue-8>8</span>
           <div>
             <h3>Mitre Tavern <em>Pub</em></h3>
             <p>Kings Road, BN1 2GS
           </div>
       
-      <li data-latlng=50.834029696136774,-0.13861119747161865><span class=venue-9>9</span>
+      <li data-latlng=50.83406696411911,-0.13850659132003784><span class=venue-9>9</span>
           <div>
             <h3>Mediterrane <em>Pub</em></h3>
             <p>Next to Duke of York's

@@ -1,30 +1,52 @@
-function newHoverIconAction(el, marker, standardIcon, hoverIcon) {
+function newHoverIconAction(el, latlng, marker, standardIcon, hoverIcon) {
   return function (event) {
     if (event.type === 'mouseover') {
       marker.setZIndex(zIndex++);
       marker.setIcon(hoverIcon);
-      el.setAttribute('class','selected');  
+      addClass(el, 'selected');
+      // don't use the pageX - just using it to determine that we hovered from the li, not a google hover
+      if (event.pageX) map.panTo(latlng);
     } else {
       marker.setIcon(standardIcon);
-      el.removeAttribute('class');
+      removeClass(el, 'selected');
     }
   };
+}
+
+function each(els, fn) {
+  var i = els.length;
+  while (i--) {
+    fn.call(els[i], els[i]);
+  }
+}
+
+function addClass(el, c) {
+  var className = el.className;
+  
+  if ((' ' + className + ' ').indexOf(' ' + c + ' ') !== false) {
+    // add
+    el.className = className + ' ' + c;
+  }
+}
+
+function removeClass(el, c) {
+  el.className = (' ' + el.className + ' ').replace(c, '');
 }
 
 var iconSize = new google.maps.Size(29, 39, 'px', 'px'),
     iconPoint = new google.maps.Point(16, 39),
     iconURL = '/images/map-markers.png',
     iconWidth = 29,
-    zIndex = google.maps.Marker.MAX_ZINDEX,
     map = new google.maps.Map(document.getElementById('venue-map'), {
       center: new google.maps.LatLng(50.8339238, -0.1385427),
       zoom: 12,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
     }),
     lis = document.getElementById('associated-venues').getElementsByTagName('li'),
     len = lis.length,
     bounds = new google.maps.LatLngBounds(),
-    doyLocation = new google.maps.LatLng(50.8336812, -0.1388816);
+    doyLocation = new google.maps.LatLng(50.8336812, -0.1388816),
+    zIndex = google.maps.Marker.MAX_ZINDEX;
     
 var doyIcon = new google.maps.Marker({
   position: doyLocation,
@@ -61,7 +83,7 @@ for (var i = 0; i < len; i++) {
           flat: true,
           icon: standardIcon
         }),
-        hoverIconAction = newHoverIconAction(el, marker, standardIcon, hoverIcon);
+        hoverIconAction = newHoverIconAction(el, venueLocation, marker, standardIcon, hoverIcon);
 
     bounds.extend(venueLocation);
     
@@ -72,6 +94,12 @@ for (var i = 0; i < len; i++) {
     google.maps.event.addListener(marker, 'mouseout', function () {
       hoverIconAction({ type: 'mouseout' });
     });
+    // google.maps.event.addListener(marker, 'click', function () {
+    //   each(lis, function (el) {
+    //     removeClass(el, 'highlighted');
+    //   });
+    //   addClass(el, 'highlighted');
+    // });
     el.onmouseover = hoverIconAction;
     el.onmouseout = hoverIconAction;
     
