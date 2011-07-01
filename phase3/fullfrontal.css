@@ -775,14 +775,14 @@ blockquote p a {
 .venue-9 { background-position: -232px 60px; }
 
 li.selected .venue-1, li:hover .venue-1 { background-position: 0 31px; }
-li:hover .venue-2 { background-position: -29px 31px; }
-li:hover .venue-3 { background-position: -58px 31px; }
-li:hover .venue-4 { background-position: -87px 31px; }
-li:hover .venue-5 { background-position: -116px 31px; }
-li:hover .venue-6 { background-position: -145px 31px; }
-li:hover .venue-7 { background-position: -174px 31px; }
-li:hover .venue-8 { background-position: -203px 31px; }
-li:hover .venue-9 { background-position: -232px 31px; }
+li.selected .venue-2, li:hover .venue-2 { background-position: -29px 31px; }
+li.selected .venue-3, li:hover .venue-3 { background-position: -58px 31px; }
+li.selected .venue-4, li:hover .venue-4 { background-position: -87px 31px; }
+li.selected .venue-5, li:hover .venue-5 { background-position: -116px 31px; }
+li.selected .venue-6, li:hover .venue-6 { background-position: -145px 31px; }
+li.selected .venue-7, li:hover .venue-7 { background-position: -174px 31px; }
+li.selected .venue-8, li:hover .venue-8 { background-position: -203px 31px; }
+li.selected .venue-9, li:hover .venue-9 { background-position: -232px 31px; }
 
 
 
