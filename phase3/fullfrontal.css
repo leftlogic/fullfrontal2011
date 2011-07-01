@@ -69,7 +69,8 @@ li {
   padding: 0;
   background-image: url('images/custom-bullet.gif');
   background-repeat: no-repeat;
-  background-position: center left;
+/*  background-position: center left;*/
+  background-position: 0px 5px;
   padding-left: 16px;
 }
 
@@ -744,6 +745,7 @@ blockquote p a {
   background: none;
   padding: 0;
   overflow: hidden;
+  padding-top: 0.3753em;
 }
 .associated-venues li span {
   display: block;
@@ -753,13 +755,19 @@ blockquote p a {
   width: 29px;
   height: 29px;
   text-indent: -9999em;
-  margin-top: 0.3753em;
+/*  margin-top: 0.3753em;*/
   margin-right: 0.5em;
-
+  margin-left: 0.5em;
 }
+
+.associated-venues li.highlighted,
+.associated-venues li.selected {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
 .associated-venues li div {
   float: left;
-  width: 294px;
+  max-width: 280px; /* TODO needs to be % */
 }
 .associated-venues h3 {
   margin: 0;
