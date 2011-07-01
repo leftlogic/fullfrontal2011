@@ -321,14 +321,24 @@ footer {
   width: 63%;
   padding-right: -1em;
 }
-.sponsors img {
+.sponsors a.small {
+  width: 30%;
+  float: left;
+  display: block;
   background: #FFF;
   margin: 0 1em 1em 0;
   box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+  height: 5em;
+  line-height: 5em;
 }
-.sponsors a:hover img,
-.sponsors a:focus img {
+.sponsors a:hover,
+.sponsors a:focus {
   box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+}
+
+.sponsors a img {
+  vertical-align: middle;
+  max-width: 100%;
 }
 
 /* The Real Footer */
@@ -571,6 +581,7 @@ blockquote p a {
 
 .sponsor-blurb {
   overflow: hidden;
+  margin-bottom: 2em;
 }
 .sponsor-blurb h1,
 .sponsor-blurb p {
