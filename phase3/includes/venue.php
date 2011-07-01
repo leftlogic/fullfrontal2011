@@ -17,7 +17,7 @@
       station.
   </div>
   
-  <img src=images/pictures/venue.jpg>
+  <img src=images/venue.jpg>
   
 </section>
 

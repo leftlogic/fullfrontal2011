@@ -7,7 +7,7 @@
   <meta name=viewport content="width=device-width, initial-scale=1.0">
   <title>Full Frontal 2011- JavaScript Conference</title>
   <link rel=stylesheet href=fullfrontal.css>
-  <linkXXX rel=stylesheet href=queires.css>
+  <!-- link rel=stylesheet href=queires.css -->
   
   <!--[if lt IE 9]>
   <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
