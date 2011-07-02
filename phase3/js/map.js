@@ -15,26 +15,6 @@ function newHoverIconAction(el, latlng, marker, standardIcon, hoverIcon) {
   };
 }
 
-function each(els, fn) {
-  var i = els.length;
-  while (i--) {
-    fn.call(els[i], els[i]);
-  }
-}
-
-function addClass(el, c) {
-  var className = el.className;
-  
-  if ((' ' + className + ' ').indexOf(' ' + c + ' ') !== false) {
-    // add
-    el.className = className + ' ' + c;
-  }
-}
-
-function removeClass(el, c) {
-  el.className = (' ' + el.className + ' ').replace(c, '');
-}
-
 var iconURL = '/images/map-markers.png',
     doyLocation = new google.maps.LatLng(50.8336812, -0.1388816),
     doyIcon = new google.maps.Marker({

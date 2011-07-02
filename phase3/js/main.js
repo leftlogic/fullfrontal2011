@@ -15,6 +15,56 @@ twitterlib.timeline('fullfrontalconf', { limit: 2 }, function (tweets) {
   updates.innerHTML = html;
 });
 
+if (document.getElementById('speakers')) {
+  // speakers page
+  var sections = document.getElementsByTagName('section'),
+      speakers = [],
+      i = sections.length,
+      visible = null,
+      test = null;
+      
+  while (i--) {
+    test = (' ' + sections[i].className + ' ');
+    if (test.indexOf(' speaker ') !== -1 && test.indexOf(' want-to ') === -1) {
+      !function (i) {
+        var speaker = sections[i],
+            div = document.createElement('div'),
+            more = document.createElement('a');
+            
+        div.className = 'clone';
+        div.appendChild(speaker.cloneNode(true));
+        speaker.appendChild(div);
+
+        more.innerHTML = 'More &raquo;';
+        more.href = '#';
+        
+        more.onclick = function (event) {
+          event = event || window.event;
+          event.preventDefault && event.preventDefault();
+          visible = speaker;
+          each(speakers, function (el) {
+            removeClass(el, 'spotlight');
+          });
+          addClass(speaker, 'spotlight');          
+          return false;
+        };
+        
+        speaker.getElementsByTagName('p')[0].appendChild(more);
+        speakers.push(speaker);
+      }(i);
+    }
+  }
+  
+  document.onkeydown = function (event) {
+    event = event || window.event;
+    if (event.which === 27 && visible !== null) { // esc
+      each(speakers, function (el) {
+        removeClass(el, 'spotlight');
+      });      
+    }
+  };
+}
+
 }();
 
 var addEvent = (function () {
@@ -40,3 +90,24 @@ var addEvent = (function () {
     };
   }
 })();
+
+
+function each(els, fn) {
+  var i = els.length;
+  while (i--) {
+    fn.call(els[i], els[i]);
+  }
+}
+
+function addClass(el, c) {
+  var className = el.className;
+  
+  if ((' ' + className + ' ').indexOf(' ' + c + ' ') !== false) {
+    // add
+    el.className = className + ' ' + c;
+  }
+}
+
+function removeClass(el, c) {
+  el.className = (' ' + el.className + ' ').replace(c, '');
+}

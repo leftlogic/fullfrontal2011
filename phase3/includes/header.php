@@ -1,11 +1,12 @@
 <!DOCTYPE html> 
-<html>
+<html id="<?=$file?>">
 <head>
   <meta charset=utf-8>
   <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
   <!-- TODO should this be max-width? -->
   <meta name=viewport content="width=max-width, initial-scale=1.0">
   <title>Full Frontal 2011- JavaScript Conference</title>
+  <script>document.documentElement.className = 'js';</script>
   <link rel=stylesheet href='http://fonts.googleapis.com/css?family=Cabin+Sketch:bold' /> 
   <link rel=stylesheet href=fullfrontal.css>
   <link rel=stylesheet href=queires.css>

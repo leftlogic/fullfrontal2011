@@ -840,10 +840,13 @@ li.selected .venue-9, li:hover .venue-9 { background-position: -232px 31px; }
 
 
 .speaker {
+  overflow: visible;
   width: 31.25%;
   margin-right: 3.125%;
   margin-bottom: 1.875em;
   float: left;
+  position: relative;
+  z-index: 1;
 }
 .speaker:nth-of-type(3n) {
   margin-right: 0;
@@ -861,7 +864,7 @@ li.selected .venue-9, li:hover .venue-9 { background-position: -232px 31px; }
 .speaker p {
   font-size: 0.9375em; /* 15/16 */
 }
-.speaker .more { /* JS */
+.js .speaker .more { /* JS */
   display: none;
 } 
 .you {
@@ -890,31 +893,39 @@ li.selected .venue-9, li:hover .venue-9 { background-position: -232px 31px; }
   float: right;
   text-align: right;
 }
+.spotlight {
+  z-index: 2;
+}
 
+.js .clone {
+  display: none;
+}
 
-.spotlight .speaker{
+.spotlight .clone {
+  display: block;
+}
+
+.spotlight .speaker {
   box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
   background-color: #93cfd6;
   padding: 0.9375em;
-  
-  
-  /* JS */
+  width: 100%;  
   position: absolute;
-  top: 551px;
-  left: 330px;
+  top: 0;
+  left: 0;
   margin-top: -0.975em;
   margin-left: -0.975em;
 }
-.spotlight  .speaker a {
+.spotlight .clone a {
   color: #fff;
 }
-.spotlight  .speaker a:focus,
-.spotlight  .speaker a:hover,
-.spotlight  .speaker h1 span,
-.spotlight  .speaker p {
+.spotlight  .clone a:focus,
+.spotlight  .clone a:hover,
+.spotlight  .clone h1 span,
+.spotlight  .clone p {
   color: #007a8b;
 }
-.spotlight  .speaker .more { /* JS */
+.js .spotlight .clone .more { /* JS */
   display: inline;
 }
 .spotlight  .speaker footer {
@@ -923,9 +934,6 @@ li.selected .venue-9, li:hover .venue-9 { background-position: -232px 31px; }
   padding: 0.9375em;
   border-top: 2px solid #a8d9de;
 }
-
-
-
 
 input {
   background-position: top left, top left, top left;
