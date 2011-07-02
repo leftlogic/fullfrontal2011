@@ -15,7 +15,7 @@
 */
 /** General Structure **/
 
-article, section, footer, header {
+article, section, footer, header, nav, hgroup {
   display: block;
 }
 
@@ -864,15 +864,16 @@ li.selected .venue-9, li:hover .venue-9 { background-position: -232px 31px; }
 .speaker .more { /* JS */
   display: none;
 } 
-
-.speaker .you {
+.you {
   background-color: #fff;
+}
+.speaker .you {
   width: 100%;
   height: 192px;
   line-height: 192px;
   text-align: center;
 }
-.speaker .you img {
+.you img {
   background-color: #007A8B;
   vertical-align: middle;
 }

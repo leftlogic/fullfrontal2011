@@ -1,7 +1,7 @@
 function newHoverIconAction(el, latlng, marker, standardIcon, hoverIcon) {
   return function (event) {
     event = event || window.event;
-
+    console.log(i++, 'action');
     if (event.type === 'mouseover') {
       marker.setZIndex(++zIndex);
       marker.setIcon(hoverIcon);
@@ -35,9 +35,20 @@ function removeClass(el, c) {
   el.className = (' ' + el.className + ' ').replace(c, '');
 }
 
-var iconSize = new google.maps.Size(29, 39, 'px', 'px'),
+var iconURL = '/images/map-markers.png',
+    doyLocation = new google.maps.LatLng(50.8336812, -0.1388816),
+    doyIcon = new google.maps.Marker({
+      position: doyLocation,
+      flat: true,
+      icon: new google.maps.MarkerImage(
+        iconURL,
+        new google.maps.Size(51, 69, 'px', 'px'),
+        new google.maps.Point(261, 0),
+        new google.maps.Point(26, 69)
+      )
+    }),
+    iconSize = new google.maps.Size(29, 39, 'px', 'px'),
     iconPoint = new google.maps.Point(16, 39),
-    iconURL = '/images/map-markers.png',
     iconWidth = 29,
     map = new google.maps.Map(document.getElementById('venue-map'), {
       center: new google.maps.LatLng(50.8339238, -0.1385427),
@@ -46,9 +57,7 @@ var iconSize = new google.maps.Size(29, 39, 'px', 'px'),
     }),
     lis = document.getElementById('associated-venues').getElementsByTagName('li'),
     len = lis.length,
-    bounds = new google.maps.LatLngBounds(),
-    doyLocation = new google.maps.LatLng(50.8336812, -0.1388816),
-    zIndex = google.maps.Marker.MAX_ZINDEX;
+    bounds = new google.maps.LatLngBounds();
     
 bounds.extend(doyLocation);
     
@@ -93,16 +102,8 @@ for (var i = 0; i < len; i++) {
   }(i);
 }
 
+doyIcon.setMap(map);
+
+var zIndex = google.maps.Marker.MAX_ZINDEX;
+
 map.fitBounds(bounds);
-
-var doyIcon = new google.maps.Marker({
-  position: doyLocation,
-  flat: true,
-  icon: new google.maps.MarkerImage(
-    iconURL,
-    new google.maps.Size(51, 69, 'px', 'px'),
-    new google.maps.Point(261, 0),
-    new google.maps.Point(26, 69)
-  )
-}).setMap(map);
-

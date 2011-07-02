@@ -11,7 +11,8 @@
   <p class=last-child>
     There are also networking opportunities throughout the conference and during the after party.
     Find out how your company can sponsor Full Frontal by reviewing our <a href=/sponsorship.html>sponsorship packages</a>
-    and <a href="mailto:events@leftlogic.com?subject=FF2011%20Sponsorship">get in touch</a> with us to discuss how we can work together.
+    and <a href="mailto:events@leftlogic.com?subject=FF2011%20Sponsorship">get in touch</a> with us to discuss how we can work together.</p>
+    <!-- interesting bug in Firefox 3.6 - if you're using HTML5 elements, and you're not closing your HTML4 p tags, then the HTML5 element gets sucked in to the paragraph. Odd, eh? -->
 </section>
 <?php /*
 <div>
@@ -46,7 +47,7 @@
   </h1>
     <a class=sponsor-logo href=http://dharmafly.com><img src=/images/sponsors/dharmafly.gif width=230 height=60 alt="Dharmafly, apps for change"></a>
     <a class=sponsor-logo href=http://pusher.com><img src=/images/sponsors/pusher.gif width=230 height=90 alt="Pusher - Supercharge your app with realtime events"></a>
-    <span class=sponsor-available>&nbsp;</span>
+    <a href=/sponsorship.html><span class="sponsor-logo you"><img src=/images/you.png width=230 height=90></span></a>
 </section>
 
 <!-- <section class="sponsor sponsor-media">
