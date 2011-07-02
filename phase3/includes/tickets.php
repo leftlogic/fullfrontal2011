@@ -19,6 +19,7 @@
   <strong>Includes:</strong> Two day workshop with <b title="Not a mobile master, but a quasi JavaScript samurai">Remy Sharp</b>, full introduction to Node and using it with HTML5 real-time APIs, evening meal with all 2 day workshop delegates and speakers and full pass to Full Frontal day event.
 </section>
 
+<?php /*
 <section class=tickets>
   <h1>Node Day 1 Workshop</h1>
   <h2>&pound;345+ <abbr>VAT</abbr> <span>Inc. Conference</span></h2>
@@ -32,12 +33,12 @@
   <p><a href=http://leftlogic.stagehq.com><span class=buy-button><img src=images/buy-tickets width=278 height=48 alt="Buy Tickets"></span></a>
   <strong>Includes:</strong> Second day Node workshop - for more advanced HTML5 real-time streaming Node services with <b title="Not a mobile master, but a quasi JavaScript samurai">Remy Sharp</b>,  full pass to Full Frontal day event and all it's JavaScript goodies.
 </section>
-
+*/?>
 
 <p class="highlight clear">
 Please note that due to the was Stage<abbr>HQ</abbr> (our payment system) works, the <abbr>VAT</abbr>
 won't show up separately when buying the tickets (nor in PayPal). <abbr>VAT</abbr> has been separately
-added, and our <abbr>VAT</abbr> registration is: 993 1266 95
+added, and our <abbr>VAT</abbr> registration is: 993 1266 95. A <abbr>VAT</abbr> invoice can be provided on request.
 
 <!-- <p>
 If your tickets type isn't available, <a href="mailto:events@leftlogic.com?subject=Full%20Frontal%20waiting%20list&amp;body=Ticket%20I%20am%20interested%20in%3A%20%5BINSERT%20HERE%5D">please email us</a> with your name and the ticket

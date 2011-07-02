@@ -856,7 +856,7 @@ li.selected .venue-9, li:hover .venue-9 { background-position: -232px 31px; }
   margin-right: 2%;
 }
 .speaker:nth-of-type(3n),
-.ie .speaker:endrow {
+.ie .speaker.endrow {
   margin-right: 0;
 }
 .speaker h1 {
