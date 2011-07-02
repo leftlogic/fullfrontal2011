@@ -3,7 +3,7 @@
   <img src=/images/speakers/brendan.jpg>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-    labore et dolore magn aliqua. Ut enim ad minim veniam, quis nostrud.
+    labore et dolore magn aliqua. Ut enim ad minim veniam, quis nostrud.</p>
     
   <footer>
     <a href=#>@brendandawsome</a>
@@ -20,7 +20,7 @@
     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <span class=more>ullamco laboris nisi ut
     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum.</span>
+    qui officia deserunt mollit anim id est laborum.</span></p>
     
  <footer>
     <a href=#>@brendandawsome</a>
@@ -28,12 +28,12 @@
   </footer>
 </section>
 
-<section class=speaker>
+<section class="speaker endrow">
   <h1><span>01</span> Brendan Dawes</h1>
   <img src=/images/speakers/brendan.jpg>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-    labore et dolore magn aliqua. Ut enim ad minim veniam, quis nostrud.
+    labore et dolore magn aliqua. Ut enim ad minim veniam, quis nostrud.</p>
     
   <footer>
     <a href=#>@brendandawsome</a>
@@ -50,7 +50,7 @@
     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <span class=more>ullamco laboris nisi ut
     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum.</span>
+    qui officia deserunt mollit anim id est laborum.</span></p>
     
  <footer>
     <a href=#>@brendandawsome</a>
@@ -65,7 +65,7 @@
   <img src=/images/speakers/brendan.jpg>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-    labore et dolore magn aliqua. Ut enim ad minim veniam, quis nostrud.
+    labore et dolore magn aliqua. Ut enim ad minim veniam, quis nostrud.</p>
     
   <footer>
     <a href=#>@brendandawsome</a>
@@ -74,7 +74,7 @@
 </section>
 
 
-<section class=speaker>
+<section class="speaker endrow">
   <h1><span>01</span> Brendan Dawes</h1>
   <img src=/images/speakers/brendan.jpg>
   <p>
@@ -82,7 +82,7 @@
     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <span class=more>ullamco laboris nisi ut
     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum.</span>
+    qui officia deserunt mollit anim id est laborum.</span></p>
     
  <footer>
     <a href=#>@brendandawsome</a>
@@ -98,6 +98,6 @@
   <div class=you><img src=/images/you.png></div>
   <p>
     Want to speak at Full Frontal 2011? We’d love to give you the platform to speak to hundreds of
-    developers and designers, so what are you waiting for, <a href=#>get in touch!</a>
+    developers and designers, so what are you waiting for, <a href=#>get in touch!</a></p>
 </section>
 

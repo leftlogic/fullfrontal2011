@@ -19,6 +19,10 @@ article, section, footer, header, nav, hgroup {
   display: block;
 }
 
+.ie article, .ie section, .ie footer, .ie header, .ie nav, .ie hgroup {
+  zoom: 1;
+}
+
 html {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2P4//+/MBQzgDAICEMxXAAMYCoRIlCVANL6FYTYi5d+AAAAAElFTkSuQmCC), url('images/bg-pier.png');
   background-position: center -100px; /* 71px */
@@ -848,7 +852,11 @@ li.selected .venue-9, li:hover .venue-9 { background-position: -232px 31px; }
   position: relative;
   z-index: 1;
 }
-.speaker:nth-of-type(3n) {
+.ie .speaker {
+  margin-right: 2%;
+}
+.speaker:nth-of-type(3n),
+.ie .speaker:endrow {
   margin-right: 0;
 }
 .speaker h1 {

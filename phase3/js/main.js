@@ -32,6 +32,10 @@ if (document.getElementById('speakers')) {
             more = document.createElement('a');
             
         div.className = 'clone';
+        // var inner = document.createElement('section');
+        // inner.className = 'speaker';
+        // div.appendChild(inner);
+        // inner.innerHTML = speaker.innerHTML;
         div.appendChild(speaker.cloneNode(true));
         speaker.appendChild(div);
 
@@ -49,7 +53,9 @@ if (document.getElementById('speakers')) {
           return false;
         };
         
-        speaker.getElementsByTagName('p')[0].appendChild(more);
+        var firstP = speaker.getElementsByTagName('p')[0];
+        firstP.appendChild(document.createTextNode(' '));
+        firstP.appendChild(more);
         speakers.push(speaker);
       }(i);
     }
@@ -57,7 +63,8 @@ if (document.getElementById('speakers')) {
   
   document.onkeydown = function (event) {
     event = event || window.event;
-    if (event.which === 27 && visible !== null) { // esc
+    var which = event.which || event.keyCode;
+    if (which === 27 && visible !== null) { // esc
       each(speakers, function (el) {
         removeClass(el, 'spotlight');
       });      
@@ -109,5 +116,5 @@ function addClass(el, c) {
 }
 
 function removeClass(el, c) {
-  el.className = (' ' + el.className + ' ').replace(c, '');
+  el.className = (' ' + el.className + ' ').replace(' ' + c + ' ', '');
 }

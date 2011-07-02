@@ -21,6 +21,10 @@
 }
 
 @media screen and (max-width: 320px) {
+  html {
+    overflow-x: hidden;
+  }
+  
   .fat-footer section {
     float: none;
   }
@@ -81,6 +85,11 @@
 
   header h2 {
     padding-left: 26%;
+  }
+  
+  .speaker {
+    width: 100%;
+    margin-right: 0;
   }
 }
 
