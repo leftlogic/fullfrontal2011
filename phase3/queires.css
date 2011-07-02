@@ -1,9 +1,4 @@
 @media screen and (max-width: 768px) {
-  html:before {
-    display: inline;
-    content: "768" !important;
-  }
-
   .sponsor h1 {
     font-size: 1.5em;
   }
@@ -11,20 +6,35 @@
   .sponsor-blurb .line1 {
     font-size: 1.25em;
   }
+
+  .terms h1 a {
+    /* always show real leftlogic logo on mobile */
+    background-position: bottom left;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  html {
+     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2P4//+/MBQzgDAICEMxXAAMYCoRIlCVANL6FYTYi5d+AAAAAElFTkSuQmCC), url('images/bg-pier-small.png'); 
+     background-position: center 250px;
+  }
 }
 
 @media screen and (max-width: 320px) {
-  html:before {
-    display: inline;
-    content: "320" !important;
-  }
-
   .fat-footer section {
     float: none;
   }
   
-  .updates {
+  .updates, .sponsors {
     width: auto;
+  }
+  
+  .updates .follow {
+    margin-right: 0;
+  }
+  
+  .updates p {
+    padding-right: 0;
   }
   
   .tickets p span {
@@ -36,6 +46,41 @@
   
   .tickets {
     margin-bottom: 1em;
+  }
+
+  .full-frontal {
+    background: url(images/ff2011-logo.png) no-repeat center;
+    background-size: 100%;
+    height: 77px; /*1.1em;*/
+    width: 82px; /*1.1em;*/
+  }
+  
+  .sponsors a.small {
+    width: 28%;
+    line-height: 4em;
+    height: 4em;
+  }
+  
+  hgroup {
+    display: inline;
+  }
+  
+  .full-frontal {
+    display: none;
+  }
+  
+  header hgroup {
+    background: url(images/ff2011-logo.png) no-repeat top left;
+    background-size: 25%;
+  }
+
+  header h2,
+  header .tickets {
+    font-size: 2.71em;
+  }
+
+  header h2 {
+    padding-left: 26%;
   }
 }
 
@@ -260,11 +305,8 @@
   }
 }
 @media screen and (max-width: 36em) {
-  html {
-     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2P4//+/MBQzgDAICEMxXAAMYCoRIlCVANL6FYTYi5d+AAAAAElFTkSuQmCC), url('images/bg-pier-small.png'); 
-  }
   .wrapper {
-   margin-top: 1em; 
+    margin-top: 1em; 
   }
   .follow {
     font-size: 1.875em;
@@ -274,24 +316,6 @@
   }
 }
 @media screen and (max-width: 32em) {
-  .full-frontal {
-    background: url(images/ff2011-logo.png) no-repeat center;
-    background-size: 100%;
-    height: 77px; /*1.1em;*/
-    width: 82px; /*1.1em;*/
-  }
-  
-  header h2,
-  header .tickets {
-    font-size: 2.95em;
-  }
-  .tickets {
-    float: left;
-  }
-  
-  header h3 {
-    clear: left;
-  }
   
   form {
     margin: 1.375em 0 1.375em 0;

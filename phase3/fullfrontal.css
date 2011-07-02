@@ -130,6 +130,10 @@ header {
   overflow: hidden;
 }
 
+header .buy-tickets span {
+  display: block;
+}
+
 /* FF Logo */
 
 .full-frontal {

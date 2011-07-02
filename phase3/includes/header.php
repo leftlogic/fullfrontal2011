@@ -25,8 +25,8 @@
       </hgroup>
     
       <a href=/tickets class="buy-tickets early-bird">
-        Earlybird<br>
-        <span>1 day &pound;99+ <abbr>VAT</abbr></span><br>
+        Earlybird
+        <span>1 day &pound;99+ <abbr>VAT</abbr></span>
         <span class=buy-button><img src=images/buy-tickets width=278 height=48 alt="Buy Tickets"></span>
       </a>
       
