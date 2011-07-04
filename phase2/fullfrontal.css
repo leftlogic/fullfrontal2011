@@ -531,6 +531,19 @@ html:before {
     margin-left: 11em;
   }
 }
+time.time {
+  font-size: 11.75em;
+  letter-spacing: -0.12em;
+  margin-right: 0.1em;
+}
+
+time.time:after {
+  content: '19.07.11';
+}
+
+time.time b {
+  display: none;
+}
 @media screen and (max-width: 63em) {
   .want-to {
     margin-bottom: 3.075em;

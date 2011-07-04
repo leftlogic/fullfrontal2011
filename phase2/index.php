@@ -35,10 +35,10 @@ if (isset($_POST['email']) && $_POST['email'] && validEmail($_POST['email'])) {
   
 </head>
 <!--[if lte IE 8]><body class="ie nomediaquerygoodnessyepisuck"><![endif]-->
-<!--[if gt IE 8]><!--><body><!--<![endif]-->
+<!--[if gt IE 8]><!--><body class="time"><!--<![endif]-->
     <header>
       <h1 class="full-frontal">Full Frontal</h1> 
-      <time datetime="2011-11-11T09:00:00Z">11.11.11</time>
+      <time id="time" datetime="2011-11-11T09:00:00Z"><b>11.11.11</b></time>
       <h2>JavaScript <br /> <span>Conference</span></h2>
       <h3>Duke Of Yorks, Brighton, <br /> 11th November 2011</h3>
     </header>
@@ -122,7 +122,7 @@ for ($i = 0; $i < 5; $i++) : $fav = $favs[$i]; ?>
     
 <script>
   // Google Analytics
-  var _gaq = _gaq || [];
+  var _gaq = _gaq || [], d = document, n = 'className', g = 'getElementById', i = 'time';
   _gaq.push(['_setAccount', 'UA-1656750-25']);
   _gaq.push(['_trackPageview']);
   (function() {
@@ -132,7 +132,14 @@ for ($i = 0; $i < 5; $i++) : $fav = $favs[$i]; ?>
   })();
   
   // stops the transitions from applying whilst the page is rendering
-  document.documentElement.className += ' transition';  
+  document.documentElement.className += ' transition';
+  
+  var k = "65,66,39,37,39,37,40,40,38,38",
+      c = _gaq;
+  d.onkeyup=function(e){
+    c.unshift((e||event).keyCode);
+    if (!(c+'').indexOf(k))d[g](i)[n]=i;
+  }
 </script>
 </body> 
 </html>
