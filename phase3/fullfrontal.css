@@ -124,7 +124,6 @@ h1, h2 {
   background-position: bottom;
 }
 
-
 /*** Header & Footer ***/
 
 /** Header **/
@@ -137,6 +136,7 @@ header {
 header .buy-tickets span {
   display: block;
 }
+
 
 /* FF Logo */
 
@@ -208,13 +208,13 @@ header h3 {
 header .buy-tickets {
   float: right;
 }
-.buy-tickets span {
+.buy-tickets .price {
   font-size: 0.7313em; /* 49/67 */
 }
 .buy-now {
   font-size: 4.6875em; /* 75/16 */
 }
-.buy-now span {
+.buy-now .price {
   font-size: 0.64em; /* 48/75 */  
 }
 .buy-tickets .buy-button {
@@ -229,13 +229,15 @@ header .buy-tickets {
   background-position: bottom;
 }
 
+
+
 /** Main Navigation **/
 
 nav {
   font-size: 1.625em; /* 25/16 */
   clear: both;
   border-bottom: 2px solid #9cc;
-  margin-top: 2.2em; /* 55/25 */
+  /*margin-top: 2.2em; /* 55/25 */
 }
 nav ul {
   margin: 0;

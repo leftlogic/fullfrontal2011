@@ -274,6 +274,42 @@
   }
 }
 @media screen and (max-width: 56em) {  
+  
+  header .full-frontal {
+    margin-bottom: 0.6em;
+  }
+  header .buy-tickets {
+    position: relative;
+    float: none;
+    clear: both;
+    font-size: 41px;
+    line-height: 48px;
+    overflow: hidden;
+  }
+  header .buy-tickets .tickets-wrapper {
+    float: left;
+    margin-right: 308px;
+  }
+  header .buy-tickets .type {
+    margin-right: 0.2em;
+  }
+  header .buy-tickets .type,
+  header .buy-tickets .price {
+    float: left;
+    font-size: 1em;
+  }
+  header .buy-tickets .buy-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 0.2em;
+    margin-top: 0;
+  }
+  nav {
+    margin-top: 0.8em;
+  }
+  
   .want-to section {
     width: 100%;
     float: none;
@@ -287,6 +323,11 @@
   .want-to section p {
     max-width: none;
     margin-left: 11em;
+  }
+}
+@media screen and (max-width: 781px) {
+  header .buy-tickets .buy-button {
+    top: 24px;
   }
 }
 @media screen and (max-width: 47em) {
