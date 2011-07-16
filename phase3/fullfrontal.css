@@ -844,6 +844,7 @@ li.selected .venue-9, li:hover .venue-9 { background-position: -232px 31px; }
 
 
 .speaker {
+  max-height: 337px;
   overflow: visible;
   width: 31.25%;
   margin-right: 3.125%;
@@ -909,11 +910,14 @@ li.selected .venue-9, li:hover .venue-9 { background-position: -232px 31px; }
   display: none;
 }
 
-.spotlight .clone {
+.spotlight .clone,
+:target .clone {
   display: block;
 }
 
-.spotlight .speaker {
+.spotlight .speaker,
+:target .speaker {
+  max-height: none;
   box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
   background-color: #93cfd6;
   padding: 0.9375em;
@@ -924,19 +928,19 @@ li.selected .venue-9, li:hover .venue-9 { background-position: -232px 31px; }
   margin-top: -0.975em;
   margin-left: -0.975em;
 }
-.spotlight .clone a {
+.clone a {
   color: #fff;
 }
-.spotlight  .clone a:focus,
-.spotlight  .clone a:hover,
-.spotlight  .clone h1 span,
-.spotlight  .clone p {
+.clone a:focus,
+.clone a:hover,
+.clone h1 span,
+.clone p {
   color: #007a8b;
 }
-.js .spotlight .clone .more { /* JS */
+.js .clone .more { /* JS */
   display: inline;
 }
-.spotlight  .speaker footer {
+.clone .speaker footer {
   display: block;
   margin: 0 -0.9375em;
   padding: 0.9375em;
