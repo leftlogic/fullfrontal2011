@@ -15,21 +15,6 @@
     <!-- interesting bug in Firefox 3.6 - if you're using HTML5 elements, and you're not closing your HTML4 p tags, then the HTML5 element gets sucked in to the paragraph. Odd, eh? -->
 </section>
 <?php /*
-<div>
-  <h1>Full Monties
-    <a href=/sponsorship.html>Become a Full Monty sponsor</a>  
-  </h1>
-  <section class=sponsor-full>
-    <a href=#>
-      <h1><img src=images/sponsors/mozilla alt=Mozilla></h1>
-    </a>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irur
-      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-      non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </section>
-</div>
 
 <section class="sponsor sponsor-half">
   <h1>Half Monties
@@ -41,6 +26,18 @@
 </section>
 */
 ?>
+<section class="sponsor">
+  <h1>Full Monties
+    <a href=/sponsorship.html>Become a Full Monty sponsor</a>  
+  </h1>
+  <section class=sponsor-full>
+    <a href=http://www.mozilla.org class=sponsor-logo>
+      <img src=images/sponsors/mozilla alt=Mozilla>
+    </a>
+    <p>
+      Mozilla is an international non-profit organization and a global community dedicated to improving the Internet experience for people everywhere. They create free, open source products and technologies through highly disciplined, transparent and cooperative process. Everything they create is a public asset available for others to use, adapt and improve. The result is great products built by passionate people – and better choices for everyone. For more information, visit <a href=http://www.mozilla.com>www.mozilla.com</a>.</p>
+  </section>
+</section>
 <section class="sponsor sponsor-small">
   <h1>Small Monties
     <a href=/sponsorship.html>Become a Small Monty Sponsor</a>

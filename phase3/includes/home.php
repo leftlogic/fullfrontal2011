@@ -4,7 +4,7 @@
     <li><a href=/speakers#jeremy>Jeremy Ashkenas</a>
     <li><a href=/speakers#glenn>Glenn Jones</a>
     <li><a href=/speakers#brendan>Brendan Dawes</a>
-    <li><a href=/speakers#marijn>Marijn Haverbeke</a>
+    <li><a href=/speakers#phil>Phil Hawksworth</a>
     <li><a href="mailto:events@leftlogic.com?subject=FF2011%20Speaking%20Proposal">&gt; You?</a>
   </ul>
 
@@ -57,7 +57,7 @@ shuffle($favs);
 
 for ($i = 0; $i < 5; $i++) : $fav = $favs[$i]; ?>
       <div><blockquote cite="http://twitter.com/<?=$fav->user->screen_name?>/statuses/<?=$fav->id_str?>">
-        <p><?=(htmlentities($fav->text))?>
+        <p><?=linkify(htmlentities($fav->text))?>
         <footer><a href="http://twitter.com/<?=$fav->user->screen_name?>"><img width=30 height=30 src="<?=$fav->user->profile_image_url?>" alt="<?=$fav->user->screen_name?>"></a><a href="http://twitter.com/<?=$fav->user->screen_name?>/statuses/<?=$fav->id_str?>"><?=$fav->user->screen_name?></a></footer>
       </blockquote></div>
 <?php endfor ?>

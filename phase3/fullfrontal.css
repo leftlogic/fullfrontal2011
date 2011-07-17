@@ -343,6 +343,17 @@ footer {
 .sponsors a {
   overflow: hidden;
 }
+.sponsors a.large {
+  width: 30%;
+  float: left;
+  display: block;
+  background: #FFF;
+  margin: 0 1em 1em 0;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+  height: 5em;
+  line-height: 5em;
+  text-align: center;
+}
 .sponsors a.small {
   width: 30%;
   float: left;
@@ -686,7 +697,7 @@ blockquote p a {
   color: #007a8b;
   box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
 }
-.sponsor-full a {
+.sponsor-full > a {
   display: block;
   padding: 2.5em 1.875%;
   float: left;
@@ -702,7 +713,10 @@ blockquote p a {
   color: #007a8b;
   border-left: 1px solid #c9e7ea;
 }
-
+.sponsor-full p a:hover { 
+  color: #007A8B;
+  text-decoration: underline;
+}
 .sponsor-half .sponsor-logo,
 .sponsor-half .sponsor-available {
   width: 32.3333%;
@@ -904,7 +918,8 @@ li.selected .venue-9, li:hover .venue-9 { background-position: -232px 31px; }
   float: right;
   text-align: right;
 }
-.spotlight {
+.spotlight,
+:target {
   z-index: 2;
 }
 

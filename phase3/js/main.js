@@ -40,17 +40,17 @@ if (document.getElementById('speakers')) {
         speaker.appendChild(div);
 
         more.innerHTML = 'More &raquo;';
-        more.href = '#';
+        more.href = '#' + speaker.id;
         
         more.onclick = function (event) {
           event = event || window.event;
-          event.preventDefault && event.preventDefault();
+          // event.preventDefault && event.preventDefault();
           visible = speaker;
           each(speakers, function (el) {
             removeClass(el, 'spotlight');
           });
           addClass(speaker, 'spotlight');          
-          return false;
+          // return false;
         };
         
         var firstP = speaker.getElementsByTagName('p')[0];
@@ -64,10 +64,13 @@ if (document.getElementById('speakers')) {
   document.onkeydown = function (event) {
     event = event || window.event;
     var which = event.which || event.keyCode;
-    if (which === 27 && visible !== null) { // esc
+    if (which === 27 && visible !== null || location.hash) { // esc
+      event.preventDefault && event.preventDefault();
       each(speakers, function (el) {
         removeClass(el, 'spotlight');
-      });      
+      });
+      location.hash = '';
+      return false;
     }
   };
 }

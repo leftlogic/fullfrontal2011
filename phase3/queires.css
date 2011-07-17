@@ -20,83 +20,6 @@
   }
 }
 
-@media screen and (max-width: 320px) {
-  html {
-    overflow-x: hidden;
-  }
-  
-  .fat-footer section {
-    float: none;
-  }
-  
-  .updates, .sponsors {
-    width: auto;
-  }
-  
-  .updates .follow {
-    margin-right: 0;
-  }
-  
-  .updates p {
-    padding-right: 0;
-  }
-  
-  .tickets p span {
-    display: block;
-    float: none;
-    width: 100%;
-    margin-bottom: 14px;
-  }
-  
-  .tickets {
-    margin-bottom: 1em;
-  }
-
-  .full-frontal {
-    background: url(images/ff2011-logo.png) no-repeat center;
-    background-size: 100%;
-    height: 77px; /*1.1em;*/
-    width: 82px; /*1.1em;*/
-  }
-  
-  .sponsors a.small {
-    width: 28%;
-    line-height: 4em;
-    height: 4em;
-  }
-  
-  hgroup {
-    display: inline;
-  }
-  
-  .full-frontal {
-    display: none;
-  }
-  
-  header hgroup {
-    background: url(images/ff2011-logo.png) no-repeat top left;
-    background-size: 25%;
-  }
-
-  header h2,
-  header .tickets {
-    font-size: 2.71em;
-  }
-
-  header h2 {
-    padding-left: 26%;
-  }
-  
-  .speaker {
-    width: 100%;
-    margin-right: 0;
-  }
-}
-
-@media screen and (max-width: 1017px) {
-    
-}
-
 @media screen and (max-height: 16em) and (min-width: 40em) {
   html:before {
     display: inline;
@@ -404,5 +327,177 @@
   }
   .want-to section p {
     float: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    overflow-x: hidden;
+  }
+  
+  .sponsors a.large {
+    width: 100%;
+  }
+  
+  .full-frontal {
+    display: none;
+  }
+
+  .speakers-list li {
+    font-size: 2em;
+  }
+
+  .fat-footer section {
+    float: none;
+  }
+  
+  .updates, .sponsors {
+    width: auto;
+  }
+  
+  .updates .follow {
+    line-height: 1.75em;
+    margin-right: 0;
+    padding: 0.1em 0;
+  }
+  
+  .updates p {
+    padding-right: 0;
+  }
+  
+  .full-frontal {
+    background: url(images/ff2011-logo.png) no-repeat center;
+    background-size: 100%;
+    height: 77px; /*1.1em;*/
+    width: 82px; /*1.1em;*/
+  }
+  
+  .fat-footer {
+    padding-bottom: 1em;
+  }
+  
+  .sponsors a.small {
+    width: 28%;
+    line-height: 4em;
+    height: 4em;
+  }
+  
+  hgroup {
+    display: inline;
+  }
+  
+  header hgroup {
+    background: url(images/ff2011-logo.png) no-repeat top left;
+    background-size: 25%;
+  }
+
+  header h2,
+  header .tickets {
+    font-size: 2.71em;
+  }
+
+  header h2 {
+    padding-left: 26%;
+  }
+  
+  .speaker {
+    width: 100%;
+    margin-right: 0;
+  }
+  
+  /* venue */
+  #venue .details { 
+    width: 100%;
+  }
+  
+  #venue .details li > span {
+    display: none;
+  }
+  
+  #venue .venue img {
+    width: 100%;
+  }
+  
+  #venue #venue-map {
+    display: none;
+  }
+  
+  footer {
+    margin-bottom: 2em;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  #venue .details {
+    width: 60%;
+  }
+
+  #venue .venue img,
+  #venue-map {
+    width: 39%;
+  }
+
+}
+
+@media screen and (max-width: 520px) {
+  #venue .details {
+    width: 100%;
+  }
+
+  #venue .venue img,
+  #venue-map {
+    display: none;
+  }
+
+  header .buy-tickets .buy-button {
+    width: 100%;
+    top: 0;
+    position: relative;
+  }  
+  .tickets p span {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-bottom: 14px;
+  }
+  
+  .tickets {
+    margin-bottom: 1em;
+  }
+
+  /* removed elements */
+  header .buy-tickets .tickets-wrapper,
+  .image-cube {
+    display: none;
+  }
+  
+  .speakers-list {
+    width: 100%;
+    float: none;
+  }
+  
+  #workshops .callout {
+    float: none;
+    width: 100%;
+  }
+  
+  #workshops .headshot {
+    display: none;
+  }
+
+  #workshops .details {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  ul {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 442px) {
+  .speakers-list li {
+    font-size: 3em;
   }
 }

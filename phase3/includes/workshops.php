@@ -32,7 +32,7 @@
   </div>
   
   <div class=callout>
-    <img src=images/speakers/remy.jpg>
+    <img class=headshot src=images/speakers/remy.jpg>
     <a href=/tickets class="buy-tickets early-bird">
       Both days<br>
       <span>&pound;595+ <abbr>VAT</abbr></span><br>
@@ -84,7 +84,7 @@
   </div>
   
   <div class=callout>
-    <img src=images/speakers/ppk.jpg>
+    <img class=headshot src=images/speakers/ppk.jpg>
     <a href=/tickets class="buy-tickets early-bird">
       Mobilism<br>
       <span>&pound;595+ <abbr>VAT</abbr></span><br>

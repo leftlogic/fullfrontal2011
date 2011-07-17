@@ -4,8 +4,8 @@
     <h2>
       <span class=line-1>Duke</span>
       <span class=line-2>of York's</span>
-      <span class=line-3>Picturehouse</span>
-      <span class=line-4>Preston Circus, Brighton, BN1 4NA</span>
+      <span class=line-3>Picturehouse</span><br>
+      <span class=line-4>Preston Circus, Brighton, BN1 4NA</span><br>
       <span class=line-5>+44 (0)871 902 5728</span>
     </h2>
 
