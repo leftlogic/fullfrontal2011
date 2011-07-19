@@ -241,11 +241,12 @@
     margin-left: 11em;
   }
 }
-@media screen and (max-width: 781px) {
+/*@media screen and (max-width: 781px) {
   header .buy-tickets .buy-button {
     top: 24px;
   }
 }
+*/
 @media screen and (max-width: 47em) {
   .want-to {
     margin-bottom: 2.075em;
@@ -329,7 +330,7 @@
     background-position: center -71px;
   }    
 }
-@media screen and (max-width: 781px) {
+@media screen and (max-width: 775px) {
   html {
     background-position: center -22px;
   }   
@@ -337,15 +338,29 @@
 @media screen and (max-width: 750px) {
   html {
     background-position: center 12px;
+  }   
+}
+@media screen and (max-width: 594px) {
+  html {
+    background-position: center -22px;
   }  
 }
-@media screen and (max-width: 583px) {
+/*@media screen and (max-width: 594px) {
+  html {
+    background-position: center 60px;
+  }  
+}
+*/@media screen and (max-width: 594px) {
+  html {
+    background-position: center 60px;
+  }  
+}
+@media screen and (max-width: 576px) {
   html {
     background-position: center 57px;
   }  
 }
-
-@media screen and (max-width: 555px) {
+@media screen and (max-width: 554px) {
   html {
     background-position: center 208px;
   }  
@@ -499,6 +514,11 @@
   }
 }
 
+@media screen and (max-width: 776px) {
+  header .buy-tickets .buy-button {
+    top: 0;
+  }
+}
 
 @media screen and (max-width: 720px) {
   .sponsor-blurb h1 {
@@ -563,7 +583,7 @@
   }
 
   header .buy-tickets .buy-button {
-    width: 100%;
+    max-width: 100%;
     top: 0;
     position: relative;
   }  

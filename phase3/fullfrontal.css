@@ -25,7 +25,7 @@ article, section, footer, header, nav, hgroup {
 
 html {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2P4//+/MBQzgDAICEMxXAAMYCoRIlCVANL6FYTYi5d+AAAAAElFTkSuQmCC), url('images/bg-pier.png');
-  background-position: center -66px; /* 71px */
+  background-position: center -100px; /* 71px */
   background-repeat: repeat, no-repeat;
   background-color: #008999;
 }
@@ -34,7 +34,7 @@ body {
   margin: 0 auto;
   padding: 0;
   font-family: 'Century Gothic', sans-serif;
-  font-weight: bold;
+/*  font-weight: bold;*/
   color: #93cfd6;
 }
 .wrapper {

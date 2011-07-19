@@ -33,7 +33,8 @@ if (document.getElementById('speakers')) {
       !function (i) {
         var speaker = sections[i],
             div = document.createElement('div'),
-            more = document.createElement('a');
+            more = document.createElement('a'),
+            image = speaker.getElementsByTagName('img')[0];
             
         div.className = 'clone';
         div.appendChild(speaker.cloneNode(true));
@@ -53,7 +54,7 @@ if (document.getElementById('speakers')) {
           // return false;
         };
         
-        more.onclick = click;
+        speaker.onclick = click; // more.onclick = 
         
         // lame - but a good reason for it - sorry folks
         if (location.hash.substr(1) == speaker.id) {
