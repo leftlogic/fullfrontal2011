@@ -51,7 +51,7 @@
     <a href=http://leftlogic.stagehq.com/events/901/booking/new class="buy-tickets" style="font-size: 3em;">
       Single day @ <span>&pound;345+ <abbr>VAT</abbr></span> <small>or</small><br>
       Both days @ <span>&pound;595+ <abbr>VAT</abbr></span>
-      <span class=buy-button><img src=images/buy-tickets width=278 height=48 alt="Buy Tickets"></span>
+      <span class=buy-button><img src=images/buy-tickets.png width=278 height=48 alt="Buy Tickets"></span>
     </a>
     <p>Ticket includes pass to Friday event.<br>Two day ticket includes evening meal on Wednesday with Remy &amp; PPK.<br>
       Tea, Coffee and lunch provided for both days.
@@ -95,7 +95,7 @@
     <a href=http://leftlogic.stagehq.com/events/902/booking/new class="buy-tickets early-bird">
       Mobilism<br>
       <span>&pound;595+ <abbr>VAT</abbr></span><br>
-      <span class=buy-button><img src=images/buy-tickets width=278 height=48 alt="Buy Tickets"></span>
+      <span class=buy-button><img src=images/buy-tickets.png width=278 height=48 alt="Buy Tickets"></span>
     </a>
     <p>Ticket includes pass to Friday event and evening meal with PPK &amp; Remy on Wednesday evening. Tea, Coffee and lunch provided for both days.
   </div>

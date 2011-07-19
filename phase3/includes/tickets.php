@@ -8,14 +8,14 @@
 <section class=tickets>
   <h1>Mobilism Workshop</h1>
   <h2>&pound;595+<abbr>VAT</abbr> <span>Inc. Conference</span></h2>
-  <p><a href=http://leftlogic.stagehq.com/events/902/booking/new><span class=buy-button><img src=images/buy-tickets width=278 height=48 alt="Buy Tickets"></span></a>
+  <p><a href=http://leftlogic.stagehq.com/events/902/booking/new><span class=buy-button><img src=images/buy-tickets.png width=278 height=48 alt="Buy Tickets"></span></a>
   <strong>Includes:</strong> Two day workshop with mobile master: PPK, evening meal with PPK and other workshop delegates, full pass to Full Frontal day event, and did we mention PPK? <a href=/workshops#mobilism>read more</a>
 </section>
 
 <section class=tickets>
   <h1>Node Workshop</h1>
   <h2>&pound;595+<abbr>VAT</abbr>/&pound;345+<abbr>VAT</abbr> <span>Inc. Conference</span></h2>
-  <p><a href=http://leftlogic.stagehq.com/events/901/booking/new><span class=buy-button><img src=images/buy-tickets width=278 height=48 alt="Buy Tickets"></span></a>
+  <p><a href=http://leftlogic.stagehq.com/events/901/booking/new><span class=buy-button><img src=images/buy-tickets.png width=278 height=48 alt="Buy Tickets"></span></a>
   <strong>Available:</strong> One or two day workshop with <b title="Not a mobile master, but a quasi JavaScript samurai">Remy Sharp</b>, full introduction to Node and using it with HTML5 real-time APIs, evening meal with all 2 day workshop delegates and speakers and full pass to Full Frontal day event. <a href=/workshops#node>read more</a>
 </section>
 

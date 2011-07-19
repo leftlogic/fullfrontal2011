@@ -30,7 +30,7 @@
           <span class=type>Earlybird</span>
           <span class=price>1 day &pound;99+<abbr>VAT</abbr></span>
         </span>
-        <span class=buy-button><img src=images/buy-tickets width=278 height=48 alt="Buy Tickets"></span>
+        <span class=buy-button><img src=images/buy-tickets.png width=278 height=48 alt="Buy Tickets"></span>
       </a>
       
       
@@ -39,7 +39,7 @@
         <span class=type>Buy Now</span>
         <span class=price>1 day &pound;129+ <abbr>VAT</abbr></span><br>
         </span>
-        <span class=buy-button><img src=images/buy-tickets width=278 height=48 alt="Buy Tickets"></span>
+        <span class=buy-button><img src=images/buy-tickets.png width=278 height=48 alt="Buy Tickets"></span>
       </a> -->
             
       <!-- <span class="buy-tickets sold-out">Sold Out!</span> -->
