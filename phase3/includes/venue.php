@@ -31,7 +31,7 @@
             <h3><a href=http://brightonhotels.jurysinns.com>Jury's Inn'</a> £112*</h3>
             <p>
               101 Stroundly Road, BN1 4DJ<br>
-              <small>* 2 nights special Full Frontal, £129 also includes breakfast</small>
+              <small>* 2 nights online special, £129 also includes breakfast</small>
           </div>
           
       <li data-latlng=50.83632670343803,-0.1439809799194336><span class=venue-2>2</span>

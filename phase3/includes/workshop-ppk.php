@@ -2,7 +2,7 @@
   <div class=details>
     <header>
       <h1>Mobilism</h1>
-      <time>9th &amp; 10th Novermber, 09:30 &ndash; 17:00</time><br>
+      <time>9th &amp; 10th November, 09:30 &ndash; 17:00</time><br>
       <a href=/speakers#ppk>PPK</a> at The Lighthouse</a>
     </header>
   

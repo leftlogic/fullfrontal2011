@@ -13,7 +13,7 @@
 <section class=speaker id=jeremy>
   <h1><span>02</span> Jeremy Ashkenas</h1>
   <img src=/images/speakers/jeremy.jpg>
-  <p>Jeremy Ashkenas works on CoffeeScript, Backbone.js, Underscore.js, Docco, and Jammit, among other opensource projects.<span class=more>He is also part of the Interactive News team at the New York Times, as well as the lead developer of DocumentCloud, helping news organizations analyze and publish the primary source documents behind the news.</span></p>
+  <p>Jeremy Ashkenas works on CoffeeScript, Backbone.js, Underscore.js, Docco, and Jammit, among other opensource projects.<span class=more>He is also part of the Interactive News team at the New York Times, as well as the lead developer of DocumentCloud, helping news organisations analyise and publish the primary source documents behind the news.</span></p>
     
  <footer>
     <a href=http://twitter.com/jashkenas>@jashkenas</a>
@@ -39,14 +39,14 @@
     
   <footer>
     <a href=http://twitter.com/glennjones>@glennjones</a>
-    <a href=http://www.glennjones.net>Magex / glennjones.net</a>
+    <a href=http://www.glennjones.net>Madgex / glennjones.net</a>
   </footer>
 </section>
 
 <section class="speaker" id=phil>
   <h1><span>05</span> Phil Hawksworth</h1>
   <img src=/images/speakers/phil.jpg>
-  <p>Phil is a JavaScript developer who has been developing web applications since the late 90s.  These days, as Technical Director for The Team. <span class=more>The Team is an agency based in London, he focusses more on technical architecture and working closely with developers, designers, and UX designers, than writing code.  He loves that role, but just can&rsquo;t keep his sticky fingers away from code, which leads him to various small experiments and side projects.  In his previous roles at places like Verisign, VMware and BT, Phil spent much time espousing the value of adopting unobtrusive JavaScript, Open Web standards and open source technologies.</span></p>
+  <p>Phil is a JavaScript developer who has been developing web applications since the late 90s.  These days, he&rsquo;s the Technical Director for The Team. <span class=more>The Team is an agency based in London, he focusses more on technical architecture and working closely with developers, designers, and UX designers, than writing code.  He loves that role, but just can&rsquo;t keep his sticky fingers away from code, which leads him to various small experiments and side projects.  In his previous roles at places like Verisign, VMware and BT, Phil spent much time espousing the value of adopting unobtrusive JavaScript, Open Web standards and open source technologies.</span></p>
     
   <footer>
     <a href=http://twitter.com/philhawksworth>@philhawksworth</a>
