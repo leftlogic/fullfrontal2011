@@ -501,11 +501,17 @@
 }
 
 @media screen and (max-width: 840px) {
+  .image-cube {
+    width: 40%;
+  }
+  
   .image-cube div {
     width: 50%;
   }
   
-  .image-cube div:last-child {
+  .image-cube div:last-child,
+  .image-cube div:nth-child(8),
+  .image-cube div:nth-child(7) {
     display: none;
   }
   
@@ -515,6 +521,11 @@
 }
 
 @media screen and (max-width: 776px) {
+  .image-cube div:nth-child(8),
+  .image-cube div:nth-child(7) {
+    display: block;
+  }
+
   header .buy-tickets .buy-button {
     top: 0;
   }
