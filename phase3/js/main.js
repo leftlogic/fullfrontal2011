@@ -15,6 +15,10 @@ twitterlib.timeline('fullfrontalconf', { limit: 2 }, function (tweets) {
   updates.innerHTML = html;
 });
 
+/mobile/i.test(navigator.userAgent) && !location.hash && setTimeout(function () {
+  if (!pageYOffset) window.scrollTo(0, 1);
+}, 1000);
+
 if (document.getElementById('speakers')) {
   // speakers page
   var sections = document.getElementsByTagName('section'),
@@ -25,33 +29,36 @@ if (document.getElementById('speakers')) {
       
   while (i--) {
     test = (' ' + sections[i].className + ' ');
-    if (test.indexOf(' speaker ') !== -1 && test.indexOf(' want-to ') === -1) {
+    if (test.indexOf(' speaker ') !== -1 && test.indexOf(' want-to ') === -1 && sections[i].getElementsByTagName('p')[0].getElementsByTagName('span').length) {
       !function (i) {
         var speaker = sections[i],
             div = document.createElement('div'),
             more = document.createElement('a');
             
         div.className = 'clone';
-        // var inner = document.createElement('section');
-        // inner.className = 'speaker';
-        // div.appendChild(inner);
-        // inner.innerHTML = speaker.innerHTML;
         div.appendChild(speaker.cloneNode(true));
         speaker.appendChild(div);
 
         more.innerHTML = 'More &raquo;';
         more.href = '#' + speaker.id;
         
-        more.onclick = function (event) {
-          event = event || window.event;
+        var click = function (event) {
+          // event = event || window.event;
           // event.preventDefault && event.preventDefault();
           visible = speaker;
           each(speakers, function (el) {
             removeClass(el, 'spotlight');
           });
-          addClass(speaker, 'spotlight');          
+          addClass(speaker, 'spotlight');
           // return false;
         };
+        
+        more.onclick = click;
+        
+        // lame - but a good reason for it - sorry folks
+        if (location.hash.substr(1) == speaker.id) {
+          click.call(more, {});
+        }
         
         var firstP = speaker.getElementsByTagName('p')[0];
         firstP.appendChild(document.createTextNode(' '));
@@ -64,14 +71,13 @@ if (document.getElementById('speakers')) {
   document.onkeydown = function (event) {
     event = event || window.event;
     var which = event.which || event.keyCode;
-    if (which === 27 && visible !== null || location.hash) { // esc
+    if (which === 27 && visible !== null || location.hash.substr(1)) { // esc
       event.preventDefault && event.preventDefault();
       each(speakers, function (el) {
         removeClass(el, 'spotlight');
       });
-      location.hash = '';
       return false;
-    }
+    } 
   };
 }
 
@@ -118,6 +124,10 @@ function addClass(el, c) {
   }
 }
 
+// thank you jQuery...
+var triml = /^\s+/,
+	  trimr = /\s+$/;
+
 function removeClass(el, c) {
-  el.className = (' ' + el.className + ' ').replace(' ' + c + ' ', '');
+  el.className = (' ' + el.className + ' ').replace(' ' + c + ' ', '').replace(triml, '').replace(trimr, '');
 }

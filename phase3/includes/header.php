@@ -9,7 +9,7 @@
   <script>document.documentElement.className = 'js';</script>
   <link rel=stylesheet href='http://fonts.googleapis.com/css?family=Cabin+Sketch:bold' /> 
   <link rel=stylesheet href=fullfrontal.css>
-  <link rel=stylesheet href=queires.css>
+  <link rel=stylesheet href=queries.css>
   
   <!--[if lt IE 9]>
   <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -28,13 +28,13 @@
       <a href=/tickets class="buy-tickets early-bird">
         <span class=tickets-wrapper>
           <span class=type>Earlybird</span>
-          <span class=price>1 day &pound;99+ <abbr>VAT</abbr></span>
+          <span class=price>1 day &pound;99+<abbr>VAT</abbr></span>
         </span>
         <span class=buy-button><img src=images/buy-tickets width=278 height=48 alt="Buy Tickets"></span>
       </a>
       
       
-      <!-- <a href=# class="buy-tickets buy-now">
+      <!-- <a href=/tickets class="buy-tickets buy-now">
         <span class=tickets-wrapper>
         <span class=type>Buy Now</span>
         <span class=price>1 day &pound;129+ <abbr>VAT</abbr></span><br>

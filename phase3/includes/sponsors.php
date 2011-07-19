@@ -27,24 +27,36 @@
 */
 ?>
 <section class="sponsor">
-  <h1>Full Monties
-    <a href=/sponsorship.html>Become a Full Monty sponsor</a>  
-  </h1>
+  <h1>Our Full Monty Sponsors</h1>
   <section class=sponsor-full>
-    <a href=http://www.mozilla.org class=sponsor-logo>
-      <img src=images/sponsors/mozilla alt=Mozilla>
+    <a href=http://www.blackberry.com/developers class=sponsor-logo>
+      <img src=images/sponsors/blackberry2.gif alt=Blackberry>
     </a>
-    <p>
-      Mozilla is an international non-profit organization and a global community dedicated to improving the Internet experience for people everywhere. They create free, open source products and technologies through highly disciplined, transparent and cooperative process. Everything they create is a public asset available for others to use, adapt and improve. The result is great products built by passionate people – and better choices for everyone. For more information, visit <a href=http://www.mozilla.com>www.mozilla.com</a>.</p>
+    <div class=blurb>
+      <p>The BlackBerry&reg; WebWorks&trade; SDK lets developers build rich, integrated, standalone BlackBerry applications using web technologies (HTML5, CSS3, JavaScript). These applications allow full integration into the BlackBerry ecosystem and can be distributed and monetized like traditional applications running on the BlackBerry&reg; PlayBook&trade; tablet and BlackBerry smartphones.</p>
+      <p>The BlackBerry WebWorks SDK v2.1 provides page load improvements and includes new features in BBM&trade; integration, push technology, device integration and security.</p>
+      <p><a href="http://us.blackberry.com/developers/browserdev/advfeatures.jsp">Learn about the new features in the BlackBerry WebWorks</a></p>
+    </div>
+  </section>
+  
+  <section class=sponsor-full>
+    <a href=https://developer.mozilla.org/demos/devderby class=sponsor-logo>
+      <img src=images/sponsors/mozilla-badge.gif alt=Mozilla>
+    </a>
+    <div class=blurb>
+      <p>Mozilla is a global, nonprofit organization dedicated to making the Web better. We emphasize principle over profit, and believe that the Web is a shared public resource to be cared for, not a commodity to be sold.
+      <p>They work with an open community of developers building resources for a better web, regardless of brand, browser or platform. Anyone can contribute and each person who does makes us stronger. Together we can continue to drive innovation on the Web to serve the greater good. It starts here, with you.
+      <p>Mozilla have created Dev Derby, an HTML5 demo contest, to encourage developers to show off what is possible with HTML5.</p>
+      <p><a href="https://developer.mozilla.org/demos/devderby">Please submit your own demo and share what open technologies can do!</a></p>
   </section>
 </section>
 <section class="sponsor sponsor-small">
   <h1>Small Monties
     <a href=/sponsorship.html>Become a Small Monty Sponsor</a>
   </h1>
-    <a class=sponsor-logo href=http://dharmafly.com><img src=/images/sponsors/dharmafly.gif width=230 height=60 alt="Dharmafly, apps for change"></a>
-    <a class=sponsor-logo href=http://pusher.com><img src=/images/sponsors/pusher.gif width=230 height=90 alt="Pusher - Supercharge your app with realtime events"></a>
-    <a href=/sponsorship.html><span class="sponsor-logo you"><img src=/images/you.png width=230 height=90></span></a>
+    <a class=sponsor-logo href=http://dharmafly.com><img src=/images/sponsors/dharmafly.gif width=230 alt="Dharmafly, apps for change"></a>
+    <a class=sponsor-logo href=http://pusher.com><img src=/images/sponsors/pusher.gif width=230 alt="Pusher - Supercharge your app with realtime events"></a>
+    <a href=/sponsorship.html><span class="sponsor-logo you"><img src=/images/you.png width=230></span></a>
 </section>
 
 <!-- <section class="sponsor sponsor-media">

@@ -13,16 +13,21 @@
   
     <section class=sponsors>
       <h1>Proudly Sponsored By...</h1>
-      <a class=large href=http://www.mozilla.org><img src=/images/sponsors/mozilla.gif alt="Mozilla - Building a better internet, and dedicated to keeping it free, open and accessible to all" width=264></a>
+      <?php
+      $full = array('<a class=large href=http://www.blackberry.com/developers><img src=/images/sponsors/blackberry.gif alt="The BlackBerry Developer Zone is the central place for developers to get tools, resources and information to develop for the BlackBerry Application Platform" width=264></a>','<a class=large href=http://www.mozilla.org><img src=/images/sponsors/mozilla.gif alt="Mozilla - Building a better internet, and dedicated to keeping it free, open and accessible to all" width=264></a>');
+      shuffle($full);
+      echo join($full, ' ');
+      ?>
+      
       <a class=small href=http://dharmafly.com><img src=/images/sponsors/dharmafly.gif alt="Dharmafly, apps for change"></a>
       <a class=small href=http://pusher.com><img src=/images/sponsors/pusher.gif alt="Pusher - Supercharge your app with realtime events"></a>
       <a class="small you" href=/sponorship.html><img src=/images/you.png alt="Want to sponsor?"></a>
-      <!-- <a href=#><img src=/ alt= width=132 height=99></a>
+      <?php /*<!-- <a href=#><img src=/ alt= width=132 height=99></a>
       <a href=#><img src=/ alt= width=132 height=99></a>
       <a href=#><img src=/ alt= width=132 height=99></a>
       <a href=#><img src=/ alt= width=132 height=99></a>
       <a href=#><img src=/ alt= width=132 height=99></a>
-      <a href=#><img src=/ alt= width=132 height=99></a> -->
+      <a href=#><img src=/ alt= width=132 height=99></a> */?>
     </section>
     </div>
   </div>

@@ -13,13 +13,6 @@
   }
 }
 
-@media screen and (max-width: 360px) {
-  html {
-     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2P4//+/MBQzgDAICEMxXAAMYCoRIlCVANL6FYTYi5d+AAAAAElFTkSuQmCC), url('images/bg-pier-small.png'); 
-     background-position: center 125px;
-  }
-}
-
 @media screen and (max-height: 16em) and (min-width: 40em) {
   html:before {
     display: inline;
@@ -330,13 +323,67 @@
   }
 }
 
+/* yeah, overkill - sorry :( --rs */
+@media screen and (max-width: 896px) {
+  html {
+    background-position: center -71px;
+  }    
+}
+@media screen and (max-width: 781px) {
+  html {
+    background-position: center -22px;
+  }   
+}
+@media screen and (max-width: 750px) {
+  html {
+    background-position: center 12px;
+  }  
+}
+@media screen and (max-width: 583px) {
+  html {
+    background-position: center 57px;
+  }  
+}
+
+@media screen and (max-width: 555px) {
+  html {
+    background-position: center 208px;
+  }  
+}
+@media screen and (max-width: 520px) {
+  html {
+    background-position: center 114px;
+  }
+}
+
+@media screen and (max-width: 409px) {
+  html { 
+    background-position: center 150px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  html {
+     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2P4//+/MBQzgDAICEMxXAAMYCoRIlCVANL6FYTYi5d+AAAAAElFTkSuQmCC), url('images/bg-pier-small.png'); 
+     background-position: center 335px;
+  }
+}
+
 @media screen and (max-width: 320px) {
   html {
     overflow-x: hidden;
+    background-position: center 125px;
   }
   
-  .sponsors a.large {
+  .sponsor-blurb p {
+    display: none;
+  }
+  
+  .sponsors a.large,
+  .sponsors a.small {
     width: 100%;
+    height: auto;
+    text-align: center;
   }
   
   .full-frontal {
@@ -376,12 +423,12 @@
     padding-bottom: 1em;
   }
   
-  .sponsors a.small {
+/*  .sponsors a.small {
     width: 28%;
     line-height: 4em;
     height: 4em;
   }
-  
+*/  
   hgroup {
     display: inline;
   }
@@ -436,7 +483,73 @@
   #venue-map {
     width: 39%;
   }
+}
 
+@media screen and (max-width: 840px) {
+  .image-cube div {
+    width: 50%;
+  }
+  
+  .image-cube div:last-child {
+    display: none;
+  }
+  
+  .speakers-list li {
+    margin-bottom: 2%;
+  }
+}
+
+
+@media screen and (max-width: 720px) {
+  .sponsor-blurb h1 {
+    display: none;
+  }
+  
+  .sponsor-blurb p {
+    width: 100%;
+    float: none;    
+  }
+  
+  .sponsor-full > a {
+    float: none;
+    display: block;
+    width: 100%;
+    padding-bottom: 0;
+  }
+  
+  .sponsor-full > a img {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .sponsor-full .blurb {
+    border-left: 0;
+  }
+  
+  .sponsor-small .sponsor-logo {
+    width: auto;
+  }
+  
+  #workshops .callout {
+    float: none;
+    width: 100%;
+  }
+  
+  #workshops .headshot {
+    display: none;
+  }
+
+  #workshops .details {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  ul {
+    padding-left: 0;
+  }
+  
 }
 
 @media screen and (max-width: 520px) {
@@ -474,26 +587,7 @@
   .speakers-list {
     width: 100%;
     float: none;
-  }
-  
-  #workshops .callout {
-    float: none;
-    width: 100%;
-  }
-  
-  #workshops .headshot {
-    display: none;
-  }
-
-  #workshops .details {
-    float: none;
-    width: 100%;
-    margin-left: 0;
-  }
-  
-  ul {
-    padding-left: 0;
-  }
+  }  
 }
 
 @media screen and (max-width: 442px) {

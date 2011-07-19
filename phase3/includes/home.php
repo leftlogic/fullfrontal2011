@@ -4,13 +4,13 @@
     <li><a href=/speakers#jeremy>Jeremy Ashkenas</a>
     <li><a href=/speakers#glenn>Glenn Jones</a>
     <li><a href=/speakers#brendan>Brendan Dawes</a>
-    <li><a href=/speakers#phil>Phil Hawksworth</a>
+    <li><a href=/speakers#marijan>Marijan Haverbeke</a>
+      <li><a href=/speakers#phil>Phil Hawksworth</a>
     <li><a href="mailto:events@leftlogic.com?subject=FF2011%20Speaking%20Proposal">&gt; You?</a>
   </ul>
 
-  <h2>Duke Of Yorks, Brighton, <br> 11th November 2011</h2>
 </div>
-
+<h2>Duke Of Yorks, Brighton, <br> 11th November 2011</h2>
 <div class=image-cube>
   <div><img src=images/home/home-1.jpg></div>
   <div><img src=images/home/home-2.jpg></div>

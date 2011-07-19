@@ -54,6 +54,18 @@
   </footer>
 </section>
 
+<section class="speaker" id=marijan>
+  <h1><span>06</span> Marijan Haverbeke</h1>
+  <img src=/images/speakers/marijan.jpg>
+  <p>So cool we don&rsquo;t even have his bio&hellip;yet :)</p>
+    
+  <footer>
+    <a href=http://twitter.com/marijnjh>@marijnjh</a>
+    <a href=http://marijnhaverbeke.nl>marijnhaverbeke.nl</a>
+  </footer>
+</section>
+
+
 <section class="want-to speaker">
   <h1><span>&gt;</span> Want to speak?</h1>
   <div class=you><img src=/images/you.png></div>
