@@ -54,8 +54,8 @@
   </footer>
 </section>
 
-<section class="speaker" id=marijan>
-  <h1><span>06</span> Marijan Haverbeke</h1>
+<section class="speaker" id=marijn>
+  <h1><span>06</span> Marijn Haverbeke</h1>
   <img src=/images/speakers/marijan.jpg>
   <p>Author of <a href=http://eloquentjavascript.net/>Eloquent JavaScript</a> and main developer of <a href=http://codemirror.net/>CodeMirror</a>. <span class=more>Marijn Haverbeke has been trying to get out of web programming for over ten years, but web programming just kept on getting more interesting. Currently working on Mozilla&rsquo;s new programming language, Rust.</span></p>
     

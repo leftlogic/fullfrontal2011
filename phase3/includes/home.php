@@ -4,7 +4,7 @@
     <li><a href=/speakers#jeremy>Jeremy Ashkenas</a>
     <li><a href=/speakers#glenn>Glenn Jones</a>
     <li><a href=/speakers#brendan>Brendan Dawes</a>
-    <li><a href=/speakers#marijan>Marijan Haverbeke</a>
+    <li><a href=/speakers#marijn>Marijn Haverbeke</a>
       <li><a href=/speakers#phil>Phil Hawksworth</a>
     <li><a href="mailto:events@leftlogic.com?subject=FF2011%20Speaking%20Proposal">&gt; You?</a>
   </ul>
