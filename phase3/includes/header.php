@@ -25,22 +25,22 @@
         <h3>Duke Of Yorks, Brighton, <br> <time datetime=2011-11-11T09:00:00Z>11th November 2011</time></h3>
       </hgroup>
     
-      <a href=/tickets class="buy-tickets early-bird">
+      <!-- <a href=/tickets class="buy-tickets early-bird">
         <span class=tickets-wrapper>
           <span class=type>Earlybird</span>
           <span class=price>1 day &pound;99+<abbr>VAT</abbr></span>
         </span>
         <span class=buy-button><img src=images/buy-tickets.png width=278 height=48 alt="Buy Tickets"></span>
-      </a>
+      </a>-->
       
       
-      <!-- <a href=/tickets class="buy-tickets buy-now">
+      <a href=/tickets class="buy-tickets buy-now">
         <span class=tickets-wrapper>
         <span class=type>Buy Now</span>
         <span class=price>1 day &pound;129+ <abbr>VAT</abbr></span><br>
         </span>
         <span class=buy-button><img src=images/buy-tickets.png width=278 height=48 alt="Buy Tickets"></span>
-      </a> -->
+      </a>
             
       <!-- <span class="buy-tickets sold-out">Sold Out!</span> -->
       

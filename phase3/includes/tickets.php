@@ -1,6 +1,6 @@
 <section class=tickets>
   <h1>Conference</h1>
-  <h2>&pound;99+<abbr>VAT</abbr>, <span>Conference only</span></h2>
+  <h2>&pound;129+<abbr>VAT</abbr>, <span>Conference only</span></h2>
   <p><a href=http://leftlogic.stagehq.com/events/848/booking/new><span class=buy-button><img src=images/buy-tickets.png width=278 height=48 alt="Buy Tickets"></span></a><strong>Includes:</strong> Full day conference ticket, complimentary coffee &amp; snacks, access to the After Party and a shed load of awesome JavaScript.
     
 </section> 

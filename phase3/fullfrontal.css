@@ -94,8 +94,8 @@ nav,
 h1, h2, h3,
 .speakers-list {
   font-family: 'Cabin Sketch', sans-serif;
-  -webkit-text-shadow: 2px 2px 2px rgba(0,0,0,0.1); 
-  text-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+/*  -webkit-text-shadow: 2px 2px 2px rgba(0,0,0,0.1); */
+/*  text-shadow: 2px 2px 2px rgba(0,0,0,0.1);*/
   text-transform: uppercase;
   color: #fff;
 }
@@ -129,7 +129,7 @@ h1, h2 {
 /** Header **/
 
 header {
-  -webkit-text-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+/*  -webkit-text-shadow: 2px 2px 2px rgba(0,0,0,0.1);*/
   overflow: hidden;
 }
 
