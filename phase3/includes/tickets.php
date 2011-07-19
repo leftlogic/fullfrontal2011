@@ -22,7 +22,7 @@
 
 
 <p class="highlight clear">
-Please note that due to the was Stage<abbr>HQ</abbr> (our payment system) works, the <abbr>VAT</abbr>
+Please note that due to the way Stage<abbr>HQ</abbr> (our payment system) works, the <abbr>VAT</abbr>
 won't show up separately when buying the tickets (nor in PayPal). <abbr>VAT</abbr> has been separately
 added, and our <abbr>VAT</abbr> registration is: 993 1266 95. A <abbr>VAT</abbr> invoice can be provided <a href="events@leftlogic.com?subject=Invoice%20request">on request</a>.
 
