@@ -24,7 +24,7 @@
 <p class="highlight clear">
 Please note that due to the way Stage<abbr>HQ</abbr> (our payment system) works, the <abbr>VAT</abbr>
 won't show up separately when buying the tickets (nor in PayPal). <abbr>VAT</abbr> has been separately
-added, and our <abbr>VAT</abbr> registration is: 993 1266 95. A <abbr>VAT</abbr> invoice can be provided <a href="events@leftlogic.com?subject=Invoice%20request">on request</a>.
+added, and our <abbr>VAT</abbr> registration is: 993 1266 95. A <abbr>VAT</abbr> invoice can be provided <a href="mailto:events@leftlogic.com?subject=Invoice%20request">on request</a>.
 
 <!-- <p>
 If your tickets type isn't available, <a href="mailto:events@leftlogic.com?subject=Full%20Frontal%20waiting%20list&amp;body=Ticket%20I%20am%20interested%20in%3A%20%5BINSERT%20HERE%5D">please email us</a> with your name and the ticket
