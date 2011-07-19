@@ -25,7 +25,7 @@ article, section, footer, header, nav, hgroup {
 
 html {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2P4//+/MBQzgDAICEMxXAAMYCoRIlCVANL6FYTYi5d+AAAAAElFTkSuQmCC), url('images/bg-pier.png');
-  background-position: center -100px; /* 71px */
+  background-position: center -66px; /* 71px */
   background-repeat: repeat, no-repeat;
   background-color: #008999;
 }
