@@ -71,7 +71,7 @@ if (document.getElementById('speakers')) {
   document.onkeydown = function (event) {
     event = event || window.event;
     var which = event.which || event.keyCode;
-    if (which === 27 && visible !== null || location.hash.substr(1)) { // esc
+    if (which === 27 && visible !== null) { // esc
       event.preventDefault && event.preventDefault();
       each(speakers, function (el) {
         removeClass(el, 'spotlight');
