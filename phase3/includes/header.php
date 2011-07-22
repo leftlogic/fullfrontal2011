@@ -34,10 +34,18 @@
       </a>-->
       
       
-      <a href=/tickets class="buy-tickets buy-now">
+      <!-- <a href=/tickets class="buy-tickets buy-now">
         <span class=tickets-wrapper>
         <span class=type>Buy Now</span>
         <span class=price>1 day &pound;129+ <abbr>VAT</abbr></span>
+        </span>
+        <span class=buy-button><img src=images/buy-tickets.png width=278 height=48 alt="Buy Tickets"></span>
+      </a> -->
+
+      <a href=/tickets class="buy-tickets workshops-only">
+        <span class=tickets-wrapper>
+        <span class=type>Sold out</span>
+        <span class=price>Workshops available</span>
         </span>
         <span class=buy-button><img src=images/buy-tickets.png width=278 height=48 alt="Buy Tickets"></span>
       </a>

@@ -1,11 +1,4 @@
 <section class=tickets>
-  <h1>Conference</h1>
-  <h2>&pound;129+<abbr>VAT</abbr>, <span>Conference only</span></h2>
-  <p><a href=http://leftlogic.stagehq.com/events/848/booking/new><span class=buy-button><img src=images/buy-tickets.png width=278 height=48 alt="Buy Tickets"></span></a><strong>Includes:</strong> Full day conference ticket, complimentary coffee &amp; snacks, access to the After Party and a shed load of awesome JavaScript.
-    
-</section> 
-
-<section class=tickets>
   <h1>Mobilism Workshop</h1>
   <h2>&pound;595+<abbr>VAT</abbr> <span>Inc. Conference</span></h2>
   <p><a href=http://leftlogic.stagehq.com/events/902/booking/new><span class=buy-button><img src=images/buy-tickets.png width=278 height=48 alt="Buy Tickets"></span></a>
@@ -18,6 +11,12 @@
   <p><a href=http://leftlogic.stagehq.com/events/901/booking/new><span class=buy-button><img src=images/buy-tickets.png width=278 height=48 alt="Buy Tickets"></span></a>
   <strong>Available:</strong> One or two day workshop with <b title="Not a mobile master, but a quasi JavaScript samurai">Remy Sharp</b>, full introduction to Node and using it with HTML5 real-time APIs, evening meal with all 2 day workshop delegates and speakers and full pass to Full Frontal day event. <a href=/workshops#node>read more</a>
 </section>
+
+<section class=tickets>
+  <h1>Conference</h1>
+  <h2><del>&pound;129+<abbr>VAT</abbr>, <span>Conference only</span></del> (sold out!)</h2>
+  <p><strong>Includes:</strong> Full day conference ticket, complimentary coffee &amp; snacks, access to the After Party and a shed load of awesome JavaScript.
+</section> 
 
 
 

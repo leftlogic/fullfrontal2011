@@ -328,41 +328,46 @@
 @media screen and (max-width: 896px) {
   html {
     background-position: center -71px;
-  }    
-}
-@media screen and (max-width: 775px) {
-  html {
-    background-position: center -22px;
-  }   
+  }
+  
+  header .workshops-only .price {
+    font-size: 0.55em;
+    line-height: 2em;
+  }
 }
 @media screen and (max-width: 750px) {
   html {
-    background-position: center 12px;
+    background-position: center -36px;
+  }   
+}
+@media screen and (max-width: 731px) {
+  html {
+    background-position: center 9px;
   }   
 }
 @media screen and (max-width: 594px) {
   html {
-    background-position: center -22px;
+    background-position: center 9px;
   }  
 }
-/*@media screen and (max-width: 594px) {
+@media screen and (max-width: 594px) {
   html {
-    background-position: center 60px;
-  }  
-}
-*/@media screen and (max-width: 594px) {
-  html {
-    background-position: center 60px;
+    background-position: center 10px;
   }  
 }
 @media screen and (max-width: 576px) {
   html {
-    background-position: center 57px;
+    background-position: center 6px;
   }  
 }
 @media screen and (max-width: 554px) {
   html {
-    background-position: center 208px;
+    background-position: center 157px;
+  }  
+}
+@media screen and (max-width: 544px) {
+  html {
+    background-position: center 202px;
   }  
 }
 @media screen and (max-width: 520px) {
