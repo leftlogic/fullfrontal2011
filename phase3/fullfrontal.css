@@ -213,6 +213,7 @@ header .buy-tickets {
 }
 .workshops-only .price {
   font-size: 0.46em;
+  line-height: 1em;
 }
 .buy-now {
   font-size: 4.6875em; /* 75/16 */
