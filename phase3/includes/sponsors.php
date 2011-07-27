@@ -14,18 +14,6 @@
     and <a href="mailto:events@leftlogic.com?subject=FF2011%20Sponsorship">get in touch</a> with us to discuss how we can work together.</p>
     <!-- interesting bug in Firefox 3.6 - if you're using HTML5 elements, and you're not closing your HTML4 p tags, then the HTML5 element gets sucked in to the paragraph. Odd, eh? -->
 </section>
-<?php /*
-
-<section class="sponsor sponsor-half">
-  <h1>Half Monties
-    <a href=/sponsorship.html>Become a Half Monty sponsor</a>  
-  </h1>
-  <a class=sponsor-logo href=#><img src=/ width= height= alt=></a>
-  <a class=sponsor-logo href=#><img src=/ width= height= alt=></a>
-  <a class=sponsor-logo href=#><img src=/ width= height= alt=></a>
-</section>
-*/
-?>
 <section class="sponsor">
   <h1>Our Full Monty Sponsors</h1>
   <section class=sponsor-full>
@@ -49,6 +37,14 @@
       <p>Mozilla have created Dev Derby, an HTML5 demo contest, to encourage developers to show off what is possible with HTML5.</p>
       <p><a href="https://developer.mozilla.org/demos/devderby">Please submit your own demo and share what open technologies can do!</a></p>
   </section>
+</section>
+<section class="sponsor sponsor-half">
+  <h1>Half Monties
+    <a href=/sponsorship.html>Become a Half Monty sponsor</a>  
+  </h1>
+  <a class=sponsor-logo href=http://www.webappuk.com/><img src=/images/sponsors/webappsuk.gif alt="Web Applications UK"></a>
+  <!-- <a class=sponsor-logo href=#><img src=/ width= height= alt=></a>
+  <a class=sponsor-logo href=#><img src=/ width= height= alt=></a> -->
 </section>
 <section class="sponsor sponsor-small">
   <h1>Small Monties
