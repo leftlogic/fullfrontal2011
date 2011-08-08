@@ -21,7 +21,7 @@
       <br>
       <a class=half href=http://www.webappuk.com/><img src=/images/sponsors/webappsuk.gif alt="Web Applications UK"></a>
       <br>
-      <a class=small href=http://dharmafly.com><img src=/images/sponsors/dharmafly.gif alt="Dharmafly, apps for change"></a>
+      <a class=small href=http://dharmafly.com#ff><img src=/images/sponsors/dharmafly.gif alt="Dharmafly, apps for change"></a>
       <a class=small href=http://pusher.com><img src=/images/sponsors/pusher.gif alt="Pusher - Supercharge your app with realtime events"></a>
       <a class=small href=http://uxebu.com><img src=/images/sponsors/uxebu.gif alt="uxebu - The Ajax and JavaScript experts"></a>
       <!-- <a class="small you" href=/sponsorship.html><img src=/images/you.png alt="Want to sponsor?"></a> -->

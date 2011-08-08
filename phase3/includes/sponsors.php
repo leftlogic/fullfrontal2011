@@ -50,7 +50,7 @@
   <h1>Small Monties
     <a href=/sponsorship.html>Become a Small Monty Sponsor</a>
   </h1>
-    <a class=sponsor-logo href=http://dharmafly.com><img src=/images/sponsors/dharmafly.gif width=230 alt="Dharmafly, apps for change"></a>
+    <a class=sponsor-logo href=http://dharmafly.com/#ff><img src=/images/sponsors/dharmafly.gif width=230 alt="Dharmafly, apps for change"></a>
     <a class=sponsor-logo href=http://pusher.com><img src=/images/sponsors/pusher.gif width=230 alt="Pusher - Supercharge your app with realtime events"></a>
     <a class=sponsor-logo href=http://uxebu.com><img src=/images/sponsors/uxebu.gif width=230 alt="uxebu - The Ajax and JavaScript experts"></a>
     <a href=/sponsorship.html><span class="sponsor-logo you"><img src=/images/you.png width=230></span></a>
