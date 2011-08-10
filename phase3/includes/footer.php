@@ -20,10 +20,12 @@
       ?>
       <br>
       <a class=half href=http://www.webappuk.com/><img src=/images/sponsors/webappsuk.gif alt="Web Applications UK"></a>
+      <a class=half href=http://www.kendoui.com/><img src=/images/sponsors/kendo-ui.gif alt="Setting the New Standard for HTML5 UI"></a>
       <br>
       <a class=small href=http://dharmafly.com#ff><img src=/images/sponsors/dharmafly.gif alt="Dharmafly, apps for change"></a>
       <a class=small href=http://pusher.com><img src=/images/sponsors/pusher.gif alt="Pusher - Supercharge your app with realtime events"></a>
       <a class=small href=http://uxebu.com><img src=/images/sponsors/uxebu.gif alt="uxebu - The Ajax and JavaScript experts"></a>
+      <a class=small href=http://www.netmagazine.com><img src=/images/sponsors/netmag.gif alt=""></a>
       <!-- <a class="small you" href=/sponsorship.html><img src=/images/you.png alt="Want to sponsor?"></a> -->
       <?php /*<!-- <a href=#><img src=/ alt= width=132 height=99></a>
       <a href=#><img src=/ alt= width=132 height=99></a>

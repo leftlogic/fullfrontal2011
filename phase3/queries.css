@@ -400,6 +400,7 @@
   }
   
   .sponsors a.large,
+  .sponsors a.half,
   .sponsors a.small {
     width: 100%;
     height: auto;
@@ -565,6 +566,12 @@
   
   .sponsor-small .sponsor-logo {
     width: auto;
+  }
+
+  .sponsor-half .sponsor-logo {
+    width: auto;
+    margin-right: 1%;
+    margin-bottom: 1%;
   }
   
   #workshops .callout {
