@@ -6,7 +6,7 @@
     <li><a href=/speakers#brendan>Brendan Dawes</a>
     <li><a href=/speakers#marijn>Marijn Haverbeke</a>
     <li><a href=/speakers#phil>Phil Hawksworth</a>
-    <li>TBA</li>
+    <li><a href=/speakers#marcin>Marcin Wichary</a>
   </ul>
   <h2>Duke Of Yorks, Brighton, <br> 11th November 2011</h2>
 
