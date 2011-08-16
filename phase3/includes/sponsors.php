@@ -43,17 +43,19 @@
     <a href=/sponsorship.html>Become a Half Monty sponsor</a>  
   </h1>
   <a class=sponsor-logo href=http://www.webappuk.com/><img src=/images/sponsors/webappsuk.gif alt="Web Applications UK"></a>
+  <a class=sponsor-logo href=http://www.kendoui.com/><img src=/images/sponsors/kendo-ui.gif alt="Setting the New Standard for HTML5 UI"></a>
   <!-- <a class=sponsor-logo href=#><img src=/ width= height= alt=></a>
   <a class=sponsor-logo href=#><img src=/ width= height= alt=></a> -->
 </section>
 <section class="sponsor sponsor-small">
-  <h1>Small Monties
-    <a href=/sponsorship.html>Become a Small Monty Sponsor</a>
-  </h1>
-    <a class=sponsor-logo href=http://dharmafly.com><img src=/images/sponsors/dharmafly.gif width=230 alt="Dharmafly, apps for change"></a>
+  <h1>Small Monties </h1>
+    <a class=sponsor-logo href=http://dharmafly.com/#ff><img src=/images/sponsors/dharmafly.gif width=230 alt="Dharmafly, apps for change"></a>
     <a class=sponsor-logo href=http://pusher.com><img src=/images/sponsors/pusher.gif width=230 alt="Pusher - Supercharge your app with realtime events"></a>
     <a class=sponsor-logo href=http://uxebu.com><img src=/images/sponsors/uxebu.gif width=230 alt="uxebu - The Ajax and JavaScript experts"></a>
-    <a href=/sponsorship.html><span class="sponsor-logo you"><img src=/images/you.png width=230></span></a>
+</section>
+<section class="sponsor sponsor-small">
+  <h1>Media Partners</h1>
+  <a class=sponsor-logo href=http://www.netmagazine.com><img src=/images/sponsors/netmag.gif alt=""></a>
 </section>
 
 <!-- <section class="sponsor sponsor-media">

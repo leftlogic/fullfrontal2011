@@ -7,9 +7,9 @@
 
 <section class=tickets>
   <h1>Node Workshop</h1>
-  <h2>&pound;595+<abbr>VAT</abbr>/&pound;345+<abbr>VAT</abbr> <span>Inc. Conference</span></h2>
-  <p><a href=http://leftlogic.stagehq.com/events/901/booking/new><span class=buy-button><img src=images/buy-tickets.png width=278 height=48 alt="Buy Tickets"></span></a>
-  <strong>Available:</strong> One or two day workshop with <b title="Not a mobile master, but a quasi JavaScript samurai">Remy Sharp</b>, full introduction to Node and using it with HTML5 real-time APIs, evening meal with all 2 day workshop delegates and speakers and full pass to Full Frontal day event. <a href=/workshops#node>read more</a>
+  <h2><del>&pound;595+<abbr>VAT</abbr>/&pound;345+<abbr>VAT</abbr> <span>Inc. Conference</span></del></h2>
+  <p><strong>Available:</strong> One or two day workshop with <b title="Not a mobile master, but a quasi JavaScript samurai">Remy Sharp</b>, full introduction to Node and using it with HTML5 real-time APIs, evening meal with all 2 day workshop delegates and speakers and full pass to Full Frontal day event. <a href=/workshops#node>read more</a><br>
+  <strong><a href="mailto:events@leftlogic.com?subject=Add%20to%20node%20workshop%20waiting%20list">Add yourself to the waiting list</a></strong></p>
 </section>
 
 <section class=tickets>

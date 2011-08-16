@@ -48,12 +48,15 @@
   
   <div class=callout>
     <img class=headshot src=images/speakers/remy.jpg>
-    <a href=http://leftlogic.stagehq.com/events/901/booking/new class="buy-tickets" style="font-size: 3em;">
+    <a href="mailto:events@leftlogic.com?subject=Add%20to%20node%20workshop%20waiting%20list" class="buy-tickets" style="font-size: 3em;">
       Single day @ <span>&pound;345+ <abbr>VAT</abbr></span> <small>or</small><br>
       Both days @ <span>&pound;595+ <abbr>VAT</abbr></span>
-      <span class=buy-button><img src=images/buy-tickets.png width=278 height=48 alt="Buy Tickets"></span>
+      <!--<span class=buy-button><img src=images/buy-tickets.png width=278 height=48 alt="Buy Tickets"></span>-->
+      <br><br><!-- yeah, brs, sorry folks -->
+      <span>Sold out</span>
     </a>
     <p>Ticket includes pass to Friday event.<br>Two day ticket includes evening meal on Wednesday with Remy &amp; PPK.<br>
       Tea, Coffee and lunch provided for both days.
+    <p><a href="mailto:events@leftlogic.com?subject=Add%20to%20node%20workshop%20waiting%20list">Add yourself to the waiting list</a></p>
   </div>
 </section>
