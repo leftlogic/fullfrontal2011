@@ -69,7 +69,6 @@
   <h1><span>07</span> Marcin Wichary</h1>
   <img src=/images/speakers/marcin.jpg>
   <p>Marcin Wichary has been coding HTML by hand since 1994 and still finds it fascinating today as a senior user experience designer and developer at Google. <span class=more>His recent projects include Google Chrome and <a href="http://www.google.com/instant/">Google Instant</a>; he also programmed some of the popular homepage doodles including <a href="http://www.google.com/pacman/">Pac-Man</a> and <a href="http://www.google.com/logos/verne.html">Jules Verne</a>.</span></p>
-  <p>Author of <a href=http://eloquentjavascript.net/>Eloquent JavaScript</a> and main developer of <a href=http://codemirror.net/>CodeMirror</a>. <span class=more>Marijn Haverbeke has been trying to get out of web programming for over ten years, but web programming just kept on getting more interesting. Currently working on Mozilla&rsquo;s new programming language, Rust.</span></p>
     
   <footer>
     <a href=http://twitter.com/mwichary>@mwichary</a>
