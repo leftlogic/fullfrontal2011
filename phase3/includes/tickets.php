@@ -1,8 +1,9 @@
-<section class=tickets>
+<section class=tickets id=mobilism>
   <h1>Mobilism Workshop</h1>
   <h2>&pound;595+<abbr>VAT</abbr> <span>Inc. Conference</span></h2>
-  <p><a href=http://leftlogic.stagehq.com/events/902/booking/new><span class=buy-button><img src=images/buy-tickets.png width=278 height=48 alt="Buy Tickets"></span></a>
-  <strong>Includes:</strong> Two day workshop with mobile master: PPK, evening meal with PPK and other workshop delegates, full pass to Full Frontal day event, and did we mention PPK? <a href=/workshops#mobilism>read more</a>
+  <p><a href="mailto:events@leftlogic.com?subject=Mobilism%20booking&amp;body=I%20wish%20to%20book%20the%20Mobilism%20workshop%20for%20the%20following%20individuals%3A%0A%0APlease%20send%20me%20an%20invoice%20to%3A"><span class=buy-button><img src=images/buy-tickets.png width=278 height=48 alt="Buy Tickets"></span></a>
+  <strong>Includes:</strong> Two day workshop with mobile master: PPK, evening meal with PPK and other workshop delegates, full pass to Full Frontal day event, and did we mention PPK? <a href=/workshops#mobilism>read more</a><br><br>
+  <strong>Due to an issue with PayPal, we are only taking payment for this workshop via direct wire transfers. Send us a <a href="mailto:events@leftlogic.com?subject=Mobilism%20booking&amp;body=I%20wish%20to%20book%20the%20Mobilism%20workshop%20for%20the%20following%20individuals%3A%0A%0APlease%20send%20me%20an%20invoice%20to%3A">booking email</a> and the place will be reserved and details on how to pay will be sent.</strong>
 </section>
 
 <section class=tickets>

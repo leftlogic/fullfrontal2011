@@ -32,7 +32,7 @@
   
   <div class=callout>
     <img class=headshot src=images/speakers/ppk.jpg>
-    <a href=http://leftlogic.stagehq.com/events/902/booking/new class="buy-tickets early-bird">
+    <a href=/tickets#mobilism class="buy-tickets early-bird">
       Mobilism<br>
       <span>&pound;595+ <abbr>VAT</abbr></span><br>
       <span class=buy-button><img src=images/buy-tickets.png width=278 height=48 alt="Buy Tickets"></span>
