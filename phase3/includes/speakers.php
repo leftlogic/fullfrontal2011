@@ -65,12 +65,15 @@
   </footer>
 </section>
 
-
-<section class="want-to speaker">
-  <h1><span>&gt;</span> Want to speak?</h1>
-  <div class=you><img src=/images/you.png></div>
-  <p>
-    Want to speak at Full Frontal 2011? We’d love to give you the platform to speak to hundreds of
-    developers and designers, so what are you waiting for, <a href="mailto:events@leftlogic.com?subject=FF2011%20Speaking%20Proposal">get in touch!</a></p>
+<section class="speaker" id=marcin>
+  <h1><span>07</span> Marcin Wichary</h1>
+  <img src=/images/speakers/marcin.jpg>
+  <p>Marcin Wichary has been coding HTML by hand since 1994 and still finds it fascinating today as a senior user experience designer and developer at Google. <span class=more>His recent projects include Google Chrome and <a href="http://www.google.com/instant/">Google Instant</a>; he also programmed some of the popular homepage doodles including <a href="http://www.google.com/pacman/">Pac-Man</a> and <a href="http://www.google.com/logos/verne.html">Jules Verne</a>.</span></p>
+    
+  <footer>
+    <a href=http://twitter.com/mwichary>@mwichary</a>
+    <a href=http://www.aresluna.org/>aresluna.org</a>
+  </footer>
 </section>
+
 
