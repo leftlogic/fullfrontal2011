@@ -52,6 +52,7 @@
     <a class=sponsor-logo href=http://dharmafly.com/#ff><img src=/images/sponsors/dharmafly.gif width=230 alt="Dharmafly, apps for change"></a>
     <a class=sponsor-logo href=http://pusher.com><img src=/images/sponsors/pusher.gif width=230 alt="Pusher - Supercharge your app with realtime events"></a>
     <a class=sponsor-logo href=http://uxebu.com><img src=/images/sponsors/uxebu.gif width=230 alt="uxebu - The Ajax and JavaScript experts"></a>
+    <a class=sponsor-logo href=http://www.guardian.co.uk/open-platform><img src=/images/sponsors/guardian.gif width=230 alt="The Guardian Open Platform is part of the Guardian's ongoing digital engagement strategy."></a>
 </section>
 <section class="sponsor sponsor-small">
   <h1>Media Partners</h1>

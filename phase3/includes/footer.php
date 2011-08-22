@@ -25,6 +25,7 @@
       <a class=small href=http://dharmafly.com#ff><img src=/images/sponsors/dharmafly.gif alt="Dharmafly, apps for change"></a>
       <a class=small href=http://pusher.com><img src=/images/sponsors/pusher.gif alt="Pusher - Supercharge your app with realtime events"></a>
       <a class=small href=http://uxebu.com><img src=/images/sponsors/uxebu.gif alt="uxebu - The Ajax and JavaScript experts"></a>
+      <a class=small href=http://www.guardian.co.uk/open-platform><img src=/images/sponsors/guardian.gif width=230 alt="The Guardian Open Platform is part of the Guardian's ongoing digital engagement strategy."></a>
       <a class=small href=http://www.netmagazine.com><img src=/images/sponsors/netmag.gif alt=""></a>
       <!-- <a class="small you" href=/sponsorship.html><img src=/images/you.png alt="Want to sponsor?"></a> -->
       <?php /*<!-- <a href=#><img src=/ alt= width=132 height=99></a>
