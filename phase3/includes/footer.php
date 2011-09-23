@@ -21,11 +21,13 @@
       <br>
       <a class=half href=http://www.webappuk.com/><img src=/images/sponsors/webappsuk.gif alt="Web Applications UK"></a>
       <a class=half href=http://www.kendoui.com/><img src=/images/sponsors/kendo-ui.gif alt="Setting the New Standard for HTML5 UI"></a>
+      <a class=half href=http://updates.html5rocks.com/><img src=/images/sponsors/google.gif alt="Google"></a>
       <br>
       <a class=small href=http://dharmafly.com#ff><img src=/images/sponsors/dharmafly.gif alt="Dharmafly, apps for change"></a>
       <a class=small href=http://pusher.com><img src=/images/sponsors/pusher.gif alt="Pusher - Supercharge your app with realtime events"></a>
       <a class=small href=http://uxebu.com><img src=/images/sponsors/uxebu.gif alt="uxebu - The Ajax and JavaScript experts"></a>
       <a class=small href=http://www.guardian.co.uk/open-platform><img src=/images/sponsors/guardian.gif width=230 alt="The Guardian Open Platform is part of the Guardian's ongoing digital engagement strategy."></a>
+      <a class=small style="background: #1a1818;" href="http://www.ubelly.com?WT.mc_id=evn-c-gb--dca-F3-Fullfrontal"><img src=/images/sponsors/ubelly.gif width=230 alt="Ubelly - The unofficial official Microsoft blog for developers who love the web"></a>
       <a class=small href=http://www.netmagazine.com><img src=/images/sponsors/netmag.gif alt=""></a>
       <!-- <a class="small you" href=/sponsorship.html><img src=/images/you.png alt="Want to sponsor?"></a> -->
       <?php /*<!-- <a href=#><img src=/ alt= width=132 height=99></a>

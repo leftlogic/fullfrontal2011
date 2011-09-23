@@ -7,6 +7,7 @@
     <li><a href=/speakers#marijn>Marijn Haverbeke</a>
     <li><a href=/speakers#phil>Phil Hawksworth</a>
     <li><a href=/speakers#marcin>Marcin Wichary</a>
+    <li><a href=/speakers#rik>Rik Arends</a>
   </ul>
   <h2>Duke Of Yorks, Brighton, <br> 11th November 2011</h2>
 
