@@ -78,7 +78,7 @@
 <section class="speaker" id=rik>
   <h1><span>08</span> Rik Arends</h1>
   <img src=/images/speakers/rik.jpg>
-<p>Rik Arends is co-founder and CTO of <a href="http://c9.io">Cloud9 IDE</a>, Inc (previously Ajax.org). <span class=more>Early to recognise te shift between compiled and dynamic languages, he worked on language transcompilers, in-browser graphics, optimized API designs, NoSQL database architecture and high performance webservice driven applications. As an early believer of the browser as the winning application runtime, Rik focussed his career on making the web a better place for developers. Rik now oversees the technical vision and development of Cloud9 IDE.</p>
+<p>Rik Arends is co-founder and CTO of <a href="http://c9.io">Cloud9 IDE</a>, Inc (previously Ajax.org). <span class=more>Early to recognise the shift between compiled and dynamic languages, he worked on language transcompilers, in-browser graphics, optimized API designs, NoSQL database architecture and high performance webservice driven applications. As an early believer of the browser as the winning application runtime, Rik focussed his career on making the web a better place for developers. Rik now oversees the technical vision and development of Cloud9 IDE.</p>
   <footer>
     <a href=http://twitter.com/rikarends>@rikarends</a>
     <a href=http://c9.io/>c9.io</a>
