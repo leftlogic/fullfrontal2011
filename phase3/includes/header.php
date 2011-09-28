@@ -58,7 +58,7 @@
       <ul>
         <li><a <?=$file == 'home' ? 'class=selected ' : ''?>href=/>Home</a>
         <li><a <?=$file == 'speakers' ? 'class=selected ' : ''?>href=/speakers>Speakers</a>
-<!--        <li><a <?=$file == 'schedule' ? 'class=selected ' : ''?>href=/schedule>Schedule</a> -->
+        <li><a <?=$file == 'schedule' ? 'class=selected ' : ''?>href=/schedule>Schedule</a>
         <li><a <?=$file == 'workshops' ? 'class=selected ' : ''?>href=/workshops>Workshops</a>
         <li><a <?=$file == 'venue' ? 'class=selected ' : ''?>href=/venue>The Venue</a>
         <li><a <?=$file == 'sponsors' ? 'class=selected ' : ''?>href=/sponsors>Sponsors</a>

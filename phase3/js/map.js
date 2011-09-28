@@ -1,7 +1,6 @@
 function newHoverIconAction(el, latlng, marker, standardIcon, hoverIcon) {
   return function (event) {
     event = event || window.event;
-    console.log(i++, 'action');
     if (event.type === 'mouseover') {
       marker.setZIndex(++zIndex);
       marker.setIcon(hoverIcon);
@@ -29,6 +28,8 @@ var iconURL = '/images/map-markers.png',
     }),
     iconSize = new google.maps.Size(29, 39, 'px', 'px'),
     iconPoint = new google.maps.Point(16, 39),
+    largeIconSize = new google.maps.Size(51, 69, 'px', 'px'),
+    largeIconPoint = new google.maps.Point(26, 69),
     iconWidth = 29,
     map = new google.maps.Map(document.getElementById('venue-map'), {
       center: new google.maps.LatLng(50.8339238, -0.1385427),
@@ -45,6 +46,7 @@ for (var i = 0; i < len; i++) {
   !function (i) {
     var el = lis[i],
         latlng = el.getAttribute('data-latlng').split(','),
+        large = !!el.getAttribute('data-large'),
         venueLocation = new google.maps.LatLng(latlng[0], latlng[1]),
         standardIcon = new google.maps.MarkerImage(
           iconURL,

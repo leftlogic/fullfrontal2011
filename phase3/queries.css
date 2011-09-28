@@ -354,6 +354,14 @@
   html {
     background-position: center 10px;
   }  
+
+  .schedule tr td:nth-child(2) {
+    display: none;
+  }
+
+  .schedule tr td:nth-child(3) {
+    padding-left: 10px;
+  }
 }
 @media screen and (max-width: 576px) {
   html {
@@ -492,6 +500,41 @@
   
   footer {
     margin-bottom: 2em;
+  }
+
+  .schedule tr td:nth-child(1) {
+    border-bottom: 0;
+    -webkit-transform: rotate(90deg);
+    -webkit-transform-origin: 10px;
+    position: absolute;
+    width: auto;
+  }
+
+  .schedule tr td:nth-child(3) {
+    width: 90%;
+    padding-left: 0;
+  }
+
+  .schedule tr td:nth-child(1),
+  .schedule tr td .timeslot {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .schedule tr td .timeslot {
+    display: inline;
+  }
+
+  .schedule tr td:nth-child(1) span {
+    color: transparent;
+  }
+
+  .schedule tr td:nth-child(1) > span *:last-child {
+    display: none;
+  }
+
+  .schedule tr td:nth-child(1) time:first-child {
+    color: #93CFD6;
   }
 }
 

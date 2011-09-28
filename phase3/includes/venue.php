@@ -92,9 +92,12 @@
     </ul>
 
     <h2>After Party</h2>
-    <p>More info coming soon, <a href=http://twitter.com/fullfrontalconf>follow @fullfrontalconf for the latest info</a>.
-
-        
+    <ul class=party>
+      <li data-latlng=50.82181097001707,-0.14180302619934082>
+        <div>
+        <h3>The Loft</h3>
+        <p>Please join us at the Full Frontal After Party at The Loft from 7pm until late &mdash; where Mozilla and BlackBerry, our Full Monty sponsors have bought you a pint!
+    </ul>
   </div>
       
   <div id=venue-map></div>

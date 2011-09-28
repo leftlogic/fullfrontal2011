@@ -559,6 +559,64 @@ blockquote p a {
   color: hsl(190,30%,30%);
 }
 
+/** Schedule **/
+
+.schedule {
+  margin-bottom: 3.5em;
+  border-collapse: collapse;
+  border-spacing: 2px;
+}
+
+.schedule thead {
+  display: none;
+}
+
+.schedule td {
+  border-bottom: 1px solid #33a0af;
+  padding: 20px 0 19px 0;
+  line-height: 28px;
+}
+
+.schedule td {
+  font-family: 'Cabin Sketch', sans-serif;
+  vertical-align: top;
+}
+
+.schedule td p {
+  font-family: 'Century Gothic', sans-serif;
+}
+
+.schedule .timeslot {
+  color: #93CFD6;
+  display: block;
+  font-size: 28px;
+}
+
+.schedule td img {
+  max-width: 100%;
+  display: block
+}
+
+.schedule tr td:nth-child(1) {
+  color: #DAD197;
+  width: 20%;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.schedule tr td:nth-child(2) {
+  width: 20%;
+  padding: 20px 30px 19px 0;
+}
+
+.schedule tr td:nth-child(3) {
+  width: 60%;
+}
+
+.schedule table h1 {
+  font-size: 28px;
+}
+
 /** Tickets **/
 
 .tickets {
@@ -883,6 +941,7 @@ blockquote p a {
 .venue-7 { background-position: -174px 60px; }
 .venue-8 { background-position: -203px 60px; }
 .venue-9 { background-position: -232px 60px; }
+.venue-party { background-position: -232px 60px; }
 
 li.selected .venue-1, li:hover .venue-1 { background-position: 0 31px; }
 li.selected .venue-2, li:hover .venue-2 { background-position: -29px 31px; }
@@ -893,6 +952,7 @@ li.selected .venue-6, li:hover .venue-6 { background-position: -145px 31px; }
 li.selected .venue-7, li:hover .venue-7 { background-position: -174px 31px; }
 li.selected .venue-8, li:hover .venue-8 { background-position: -203px 31px; }
 li.selected .venue-9, li:hover .venue-9 { background-position: -232px 31px; }
+li.selected .venue-party, li:hover .venue-party { background-position: -232px 31px; }
 
 
 .speaker {
@@ -1054,3 +1114,5 @@ html.transition .wrapper {
 a img {
   border: 0;
 }
+
+
