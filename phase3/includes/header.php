@@ -8,8 +8,8 @@
   <title>Full Frontal 2011- JavaScript Conference</title>
   <script>document.documentElement.className = 'js';</script>
   <link rel=stylesheet href='http://fonts.googleapis.com/css?family=Cabin+Sketch:bold' /> 
-  <link rel=stylesheet href=fullfrontal.css>
-  <link rel=stylesheet href=queries.css>
+  <link rel=stylesheet href=fullfrontal.css?20110928>
+  <link rel=stylesheet href=queries.css?20110928>
   
   <!--[if lt IE 9]>
   <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
