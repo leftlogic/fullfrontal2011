@@ -594,6 +594,7 @@ blockquote p a {
 
 .schedule td img {
   max-width: 100%;
+  width: 170px;
   display: block
 }
 
