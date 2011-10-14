@@ -125,8 +125,9 @@ This talk isn’t specific to any JavaScript library, rather, it gives you new w
       </td>
       <td><img src=/images/speakers/schedule/brendan.jpg alt="Brendan Dawes"></td>
       <td>
-        <h1>TBA</h1>
-        <p>Don't worry, we know Brendan is going to provide his overview soon, and it's going to be awesome, there's no doubt, but for now &mdash; we're just using this placeholder to keep the page even-ish.
+        <h1>Beyond The Planet Of The Geeks</h1>
+        <p>Brendan Dawes is a big-a-geek as anyone; he loves nothing more than making and experimenting with all the wondrous technologies, tools, toys and other magical things that constantly surround us. But the thing is, geeks never changed anything, well not in a real-world sense. Making cutting edge Javascript demos with the likes of Canvas or SVG are all well and good but for things to really change and have an impact stuff needs to move beyond the confines of the world of the geek and become common place, the norm and paradoxically, invisible!
+        <p>In this session Brendan takes you through his process of experimentation with purpose and how he and the team at magneticNorth are now actively using these exciting new technolgies on real client work that goes beyond *bouncing ball* demoes to create new interfaces and new ways to explore.
       </td>
     </tr>
 
