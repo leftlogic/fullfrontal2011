@@ -33,9 +33,10 @@
   <div class=callout>
     <img class=headshot src=images/speakers/ppk.jpg>
     <a href=/tickets#mobilism class="buy-tickets early-bird">
-      Mobilism<br>
+      <!--Mobilism<br>
       <span>&pound;595+ <abbr>VAT</abbr></span><br>
-      <span class=buy-button><img src=images/buy-tickets.png width=278 height=48 alt="Buy Tickets"></span>
+      <!--<span class=buy-button><img src=images/buy-tickets.png width=278 height=48 alt="Buy Tickets"></span>-->
+      <span>Sold out</span>
     </a>
     <p>Ticket includes pass to Friday event and evening meal with PPK &amp; Remy on Wednesday evening. Tea, Coffee and lunch provided for both days.
   </div>
