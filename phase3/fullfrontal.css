@@ -48,6 +48,7 @@ html {
   background-position: center -100px; /* 71px */
   background-repeat: repeat, no-repeat;
   background-color: #008999;
+  margin-top: 60px;
 }
 
 body {
@@ -1141,4 +1142,28 @@ a img {
   margin: 0 5px 0 0;
   font-size: 15px;
   font-family: 'Pictos', sans-serif;
+}
+
+#latest {
+  position: fixed;
+  background: white;
+  color: black;
+  top: 0;
+  left: 0;
+  width: 100%;
+  right: 0;
+  z-index: 99999999;
+  box-shadow: 10px 0 10px black;
+}
+
+#latest p {
+  color: black;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#latest a {
+  color: #008999;
 }
